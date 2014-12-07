@@ -1,0 +1,17 @@
+.login_title {
+	font-weight: bold;
+	line-height: 35px;
+	font-size: 14px;
+	color: #405687;
+	padding-right: 10px;
+}
+.lock-img {
+	background-image: url(images/lock.png);
+	background-repeat: no-repeat;
+	height: 256px;
+	width: 256px;
+	margin-top: -270px;
+	float:left;
+	position: relative;
+	z-index: 1;
+}

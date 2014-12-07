@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--[if lt IE 9]>
+	<script src="js/mediaqueries.js" type="text/javascript"></script>
+<![endif]-->
+<title>مشاوير | إرسل طلب</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="mobile-nav.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+<nav>
+		<ul class="clearfix" style="display: none;">
+			<li><a href="index.html">الرئيسية</a></li>
+			<li><a href="services.html">خدماتنا</a></li>
+			<li><a href="choose-city.html">الألة الحاسبة</a></li>
+			<li><a href="order.html">إرسل طلب</a></li>
+			<li><a href="contact-us.html">إتصل بنا</a></li>
+				
+		</ul>
+		<a href="#" id="pull">القائمة</a>
+	</nav>
+<div class="container">
+<div class="header">
+<div class="logo-holder">
+  <a href="#"><img src="images/logo.png" alt="مشاوير الإمارات" /></a>
+ </div>
+ <div class="header-right">
+ <div class="toplinks-area">
+ <div class="social-icons">
+ <a href="#" class="fb-icon"></a>
+ <a href="#" class="tw-icon"></a>
+ <a href="#" class="in-icon"></a>
+ </div>
+ <div class="lang">
+ <a href="#">أخبر صديق</a> |
+ <a href="#">English</a></div>
+ <div class="clear"></div>
+ </div>
+ <ul class="main-nav">
+ <li>
+ <a href="services.html">
+ <i class="services-item"></i>
+ <br />
+ خدماتنا
+ </a>
+ </li>
+ <li>
+ <a href="choose-city.html">
+ <i class="calculator-item"></i>
+ <br />
+ الآلة الحاسبة
+ </a>
+ </li>
+ <li>
+  <a href="order.html">
+ <i class="order-item"></i>
+ <br />
+إرسل طلب
+ </a>
+ </li>
+ <li>
+ <a href="contact-us.html">
+ <i class="contact-item"></i>
+ <br />
+إتصل بنا
+ </a>
+ </li>
+ </ul> 
+ 
+</div> 
+ <div class="clear"></div> 
+</div>
+<div class="page-warp">
+<h1 class="form-title">من فضلك إملاء البيانات المطلوبة و <span style="color:#fff;">إضغط إرسال</span></h1>
+<table class="form-block1" width="100%" border="0" cellspacing="1" cellpadding="1">
+<tr>
+<td colspan="2"><h3>بيانات العميل</h1></td>
+</tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="إسم العميل / الشركة" />
+    <span class="astrix"></span>
+    </td>
+    <td><input type="text" class="txt-box" placeholder="البريد الإلكتروني" />
+    <span class="astrix"></span>
+    </td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="اسم مقدم الطلب" />
+    <span class="astrix"></span></td>
+    <td><input type="text" class="txt-box" placeholder="الهاتف" />
+    <span class="astrix"></span></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div class="clear"></div>
+<table class="form-block2" border="0" cellspacing="1" cellpadding="1">
+  <caption>
+    المكان المرسل منه
+  </caption>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="الشركة" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="إسم الراسل" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="البريد الإلكتروني" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="الهاتف" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="العنوان" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="أقرب مكان مشهور" /></td>
+  </tr>
+  <tr>
+    <td><label>مدينة</label>
+      <select class="select-menu">
+      <option value="1">أبوظبي</option>
+	<option value="6">إمارة رأس الخيمة</option>
+	<option selected="selected" value="5">إمارة عجمانّ</option>
+	<option value="8">أمّ القيوين</option>
+	<option value="4">الشارقةّ</option>
+	<option value="2">العين</option>
+	<option value="7">الفجيرة</option>
+	<option value="3">دبي</option>
+	<option value="الرجاء اختيار مدينة">الرجاء اختيار مدينة</option>
+
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label>المنطقة</label>
+      <select class="select-menu">
+      
+	<option value="الرجاء اختيار المنطقة">الرجاء اختيار المنطقة</option>
+
+      </select></td>
+  </tr>
+  <tr>
+    <td>
+    <textarea name="instructions" placeholder="تعليمات" class="txt-area" style="height:60px;"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <img class="captcha-img" src="images/captcha-photo.png" />
+    <input type="text" class="captcha-box" />
+    <br />
+    <a href="#">تحديث الصورة</a></td>
+  </tr>
+</table>
+<!-- Destenation place-->
+<table class="form-block2" border="0" cellspacing="1" cellpadding="1">
+  <caption>
+    المكان المرسل إليه
+  </caption>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="الشركة" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="إسم الراسل" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="البريد الإلكتروني" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="الهاتف" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="العنوان" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="txt-box" placeholder="أقرب مكان مشهور" /></td>
+  </tr>
+  <tr>
+    <td><label>مدينة</label>
+      <select class="select-menu">
+      <option value="1">أبوظبي</option>
+	<option value="6">إمارة رأس الخيمة</option>
+	<option selected="selected" value="5">إمارة عجمانّ</option>
+	<option value="8">أمّ القيوين</option>
+	<option value="4">الشارقةّ</option>
+	<option value="2">العين</option>
+	<option value="7">الفجيرة</option>
+	<option value="3">دبي</option>
+	<option value="الرجاء اختيار مدينة">الرجاء اختيار مدينة</option>
+
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label>المنطقة</label>
+      <select class="select-menu">
+      
+	<option value="الرجاء اختيار المنطقة">الرجاء اختيار المنطقة</option>
+
+      </select></td>
+  </tr>
+  <tr>
+    <td>
+    <textarea name="instructions" placeholder="تعليمات" class="txt-area" style="height:60px;"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <span class="small-title">مكان الدفع :</span>
+    <div class="check-group">    
+    <span>
+    <label>
+    <input type="checkbox" />
+    المكان المرسل منه
+    </label>
+    </span>
+     <span>
+    <label>
+    <input type="checkbox" />
+    المكان المرسل إليه
+    </label>
+    </span></div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    تكلفة إجمالية : 50 درهم
+    <select name="select" class="via-select">
+          <option>دراجة نارية</option>
+          <option>فان</option>
+        </select>
+    </td>
+  </tr>
+  <tr>
+  <td>
+  <label class="agree-terms">
+  <input type="checkbox" />
+  <a href="#">أوافق علي الشروط والأحكام</a> </label>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <input type="button" value="إرسال" class="normal-btn"
+ />
+ <input type="button" value="مسح" class="normal-btn"
+ />
+   </td>
+  </tr>
+</table>
+
+<div class="clear"></div>
+</div>
+
+</div>
+<div class="container">
+<div class="footer">
+<ul>
+<li>
+<a href="#">الرئيسية</a>
+</li>
+<li>
+<a href="#">خدماتنا</a>
+</li>
+<li>
+<a href="#">الألة الحاسبة</a>
+</li>
+<li>
+<a href="#">إرسل طلب</a>
+</li>
+<li>
+<a href="#">الأسئلة المتداولة</a>
+</li>
+<li>
+<a href="#">الشروط والأحكام</a>
+</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

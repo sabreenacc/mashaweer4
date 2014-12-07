@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" lang="en" content="mashaweer, personal, business, errand, service, dubai, uae, mashaweeruae, balloon and flower delivery, grocery store, pharmacy, eye glass repair, drop your visit visa to the airport, Taking forgotten lunches homework gym clothes to school, Dry Cleaning, Post Office, Drop off and pick-up dry-cleaning, tailoring, alterations, shoe repair, movies, books, Food Delivery, Surprise Gifts Delivery, Bill Payment, Document Delivery, Purchase & Delivery of Stationary, Purchase & Delivery of Coffee/Canteen Supplies, Corporate gifts delivery & Distribution, Bulk Mailings, Package Delivery, send Thank you Cards, Flowers and Hampers, Post office services, Lunch Delivery, Special Delivery, Forget anything anywhere, we will bring wherever you want, united arab emirates, ajman, abu dhabi, fujairah, ras al khaimah, alain, messenger, delivery messengers, trip calculator, relieve stress, save time, save money." />
+    <meta name="description" lang="en" content="Here are Mashaweer, we deal with personal and business errand services saving you time, effort, money and letting you stay focused on doing what you love to do. We are your multiple office messengers running around the city for you so that you can concentrate on more precious things." />
+    <meta name="keywords" lang="ar" content="مشاويير,دبى,الإمارات,الإمارات العربية المتحدة, توصيل طلبات,قضاء مشاويير,سينما,مسرح,السوق,مفاتيح,سيارات,ترفيه,اتصال,بريد,ألعاب,إماراتى,بر دبى,جبل على,أسرع وقت,أرخص الأسعار,فى كل ماكن,كل الأحجام,موتوسيكل,سيارة,فى أقل من ساعة,هدايا,أكل,مشروبات,البومات الصور,كروت تهنئة,حجز,مجلات,جرائد" />
+    <meta name="description" lang="ar" content="مشاويير تقدم خدمات متنوعة للأشخاص والشركات للإبقاء على سهولة الحياة والعمل لعملائها بدون التقيد بأماكن محددة, مهمتنا هى مساعدة عميلنا للحفاظ على وقته بقضاء كل ما يحتاج من مشاويير, نحن نساعدك على تحقيق التوافق بين حياتك العملية والشخصية وتتنوع الخدمات من بريد وحجز تذاكر ونقل الورق والراسلات بالاضافة الى شراء المجلات وجرائد وكروت تهنئة والهدايا والذهاب للتسوق والكثير من الخدمات." />
+    <link href="/App_Themes/Main/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/App_Themes/Main/style<%= Globals.MashaweerLanguage %>.css" rel="stylesheet"
+        type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="js/jquery.1.7.2.min.js"></script>
+    <link rel="shortcut icon" href="fav.ico" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        <title>Mashaweer | Home</title>
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32995610-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    <form runat="server">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+            </div>
+            <ul class="nav">
+                <li><a href="Default.aspx" class="active">
+                    <asp:Literal ID="ltrlHomeTitle" runat="server" Text="<%$ Resources:LanguageFile, MENU_HOME%>" /></a></li>
+                <li><a href="Service.aspx">
+                    <asp:Literal ID="ltrlServiceTitle" runat="server" Text="<%$ Resources:LanguageFile, Services_Title%>" /></a></li>
+                <li><a href="Calculator.aspx">
+                    <asp:Literal ID="ltrlCalculatorTitle" runat="server" Text="<%$ Resources:LanguageFile, CALCULATOR%>" /></a></li>
+                <li><a href="Order.aspx">
+                    <asp:Literal ID="ltrlPlaceOrderTitle" runat="server" Text="<%$ Resources:LanguageFile, PLACE_ORDER%>" /></a></li>
+                <!--<li><a href="http://www.ontimesystem.com/sites/Mashaweer/NewAccount.aspx" class="active">
+                    <asp:Literal ID="ltrlAccountTitle" runat="server" Text="<%$ Resources:LanguageFile, Creat_An_Account%>" /></a></li>-->
+                <li><a href="ContactUs.aspx">
+                    <asp:Literal ID="ltrlContactusTitle" runat="server" Text="<%$ Resources:LanguageFile, CONTACT_US%>" /></a></li>
+            </ul>
+            <div class="header-r">
+                <asp:LinkButton ID="btnEnglishLanguage" runat="server" CssClass="eng" ToolTip="English"
+                    OnClick="BtnEnglishLanguageClick"></asp:LinkButton>
+                <asp:LinkButton ID="btnArabicLanguage" runat="server" CssClass="ar" ToolTip="عربى"
+                    OnClick="BtnArabicLanguageClick"></asp:LinkButton>
+                <a href="https://www.facebook.com/MashaweerDubai" target="_blank" class="fbook" title="Facebook">
+                </a>
+                <%--<a href="#" class="twitter" title="Follow Us">
+                </a><a href="#" class="ytube" title="Youtube Channel"></a>--%>
+                <div class="clear">
+                </div>
+                <div class="callnow">
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <!--header end-->
+        <%--<div class="welcome-banner">
+            <div class="hand">
+            </div>
+            <div class="welcome-par">
+                <div class="welcome-title">
+                </div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release
+                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>--%>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    <div class="clear">
+    </div>
+    <div class="footer">
+        <div class="container">
+            <a href="http://www.Premitek.com/" target="_blank" title="Premitek" class="float-near"
+                style="width: 100px;">
+                <div class="float-near" style="color: #D3BC7F; font-weight: bolder;">
+                    <asp:Literal ID="ltrlPremitekLogo" runat="server" Text="<%$ Resources:LanguageFile, PREMITEK_LOGO%>" />
+                </div>
+                <div class="logo-premitek float-near">
+                </div>
+            </a>
+            <ul class="footer-map">
+                <li><a href="Default.aspx">
+                    <asp:Literal ID="ltrlHomeTitle2" runat="server" Text="<%$ Resources:LanguageFile, MENU_HOME%>" /></a></li>
+                <li><a href="Service.aspx">
+                    <asp:Literal ID="ltrlServiceTitle2" runat="server" Text="<%$ Resources:LanguageFile, Services_Title%>" /></a></li>
+                <li><a href="Calculator.aspx">
+                    <asp:Literal ID="ltrlCalculatorTitle2" runat="server" Text="<%$ Resources:LanguageFile, CALCULATOR%>" /></a></li>
+                <li><a href="ContactUs.aspx">
+                    <asp:Literal ID="ltrlContactusTitle2" runat="server" Text="<%$ Resources:LanguageFile, CONTACT_US%>" /></a></li>
+                <li><a href="AboutUS.aspx">
+                    <asp:Literal ID="ltrlMissionVisionTitle" runat="server" Text="<%$ Resources:LanguageFile, ABOUTMASHAWEER%>" /></a></li>
+                <li><a href="FAQ.aspx">
+                    <asp:Literal ID="ltrlFAQTitle" runat="server" Text="<%$ Resources:LanguageFile, FAQ_SHORT%>" /></a></li>
+                <%--<li><a href="#">
+                    <asp:Literal ID="ltrlNewsTitle" runat="server" Text="<%$ Resources:LanguageFile, NEWS%>" /></a></li>--%>
+                <%--<li><a href="https://www.facebook.com/MashaweerDubai" target="_blank" class="fbook" title="Facebook" style="margin-left: -1px;"></a>
+                    <a href="#" class="twitter" title="Follow Us"></a><a href="#" class="ytube" title="Youtube Channel">
+                    </a>
+                </li>--%>
+            </ul>
+            <div class="small-logo">
+            </div>
+            <div class="crtxt">
+                Copyrights 2012 © Mashaweer
+                <%--<a href="#">Privacy Policy </a>| <a href="#">Terms Of Use</a>--%>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

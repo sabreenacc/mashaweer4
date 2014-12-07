@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABOUTMASHAWEER" xml:space="preserve">
+    <value>About Mashaweer</value>
+  </data>
+  <data name="ABOUTUS_CONTENT" xml:space="preserve">
+    <value>Having realized that, finding time to do all "little things" can be stressful, and
+            that it may deprive one from enough “free time” to enjoy it with family, spend it
+            in leisure or in other equally worthwhile commitments, we at Mashaweer Errand Services
+            offers highly customized service plans to take care of our clients’ errand needs
+            in quick, effective and accurate way.&lt;br /&gt;
+            "With this in mind we came up with the idea to help all people. Our goal is to help
+            you with all your errand needs so you will have time for the things that are most
+            important in your lives. "&lt;br /&gt;
+            Let us, at Mashaweer Errand Service, help you get back your time, your life and
+            your freedom.
+            &lt;br /&gt;
+            &lt;br /&gt;
+            &lt;h3 class="htitle1"&gt;
+                Mission&lt;/h3&gt;
+            &lt;br /&gt;
+            We shall strive to give back our valued customers the most scarce resource of their
+            life “TIME”&lt;br /&gt;
+            &lt;br /&gt; 
+            We believe that time is of the essence. hence we create, and deliver it to everyone we touch.
+            &lt;br /&gt;
+            &lt;br /&gt;
+            &lt;h3 class="htitle1"&gt;
+                Vision&lt;/h3&gt;
+            &lt;br /&gt;
+            To create and deliver time to everyone we meet, and be the most thought of and
+            reliable personal messenger/errands service provider.&lt;br /&gt;
+            &lt;br /&gt;
+            To provide a rewarding work environment for our employees, legendary service to
+            our customers and a spirit of responsibility in our communities.&lt;br /&gt;
+            &lt;br /&gt;
+            To make friends and fans by bringing energy, integrity and enthusiasm to everything
+            we do.
+            &lt;br /&gt;
+            &lt;br /&gt;</value>
+  </data>
+  <data name="AED" xml:space="preserve">
+    <value>AED</value>
+  </data>
+  <data name="BYMOTORCYCLE" xml:space="preserve">
+    <value>by Motorcycle</value>
+  </data>
+  <data name="CALCULATOR" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
+  <data name="CALCULATOR_COST" xml:space="preserve">
+    <value>The Cost </value>
+  </data>
+  <data name="CALCULATOR_COSTS" xml:space="preserve">
+    <value>Costs</value>
+  </data>
+  <data name="CALCULATOR_HOMEPAGE" xml:space="preserve">
+    <value>Get an accurate cost for your errands. Use the interactive Google map to mark your
+                    pick up and delivery locations, and get an instant exact quote. All charges are
+                    based on Motorbike run errands/ services.&lt;br /&gt;
+                    For Car run errands/services, please call &lt;br /&gt;&lt;span style="color:#896704; font-size:larger; font-weight:bolder"&gt;800 900 900&lt;/span&gt; for a quote</value>
+  </data>
+  <data name="CALCULATOR_MAP_GUIDE" xml:space="preserve">
+    <value>Click on pin of desired pick up location, then click on pin of delivery location, to get an exact quote.</value>
+  </data>
+  <data name="CONTACT_US" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="CONTACT_US_CLEAR" xml:space="preserve">
+    <value>CLEAR</value>
+  </data>
+  <data name="CONTACT_US_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CONTACT_US_FAX" xml:space="preserve">
+    <value>&lt;span class="greenspan"&gt; Fax :&lt;/span&gt; + 971 4 385 8059</value>
+  </data>
+  <data name="CONTACT_US_FILL_CONTACT_FORM" xml:space="preserve">
+    <value>Please fill the contact form and click send</value>
+  </data>
+  <data name="CONTACT_US_FOOTER_PARAGRAPH" xml:space="preserve">
+    <value>&lt;span style='font-weight: bold; color: Red; text-align: center; font-size: 16px;'&gt;Thank you for contacting Mashaweer, you will be getting a feedback within 24hrs&lt;/span&gt;</value>
+  </data>
+  <data name="CONTACT_US_INTRODUCTION" xml:space="preserve">
+    <value>&lt;strong style="color: #004E41; font-weight: bold;"&gt;Call 800 &lt;span style="color: #8D690B;"&gt;900&lt;/span&gt; 900&lt;/strong&gt; or drop us email &lt;a  style="color: #055245; font-weight: bold;" href="mailto:info@mashaweeruae.com"&gt;info@mashaweeruae.com&lt;/a&gt; , or simply use the below form .</value>
+  </data>
+  <data name="CONTACT_US_INTRODUCTION1" xml:space="preserve">
+    <value>For more Information feel free to contact &lt;strong style="color: #034F41; font-weight: bold;"&gt;Mashaweer&lt;/strong&gt; any time by &lt;strong style="color: #004E41; font-weight: bold;"&gt;Call 800 900 900&lt;/strong&gt; or drop us email &lt;span style="color: #055245; font-weight: bold;"&gt;&lt;strong&gt;info@mashaweeruae.com&lt;/strong&gt;&lt;/span&gt; , or simply use the below form .</value>
+  </data>
+  <data name="CONTACT_US_MESSAGE" xml:space="preserve">
+    <value>Your Message</value>
+  </data>
+  <data name="CONTACT_US_NAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CONTACT_US_PHONE" xml:space="preserve">
+    <value>&lt;span class="greenspan"&gt; Tel :&lt;/span&gt; + 971 4 385 8058</value>
+  </data>
+  <data name="CONTACT_US_SEND" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="CONTACT_US_TOLLFREE" xml:space="preserve">
+    <value>&lt;span class="greenspan"&gt; Toll Free :&lt;/span&gt; 800 900 900</value>
+  </data>
+  <data name="Creat_An_Account" xml:space="preserve">
+    <value>Creat An Account</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Frequently Asked Questions</value>
+  </data>
+  <data name="FAQ_SHORT" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="KNOW_MORE_ABOUT_SERVICES" xml:space="preserve">
+    <value>Know more about Our Services ..</value>
+  </data>
+  <data name="MENU_HOME" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MISSION" xml:space="preserve">
+    <value>Mission</value>
+  </data>
+  <data name="MISSION_VISION" xml:space="preserve">
+    <value>Mission &amp; Vision</value>
+  </data>
+  <data name="NEWS" xml:space="preserve">
+    <value>news</value>
+  </data>
+  <data name="NEWS_COMING_SOON" xml:space="preserve">
+    <value>Stay tuned Our NEWS are &lt;span style="color:#896704; font-size:larger; font-weight:bolder"&gt;coming soon&lt;/span&gt;</value>
+  </data>
+  <data name="ORDER_ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ORDER_COLLECTION_DETAILS" xml:space="preserve">
+    <value>Collection Location Details</value>
+  </data>
+  <data name="ORDER_CONTACT_PERSON" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="ORDER_CONTACT_PERSON_COLLECTION" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="ORDER_CONTACT_PERSON_DELIVERY" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="ORDER_COST" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="ORDER_CUSTOMER_COMPANY_NAME" xml:space="preserve">
+    <value>Customer/Company Name</value>
+  </data>
+  <data name="ORDER_CUSTOMER_DETAILS" xml:space="preserve">
+    <value>Customer Details</value>
+  </data>
+  <data name="ORDER_CUSTOMER_NO" xml:space="preserve">
+    <value>Customer Account #</value>
+  </data>
+  <data name="ORDER_DELIVERY_DETAILS" xml:space="preserve">
+    <value>Delivery Location Details</value>
+  </data>
+  <data name="ORDER_EMAIL" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="ORDER_FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ORDER_FILL_ORDER_FORM" xml:space="preserve">
+    <value>Please fill this form and click Send</value>
+  </data>
+  <data name="ORDER_FOOTER_PARAGRAPH" xml:space="preserve">
+    <value>Thank you for order, you will be receiving an email with your tracking number Shortly</value>
+  </data>
+  <data name="ORDER_LANDMARK" xml:space="preserve">
+    <value>Nearest Landmark</value>
+  </data>
+  <data name="ORDER_MOBILE_NO" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ORDER_SHIPMENT" xml:space="preserve">
+    <value>Shipment/Parcel weight/size</value>
+  </data>
+  <data name="ORDER_TELEPHONE" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="ORDER_ZONE" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="PLACE_ORDER" xml:space="preserve">
+    <value>Place an Order</value>
+  </data>
+  <data name="PREMITEK_LOGO" xml:space="preserve">
+    <value>Developed by</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="SERVICES_HOMEPAGE" xml:space="preserve">
+    <value>Mashaweer Errands Services offers a variety of both personal and business support
+        errands/services to make our customer’s life easier and stress free. No matter the
+        location, our job is to help our customers get back their time by running their
+        errands. Mashaweer helps people meet a desirable work/life balance</value>
+  </data>
+  <data name="SERVICES_PARAGRAPH" xml:space="preserve">
+    <value>To regain your Time,&lt;br /&gt; give us a call at 800 &lt;span style="color: #AE9550;"&gt;900&lt;/span&gt; 900 or &lt;a style="color: #AE9550; text-decoration: none;" href="Order.aspx"&gt;click here!&lt;/a&gt;</value>
+  </data>
+  <data name="Services_Title" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="WRITE_ON_MASHAWEER_WALL" xml:space="preserve">
+    <value>Write on Mashaweer Wall</value>
+  </data>
+</root>

@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABOUTMASHAWEER" xml:space="preserve">
+    <value>عن مشاويير</value>
+  </data>
+  <data name="ABOUTUS_CONTENT" xml:space="preserve">
+    <value>إنطلاقا من إدراكنا بأن الإرتباطات و المشاوير اليومية قد تكثرو تزداد و تؤثر سلبا
+            على حياتكم اليومية بحيث لا يستطيع الإنسان الحصول على الوقت الكافى و اللازم لإنجاز
+            تلك الأشياء الصغيرة المهمة مثل قضاء الوقت مع الأهل والأصدقاء. نحن نقدم لعملائنا
+            الأعزاء خدمة "مشاوير" لتلبية احتياجاتهم بطريقة سريعة ودقيقة حسب الطلبات الخاصة بكل
+            عميل.&lt;br /&gt;
+            هدفنا هو توفير خدمات المشاوير لجميع عملائنا حتى يتوفر لهم الوقت اللازم و الكافى
+            ليتمتعون به وينجزون فيه اشياء اخرى.&lt;br /&gt;
+            نتشرف بمساعدتكم لإسترداد أوقاتكم الثمينة وحريتكم.
+            &lt;br /&gt;
+            &lt;br /&gt;
+            &lt;h3 class="htitle1"&gt;
+                مهمتنا&lt;/h3&gt;
+            &lt;br /&gt;
+            سوف نسعى لتوفير أغلى شىء فى حياة عملائنا ألا وهو الوقت.&lt;br /&gt;
+            &lt;br /&gt;
+            نؤمن بأن الوقت قيمة لذلك نعيده ونوفره لكل عملائنا.
+            &lt;br /&gt;
+            &lt;br /&gt;
+            &lt;h3 class="htitle1"&gt;
+                رؤيتنا&lt;/h3&gt;
+            &lt;br /&gt;
+            أن نوفر لعملائنا جميع خدمات المشاوير والإحتياجات الخاصة.&lt;br /&gt;
+            &lt;br /&gt;
+            أن نوفر بيئة عمل مناسبة لموظفينا حتى يتمكنوا من توفير الخدمات الممتازة لعملائنا
+            الكرام مع الشعور بالمسئولية.&lt;br /&gt;
+            &lt;br /&gt;
+            أن نبنى قاعدة صداقات مترامية عن طريق تبنى روح المصداقية والطموح فى كل ما نقدمه.
+            &lt;br /&gt;
+            &lt;br /&gt;</value>
+  </data>
+  <data name="AED" xml:space="preserve">
+    <value>درهم إماراتى</value>
+  </data>
+  <data name="BYMOTORCYCLE" xml:space="preserve">
+    <value>بالموتوسيكل</value>
+  </data>
+  <data name="CALCULATOR" xml:space="preserve">
+    <value>الألة الحاسبة</value>
+  </data>
+  <data name="CALCULATOR_COST" xml:space="preserve">
+    <value>التكلفة </value>
+  </data>
+  <data name="CALCULATOR_COSTS" xml:space="preserve">
+    <value>تتكلف</value>
+  </data>
+  <data name="CALCULATOR_HOMEPAGE" xml:space="preserve">
+    <value>إعرف التكلفة الفعلية عن طريق إستخدام خريطة جوجل التفاعلية بتحديد أماكن الإستلام والتسليم. كل التكلفة المحسوبة على التوصيل بالدراجة البخارية.&lt;br/&gt;لمعرفة تكلفة التوصيل بالسيارات, من فضلك إتصل &lt;br /&gt;&lt;span style="color:#896704; font-size:larger; font-weight:bolder"&gt;900 900 800&lt;/span&gt;</value>
+  </data>
+  <data name="CALCULATOR_MAP_GUIDE" xml:space="preserve">
+    <value>إضغط على المكان المرسل منه ثم على المكان المرسل إليه لحساب التكلفة بدقة.</value>
+  </data>
+  <data name="CONTACT_US" xml:space="preserve">
+    <value>إتصل بنا</value>
+  </data>
+  <data name="CONTACT_US_CLEAR" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="CONTACT_US_EMAIL" xml:space="preserve">
+    <value>البريد الإلكترونى</value>
+  </data>
+  <data name="CONTACT_US_FAX" xml:space="preserve">
+    <value>&lt;span class="greenspan"&gt; فاكس :&lt;/span&gt; 8059 385 4 971 +</value>
+  </data>
+  <data name="CONTACT_US_FILL_CONTACT_FORM" xml:space="preserve">
+    <value>من فضلك إملاء البيانات وإضغط إرسال</value>
+  </data>
+  <data name="CONTACT_US_FOOTER_PARAGRAPH" xml:space="preserve">
+    <value>&lt;span style='font-weight: bold; color: Red; text-align: center; font-size: 16px;'&gt;شكراً لإستخدامكم خدمة مشاويير, سيتم الرد عليكم فى غضون 24 ساعة&lt;/span&gt;</value>
+  </data>
+  <data name="CONTACT_US_INTRODUCTION" xml:space="preserve">
+    <value>إتصل على &lt;strong style="color: #004E41; font-weight: bold;"&gt; 900 &lt;span style="color: #8D690B;"&gt;900&lt;/span&gt; 800&lt;/strong&gt; أو إرسل بريد إلكترونى على &lt;a  style="color: #055245; font-weight: bold;" href="mailto:info@mashaweeruae.com"&gt;info@mashaweeruae.com&lt;/a&gt; , أو راسلنا عبر هذة الصفحة.</value>
+  </data>
+  <data name="CONTACT_US_INTRODUCTION1" xml:space="preserve">
+    <value>لمعلومات أكثر إتصل ب &lt;strong style="color: #034F41; font-weight: bold;"&gt;مشاوير&lt;/strong&gt; فى أى وقت على &lt;strong style="color: #004E41; font-weight: bold;"&gt; 900 900 800&lt;/strong&gt; أو إرسل بريد إلكترونى على &lt;span style="color: #055245; font-weight: bold;"&gt;&lt;strong&gt;info@mashaweeruae.com&lt;/strong&gt;&lt;/span&gt; , أو راسلنا عبر هذة الصفحة.</value>
+  </data>
+  <data name="CONTACT_US_MESSAGE" xml:space="preserve">
+    <value>رسالتك</value>
+  </data>
+  <data name="CONTACT_US_NAME" xml:space="preserve">
+    <value>الأسم</value>
+  </data>
+  <data name="CONTACT_US_PHONE" xml:space="preserve">
+    <value>&lt;span class="greenspan"&gt; تليفون :&lt;/span&gt; 8058 385 4 971 +</value>
+  </data>
+  <data name="CONTACT_US_SEND" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="CONTACT_US_TOLLFREE" xml:space="preserve">
+    <value>&lt;span class="greenspan"&gt; رقم مجانى :&lt;/span&gt; 900 900 800</value>
+  </data>
+  <data name="Creat_An_Account" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+  </data>
+  <data name="FAQ_SHORT" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="KNOW_MORE_ABOUT_SERVICES" xml:space="preserve">
+    <value>أعرف المزيد عن خدماتنا</value>
+  </data>
+  <data name="MENU_HOME" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="MISSION_VISION" xml:space="preserve">
+    <value>هدفنا ورؤيتنا</value>
+  </data>
+  <data name="NEWS" xml:space="preserve">
+    <value>الأخبار</value>
+  </data>
+  <data name="NEWS_COMING_SOON" xml:space="preserve">
+    <value>تابع أخبارنا &lt;span style="color:#896704; font-size:larger; font-weight:bolder"&gt;قريباً&lt;/span&gt;</value>
+  </data>
+  <data name="ORDER_ADDRESS" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="ORDER_COLLECTION_DETAILS" xml:space="preserve">
+    <value>المكان المرسل منه</value>
+  </data>
+  <data name="ORDER_CONTACT_PERSON" xml:space="preserve">
+    <value>إسم مقدم الطلب</value>
+  </data>
+  <data name="ORDER_CONTACT_PERSON_COLLECTION" xml:space="preserve">
+    <value>اسم الراسل</value>
+  </data>
+  <data name="ORDER_CONTACT_PERSON_DELIVERY" xml:space="preserve">
+    <value>اسم المرسل إليه</value>
+  </data>
+  <data name="ORDER_COST" xml:space="preserve">
+    <value>التكلفة</value>
+  </data>
+  <data name="ORDER_CUSTOMER_COMPANY_NAME" xml:space="preserve">
+    <value>إسم العميل / الشركة</value>
+  </data>
+  <data name="ORDER_CUSTOMER_DETAILS" xml:space="preserve">
+    <value>بيانات العميل</value>
+  </data>
+  <data name="ORDER_CUSTOMER_NO" xml:space="preserve">
+    <value>رقم حساب العميل</value>
+  </data>
+  <data name="ORDER_DELIVERY_DETAILS" xml:space="preserve">
+    <value>المكان المرسل إليه</value>
+  </data>
+  <data name="ORDER_EMAIL" xml:space="preserve">
+    <value>البريد الإلكترونى</value>
+  </data>
+  <data name="ORDER_FAX" xml:space="preserve">
+    <value>فاكس</value>
+  </data>
+  <data name="ORDER_FILL_ORDER_FORM" xml:space="preserve">
+    <value>من فضلك إملاء بيانات الطلب وإضغط إرسال</value>
+  </data>
+  <data name="ORDER_FOOTER_PARAGRAPH" xml:space="preserve">
+    <value>شكراً لإستخدامكم خدمة مشاويير, سيصلك بريد إلكترونى برقم الشحنة / الرسالة بعد قليل</value>
+  </data>
+  <data name="ORDER_LANDMARK" xml:space="preserve">
+    <value>أقرب مكان مشهور</value>
+  </data>
+  <data name="ORDER_MOBILE_NO" xml:space="preserve">
+    <value>رقم الجوال</value>
+  </data>
+  <data name="ORDER_SHIPMENT" xml:space="preserve">
+    <value>وزن وحجم الشحنة أو الرسالة</value>
+  </data>
+  <data name="ORDER_TELEPHONE" xml:space="preserve">
+    <value>تليفون</value>
+  </data>
+  <data name="ORDER_ZONE" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="PLACE_ORDER" xml:space="preserve">
+    <value>إرسل طلب</value>
+  </data>
+  <data name="PREMITEK_LOGO" xml:space="preserve">
+    <value>تم التطوير بواسطة</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="SERVICES_HOMEPAGE" xml:space="preserve">
+    <value>مشاويير تقدم خدمات متنوعة للأشخاص والشركات للإبقاء على سهولة الحياة والعمل لعملائها بدون التقيد بأماكن محددة, مهمتنا هى مساعدة عميلنا للحفاظ على وقته بقضاء كل ما يحتاج من مشاويير, نحن نساعدك على تحقيق التوافق بين حياتك العملية والشخصية.</value>
+  </data>
+  <data name="SERVICES_PARAGRAPH" xml:space="preserve">
+    <value>للحفاظ على وقتك,&lt;br /&gt; إتصل بنا على  900 &lt;span style="color: #AE9550;"&gt;900&lt;/span&gt; 800 أو &lt;a style="color: #AE9550; text-decoration: none;" href="Order.aspx"&gt;إضغط هنا!&lt;/a&gt;</value>
+  </data>
+  <data name="Services_Title" xml:space="preserve">
+    <value>خدماتنا</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="WRITE_ON_MASHAWEER_WALL" xml:space="preserve">
+    <value>إكتب على حائط مشاويير</value>
+  </data>
+</root>
