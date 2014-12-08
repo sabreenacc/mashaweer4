@@ -1,82 +1,130 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeFile="Default.aspx.cs" Inherits="_Default" %>
-  
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    
-<div class="page-warp">
-<div class="services-banner">
-<div class="banner-slogan">
-    <%=Resources.LanguageFile.STWERUN %>
-</div></div>
-<div class="right-half">
-<div class="calc-block">
-    <%=Resources.LanguageFile.STOnlineCalculator %>
-	
-<% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
-   {  
-%>
-    <a href="CalculatorMobile.aspx" class="normal-btn"> <%=Resources.LanguageFile.STCalculateYourOrder %></a>
-<%
-   }
-   else
-   {
-%>
-    <a href="location.aspx" class="normal-btn"> <%=Resources.LanguageFile.STCalculateYourOrder %></a>
-<%
-   }
-%>
-</div>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="Default.aspx.cs" Inherits="LandingMashaweer" %>
 
-<img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/thumbup.png" class="thumbsup"/></div>
-<div class="left-half">
-<div class="call-num">
-<h2> <%=Resources.LanguageFile.STCALLUS %></h2>
-<span>800 900 900</span>
-</div>
-<div class="big-front-arrow"></div>
-<div class="send-inq">
-     <%=Resources.LanguageFile.STRequest %>
+<%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
+    <title>
+        <%=Resources.LanguageFile.SiteContact %></title>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+    <div class="page-warp">
+        <%--Noble Fir Fresh Xmas Tree 6 to 7 FT long--%>
+        <img src="App_Themes/Main<%= Globals.MashaweerLanguage %>/images/banner_top5.png" class="contact-img" style="width: 296px;height: 14px;margin-top: -2%;" usemap="#contactmap"  />
+        <div class="contact-header">
+            <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/contact-top-banner4.png"
+                class="contact-img" usemap="#contactmap"  />
+            <map name="contactmap">
+                <% if (Globals.MashaweerLanguage == "en")
+                   { %>
+                <area shape="rect" coords="0,175,240,464" alt="Email Mashaweer" href="mailto:info@mashaweeruae.com" />
+                <area shape="rect" coords="317,175,554,464" alt="Call Mashaweer" href="tel:800900900" />
+                <area shape="rect" coords="632,175,868,464" alt="Contact Mashaweer" href="#contact-form" />
+                <% }
+                   else
+                   {%>
+                <area shape="rect" coords="632,175,868,464" alt="إرسل بريد لمشاوير" href="mailto:info@mashaweeruae.com" />
+                <area shape="rect" coords="315,175,552,464" alt="إتصل بمشاوير" href="tel:800900900" />
+                <area shape="rect" coords="0,175,237,480" alt="إتصل بمشاوير" href="#contact-form" />
+                <% } %>
+            </map>
+            <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/contact-top-banner2.png"
+                class="contact-img2" usemap="#contactmap2" />
+            <map name="contactmap2">
+                <% if (Globals.MashaweerLanguage == "en")
+                   { %>
+                <area shape="rect" coords="0,0,600,140" alt="Email Mashaweer" href="mailto:info@mashaweeruae.com" />
+                <area shape="rect" coords="0,140,600,260" alt="Call Mashaweer" href="tel:800900900" />
+                <area shape="rect" coords="0,260,600,400" alt="Contact Mashaweer" href="#contact-form" />
+                <% }
+                   else
+                   {%>
+                <area shape="rect" coords="0,0,600,130" alt="إرسل بريد لمشاوير" href="mailto:info@mashaweeruae.com" />
+                <area shape="rect" coords="0,130,600,260" alt="إتصل بمشاوير" href="tel:800900900" />
+                <area shape="rect" coords="0,260,600,400" alt="إتصل بمشاوير" href="#contact-form" />
+                <% } %>
+            </map>
+        </div>
+        <div class="contact-form" id="contact-form">
+            <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td>
+                        <asp:TextBox ID="txtCotactUsName" CssClass="txt-box" runat="server" TabIndex="1"
+                            placeholder="<%$ Resources:LanguageFile, ContactName%>"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*"
+                            ControlToValidate="txtCotactUsName" ForeColor="Red" ValidationGroup="Valid"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <asp:TextBox ID="txtMOBILENUMBER" CssClass="txt-box" runat="server" TabIndex="1"
+                            placeholder="<%$ Resources:LanguageFile, MOBILENUMBER%>"></asp:TextBox>
+                       <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ForeColor="Red"
+                            ValidationExpression="(\+?[0-9]\-?){7,20}" ControlToValidate="txtMOBILENUMBER"
+                            Display="Dynamic" ErrorMessage="*"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="Dynamic"
+                            ErrorMessage="*" ControlToValidate="txtMOBILENUMBER" ForeColor="Red" ValidationGroup="Valid"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                        <asp:TextBox ID="txtCotactUsEmail" CssClass="txt-box" placeholder="<%$ Resources:LanguageFile, ContactEmail%>"
+                            runat="server" TabIndex="1"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ForeColor="Red"
+                            ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtCotactUsEmail"
+                            Display="Dynamic" ErrorMessage="*"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" Display="Dynamic"
+                            ErrorMessage="*" ControlToValidate="txtCotactUsEmail" ForeColor="Red" ValidationGroup="Valid"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
 
-<br />
-<% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
-   {  
-%>
-<a href="CalculatorMobile.aspx?order=1" style="background-color:#f3b902;" class="normal-btn"><%=Resources.LanguageFile.STClickHere %> </a>
-<%
-   }
-   else
-   {
-%>
-<a href="Order.aspx" style="background-color:#f3b902;" class="normal-btn"><%=Resources.LanguageFile.STClickHere %> </a>
-<%
-   }
-%>
-</div>
-<div class="delivery-man">
-       <%=Resources.LanguageFile.STPlaceOrder %>
- 
-</div>
-</div>
-<div class="testmonials">
-<h2>
-<span style="color:#FFF;">
-      <%=Resources.LanguageFile.STWHATOUR%>
-      </span> 
-<br/>
-      <span class="tesm-customers"><%=Resources.LanguageFile.STCUSTOMERS%></span>
-      <span class="tesm-aboutus"><%=Resources.LanguageFile.STSAYABOUTUS%></span>
-</h2>
- 
-<div class="testm-bg1">
-<div class="testm-bg2">
-    
-      <%=Resources.LanguageFile.STTestimonials %>
-<div class="testm-name">
-      <%=Resources.LanguageFile.STCustomerName %>  </div>
-</div>
+               <tr>
+                    <td>
+                        <asp:TextBox ID="txtDDELIVERYADDRESSLOCATION" CssClass="txt-box" placeholder="<%$ Resources:LanguageFile, DDELIVERYADDRESSLOCATION%>"
+                            runat="server" TabIndex="1"></asp:TextBox>
+                       
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic"
+                            ErrorMessage="*" ControlToValidate="txtDDELIVERYADDRESSLOCATION" ForeColor="Red" ValidationGroup="Valid"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+              
 
-</div>
-</div>
-<div class="clear"></div>
-</div>
+                <tr>
+                    <td>
+                        
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+      $(function () {
+          $("[id$=txtDELIVERYDATE]").datepicker();
+      });
+  </script>
+                        <asp:TextBox ID="txtDELIVERYDATE" CssClass="txt-box" placeholder="<%$ Resources:LanguageFile, DELIVERYDATE%>"
+                            runat="server" TabIndex="1"></asp:TextBox>
+                        
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Display="Dynamic"
+                            ErrorMessage="*" ControlToValidate="txtDELIVERYDATE" ForeColor="Red" ValidationGroup="Valid"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <asp:Button ID="btnSave" CssClass="normal-btn" runat="server" OnClick="btnSave_Click"
+                            Text="<%$ Resources:LanguageFile, CONTACT_US_SEND%>" ValidationGroup="Valid" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-arrow">
+        </div>
+        <div class="clear">
+        </div>
+
+        
+
+       <%-- <p>Date: <input type="text" id="datepicker"></p>--%>
+    </div>
 </asp:Content>

@@ -117,6 +117,90 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="ClctAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ClctCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="ClctEmail" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="ClctInstructions" xml:space="preserve">
+    <value>Instructions</value>
+  </data>
+  <data name="ClctLandMark" xml:space="preserve">
+    <value>Nearest Landmark</value>
+  </data>
+  <data name="ClctMobile" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="ClctPerson" xml:space="preserve">
+    <value>Sender Name</value>
+  </data>
+  <data name="COMINGSOON" xml:space="preserve">
+    <value>Coming Soon</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="CONTACT_US_SEND" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="CustCmpnyName" xml:space="preserve">
+    <value>Customer / Company Name</value>
+  </data>
+  <data name="CustEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CustMobile" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="CustPerson" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="DDELIVERYADDRESSLOCATION" xml:space="preserve">
+    <value>Delivery address location</value>
+  </data>
+  <data name="DELIVERYDATE" xml:space="preserve">
+    <value>Delivery date</value>
+  </data>
+  <data name="DlvryAddress" xml:space="preserve">
+    <value>Address </value>
+  </data>
+  <data name="DlvryCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="DlvryEmail" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="DlvryInstructions" xml:space="preserve">
+    <value>Instructions</value>
+  </data>
+  <data name="DlvryLandMark" xml:space="preserve">
+    <value>Nearest Landmark</value>
+  </data>
+  <data name="DlvryMobile" xml:space="preserve">
+    <value>Phone Number </value>
+  </data>
+  <data name="DlvryPerson" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
   <data name="MENU_Calculator" xml:space="preserve">
     <value>Calculator</value>
   </data>
@@ -138,8 +222,121 @@
   <data name="MENU_Terms" xml:space="preserve">
     <value>Terms and Conditions</value>
   </data>
+  <data name="MOBILENUMBER" xml:space="preserve">
+    <value>Mobile number</value>
+  </data>
+  <data name="MOTORCYCLE" xml:space="preserve">
+    <value>Motorcycle</value>
+  </data>
+  <data name="NABDCHAT" xml:space="preserve">
+    <value>Chat with Live Agent</value>
+  </data>
+  <data name="NABDCHOOSEOPTION" xml:space="preserve">
+    <value>Choose Your Support Option</value>
+  </data>
+  <data name="NABDKNOWLEDGEBASE" xml:space="preserve">
+    <value>Knowledge Base</value>
+  </data>
+  <data name="NABDSUBMITCASE" xml:space="preserve">
+    <value>Submit New Case</value>
+  </data>
+  <data name="NABDTRACK" xml:space="preserve">
+    <value>Track Case</value>
+  </data>
+  <data name="PageFAQ" xml:space="preserve">
+    <value>&lt;span style="color:#FFF;"&gt;FREQUENTLY &lt;/span&gt;
+&lt;span&gt;ASKED QUESTIONS&lt;/span&gt;</value>
+  </data>
+  <data name="PageLocation" xml:space="preserve">
+    <value>&lt;span style="color:#FFF;"&gt;Choose&lt;/span&gt;
+&lt;span &gt; Your City&lt;/span&gt;</value>
+  </data>
+  <data name="PageOrder" xml:space="preserve">
+    <value>PLEASE FILL THIS FORM &lt;span style="color:#fff;"&gt;AND CLICK SEND&lt;/span&gt;</value>
+  </data>
+  <data name="PageOrderMobile" xml:space="preserve">
+    <value>PLEASE FILL THIS FORM &lt;span style="color:#fff;"&gt;AND CLICK NEXT&lt;/span&gt;</value>
+  </data>
+  <data name="PageServices" xml:space="preserve">
+    <value>&lt;span style="font-size:50px;color:#000;"&gt;OUR&lt;/span&gt;
+&lt;br/&gt;
+&lt;span&gt;SERVICES&lt;/span&gt;</value>
+  </data>
+  <data name="PageTerms" xml:space="preserve">
+    <value>&lt;span style="color:#FFF;"&gt;Terms  &lt;/span&gt;
+&lt;span&gt;and Conditions&lt;/span&gt;</value>
+  </data>
+  <data name="PrclDtls" xml:space="preserve">
+    <value>Parcel Details</value>
+  </data>
+  <data name="RECAPATCHA_AUDIO_WRITE" xml:space="preserve">
+    <value>Enter the numbers you hear:</value>
+  </data>
+  <data name="RECAPATCHA_CANT_HERE_THIS" xml:space="preserve">
+    <value>Download sound as MP3</value>
+  </data>
+  <data name="RECAPATCHA_GET_AUDIO" xml:space="preserve">
+    <value>Get an audio CAPTCHA</value>
+  </data>
+  <data name="RECAPATCHA_GET_IMAGE" xml:space="preserve">
+    <value>Get an image CAPTCHA</value>
+  </data>
+  <data name="RECAPATCHA_HELP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="RECAPATCHA_IMAGE_WRITE" xml:space="preserve">
+    <value>Enter the words above:</value>
+  </data>
+  <data name="RECAPATCHA_INCORRECT_TRY_AGAIN" xml:space="preserve">
+    <value>Incorrect please try again</value>
+  </data>
+  <data name="RECAPATCHA_PLAY_AGAIN" xml:space="preserve">
+    <value>Replay Audio</value>
+  </data>
+  <data name="RECAPATCHA_REFRESH" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="REDIRECTMSG" xml:space="preserve">
+    <value>This page will automatically be redirected.</value>
+  </data>
+  <data name="SiteCalculator" xml:space="preserve">
+    <value>Mashaweer | Calculator</value>
+  </data>
+  <data name="SiteContact" xml:space="preserve">
+    <value>Mashaweer | Contact Us</value>
+  </data>
+  <data name="SiteFAQ" xml:space="preserve">
+    <value>Mashaweer | Frequently Asked Questions</value>
+  </data>
   <data name="SiteName" xml:space="preserve">
     <value>Mashaweer | UAE</value>
+  </data>
+  <data name="SiteOrder" xml:space="preserve">
+    <value>Mashaweer | Place an Order</value>
+  </data>
+  <data name="SiteServices" xml:space="preserve">
+    <value>Mashaweer | Services</value>
+  </data>
+  <data name="SiteTerms" xml:space="preserve">
+    <value>Mashaweer | Terms &amp; Conditions</value>
+  </data>
+  <data name="STAbuDhabi" xml:space="preserve">
+    <value>abu dhabi</value>
+  </data>
+  <data name="STAcrossUAE" xml:space="preserve">
+    <value>across UAE</value>
+  </data>
+  <data name="STADMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Abu Dhabi Map&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
+  <data name="STArea" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="STCALCCLEAR" xml:space="preserve">
+    <value>Please Clear Map by Clicking on clear button first</value>
+  </data>
+  <data name="STcalculateorder" xml:space="preserve">
+    <value>calculate order</value>
   </data>
   <data name="STCalculateYourOrder" xml:space="preserve">
     <value>calculate your order</value>
@@ -147,11 +344,50 @@
   <data name="STCALLUS" xml:space="preserve">
     <value>CALL US</value>
   </data>
+  <data name="STCHOICEMESSAGE" xml:space="preserve">
+    <value>Service is not available between these areas</value>
+  </data>
+  <data name="STCity" xml:space="preserve">
+    <value>City</value>
+  </data>
   <data name="STClickHere" xml:space="preserve">
     <value>Click Here</value>
   </data>
+  <data name="STCollection" xml:space="preserve">
+    <value>Collection</value>
+  </data>
+  <data name="STCollectionLocation" xml:space="preserve">
+    <value>Collection Location Details</value>
+  </data>
+  <data name="STCurency" xml:space="preserve">
+    <value>AED</value>
+  </data>
+  <data name="STCustomerDetails" xml:space="preserve">
+    <value>Customer Details</value>
+  </data>
   <data name="STCustomerName" xml:space="preserve">
     <value>Suzanne McDonald</value>
+  </data>
+  <data name="STCUSTOMERS" xml:space="preserve">
+    <value>&lt;span class="tesm-customers"&gt;CUSTOMERS&lt;/span&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="STDBMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Dubai Map&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
+  <data name="STDBSHMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Dubai / Sharjah Map&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
+  <data name="STDelivery" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="STDeliveryLocation" xml:space="preserve">
+    <value>Delivery Location Details</value>
+  </data>
+  <data name="STDubai" xml:space="preserve">
+    <value>dubai</value>
+  </data>
+  <data name="STFrom" xml:space="preserve">
+    <value>From</value>
   </data>
   <data name="STLang" xml:space="preserve">
     <value>عربي</value>
@@ -166,6 +402,48 @@
 &lt;/h3&gt;
 Get an accurate cost for your errands. Use the interactive Google map to mark your pick-up and delivery locations, and get an instant exact quote. You can also choose between motorcycle or van.</value>
   </data>
+  <data name="STORDERCAPTCHAINVALID" xml:space="preserve">
+    <value>Please insert captcha correctly</value>
+  </data>
+  <data name="STORDERFILLMISSINGMSG" xml:space="preserve">
+    <value>Please fill the missing fields,</value>
+  </data>
+  <data name="STORDERMESSAGE" xml:space="preserve">
+    <value>Service is not available between these areas, Please choose two areas that the services is available on them before submitting the order</value>
+  </data>
+  <data name="STORDERMESSAGESELECTAREAS" xml:space="preserve">
+    <value>Please select collection and destination areas</value>
+  </data>
+  <data name="STORDERMESSAGESELECTCITIES" xml:space="preserve">
+    <value>Please select collection and destination cities</value>
+  </data>
+  <data name="STORDERMESSAGESELECTCOLLECTIONAREA" xml:space="preserve">
+    <value>Please select collection area</value>
+  </data>
+  <data name="STORDERMESSAGESELECTCOLLECTIONCITY" xml:space="preserve">
+    <value>Please select collection city</value>
+  </data>
+  <data name="STORDERMESSAGESELECTDESTINATIONAREA" xml:space="preserve">
+    <value>Please select destination area</value>
+  </data>
+  <data name="STORDERMESSAGESELECTDESTINATIONCITY" xml:space="preserve">
+    <value>Please select destination city</value>
+  </data>
+  <data name="STORDERSELECTAREA" xml:space="preserve">
+    <value>Please select area</value>
+  </data>
+  <data name="STORDERSELECTCITY" xml:space="preserve">
+    <value>Please select city</value>
+  </data>
+  <data name="STORDERSENT" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style="color:Red;"&gt;Your Order has been sent&lt;/span&gt;</value>
+  </data>
+  <data name="STORDERTERMSINVALIDMESSAGE" xml:space="preserve">
+    <value>Please accept our terms and conditions</value>
+  </data>
+  <data name="STPaymentlocation" xml:space="preserve">
+    <value>Payment location</value>
+  </data>
   <data name="STPlaceOrder" xml:space="preserve">
     <value>&lt;span&gt;or place&lt;/span&gt;
 &lt;br /&gt;
@@ -178,11 +456,36 @@ online&lt;/span&gt;</value>
   <data name="STSAYABOUTUS" xml:space="preserve">
     <value>SAY ABOUT US</value>
   </data>
+  <data name="STSelectMotor" xml:space="preserve">
+    <value>&lt;option value="1"&gt;Motorcycle&lt;/option&gt;
+          &lt;option value="2"&gt;Van&lt;/option&gt;</value>
+  </data>
+  <data name="STSharjah" xml:space="preserve">
+    <value>sharjah</value>
+  </data>
+  <data name="STSHMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Sharjah Map&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
   <data name="STTellFriend" xml:space="preserve">
     <value>tell a friend</value>
   </data>
+  <data name="STTermsAndConditions" xml:space="preserve">
+    <value>I agree to all terms and conditions</value>
+  </data>
   <data name="STTestimonials" xml:space="preserve">
     <value>Mashaweer saves me the valuable time that I just can't afford to waste and gives me a peace of mind that my errands are safe in their hands.</value>
+  </data>
+  <data name="STTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="STTotalCostinAED" xml:space="preserve">
+    <value>Total Cost in AED :</value>
+  </data>
+  <data name="STVAN" xml:space="preserve">
+    <value>Van</value>
+  </data>
+  <data name="STVia" xml:space="preserve">
+    <value>by</value>
   </data>
   <data name="STWERUN" xml:space="preserve">
     <value>&lt;span style="font-size: 44px;color:#fff;"&gt;WE RUN&lt;/span&gt;
@@ -193,61 +496,11 @@ online&lt;/span&gt;</value>
 &lt;br/&gt;
 &lt;span style="color:#000;font-size: 29px;"&gt;90 MINUTES&lt;/span&gt;</value>
   </data>
-  <data name="ContactEmail" xml:space="preserve">
-    <value>Email</value>
+  <data name="STWHATOUR" xml:space="preserve">
+    <value>WHAT OUR</value>
   </data>
-  <data name="ContactMessage" xml:space="preserve">
-    <value>Message</value>
-  </data>
-  <data name="ContactName" xml:space="preserve">
-    <value>Your Name</value>
-  </data>
-  <data name="CONTACT_US_SEND" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="PageFAQ" xml:space="preserve">
-    <value>&lt;span style="color:#FFF;"&gt;FREQUENTLY &lt;/span&gt;
-&lt;span&gt;ASKED QUESTIONS&lt;/span&gt;</value>
-  </data>
-  <data name="PageLocation" xml:space="preserve">
-    <value>&lt;span style="color:#FFF;"&gt;Choose&lt;/span&gt;
-&lt;span &gt; Your City&lt;/span&gt;</value>
-  </data>
-  <data name="PageServices" xml:space="preserve">
-    <value>&lt;span style="font-size:50px;color:#000;"&gt;OUR&lt;/span&gt;
-&lt;br/&gt;
-&lt;span&gt;SERVICES&lt;/span&gt;</value>
-  </data>
-  <data name="PageTerms" xml:space="preserve">
-    <value>&lt;span style="color:#FFF;"&gt;Terms  &lt;/span&gt;
-&lt;span&gt;and Conditions&lt;/span&gt;</value>
-  </data>
-  <data name="SiteCalculator" xml:space="preserve">
-    <value>Mashaweer | Calculator</value>
-  </data>
-  <data name="SiteContact" xml:space="preserve">
-    <value>Mashaweer | Contact Us</value>
-  </data>
-  <data name="SiteFAQ" xml:space="preserve">
-    <value>Mashaweer | Frequently Asked Questions</value>
-  </data>
-  <data name="SiteServices" xml:space="preserve">
-    <value>Mashaweer | Services</value>
-  </data>
-  <data name="SiteTerms" xml:space="preserve">
-    <value>Mashaweer | Terms &amp; Conditions</value>
-  </data>
-  <data name="STAbuDhabi" xml:space="preserve">
-    <value>abu dhabi</value>
-  </data>
-  <data name="STAcrossUAE" xml:space="preserve">
-    <value>across UAE</value>
-  </data>
-  <data name="STDubai" xml:space="preserve">
-    <value>dubai</value>
-  </data>
-  <data name="STSharjah" xml:space="preserve">
-    <value>sharjah</value>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
   </data>
   <data name="TermsContent" xml:space="preserve">
     <value>&lt;p style="line-height: 25px;"&gt;
@@ -303,202 +556,6 @@ online&lt;/span&gt;</value>
                 &lt;h4 align="center"&gt;
                     The above terms and conditions may be changed at any given time without prior notice.&lt;/h4&gt;</value>
   </data>
-  <data name="CustCmpnyName" xml:space="preserve">
-    <value>Customer / Company Name</value>
-  </data>
-  <data name="CustEmail" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="CustPerson" xml:space="preserve">
-    <value>Contact Person</value>
-  </data>
-  <data name="CustMobile" xml:space="preserve">
-    <value>Mobile Number</value>
-  </data>
-  <data name="ClctCompanyName" xml:space="preserve">
-    <value>Company Name</value>
-  </data>
-  <data name="ClctPerson" xml:space="preserve">
-    <value>Sender Name</value>
-  </data>
-  <data name="ClctEmail" xml:space="preserve">
-    <value>Email Address</value>
-  </data>
-  <data name="ClctMobile" xml:space="preserve">
-    <value>Phone Number</value>
-  </data>
-  <data name="ClctAddress" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="ClctLandMark" xml:space="preserve">
-    <value>Nearest Landmark</value>
-  </data>
-  <data name="ClctInstructions" xml:space="preserve">
-    <value>Instructions</value>
-  </data>
-  <data name="DlvryCompanyName" xml:space="preserve">
-    <value>Company Name</value>
-  </data>
-  <data name="DlvryPerson" xml:space="preserve">
-    <value>Contact Person</value>
-  </data>
-  <data name="DlvryEmail" xml:space="preserve">
-    <value>Email Address</value>
-  </data>
-  <data name="DlvryMobile" xml:space="preserve">
-    <value>Phone Number </value>
-  </data>
-  <data name="DlvryAddress" xml:space="preserve">
-    <value>Address </value>
-  </data>
-  <data name="DlvryLandMark" xml:space="preserve">
-    <value>Nearest Landmark</value>
-  </data>
-  <data name="DlvryInstructions" xml:space="preserve">
-    <value>Instructions</value>
-  </data>
-  <data name="btnSave" xml:space="preserve">
-    <value>SEND</value>
-  </data>
-  <data name="btnCancel" xml:space="preserve">
-    <value>Clear</value>
-  </data>
-  <data name="PageOrder" xml:space="preserve">
-    <value>PLEASE FILL THIS FORM &lt;span style="color:#fff;"&gt;AND CLICK SEND&lt;/span&gt;</value>
-  </data>
-  <data name="STArea" xml:space="preserve">
-    <value>Area</value>
-  </data>
-  <data name="STCity" xml:space="preserve">
-    <value>City</value>
-  </data>
-  <data name="STCollection" xml:space="preserve">
-    <value>Collection</value>
-  </data>
-  <data name="STCollectionLocation" xml:space="preserve">
-    <value>Collection Location Details</value>
-  </data>
-  <data name="STCustomerDetails" xml:space="preserve">
-    <value>Customer Details</value>
-  </data>
-  <data name="STDelivery" xml:space="preserve">
-    <value>Delivery</value>
-  </data>
-  <data name="STDeliveryLocation" xml:space="preserve">
-    <value>Delivery Location Details</value>
-  </data>
-  <data name="STPaymentlocation" xml:space="preserve">
-    <value>Payment location</value>
-  </data>
-  <data name="STSelectMotor" xml:space="preserve">
-    <value>&lt;option value="1"&gt;Motorcycle&lt;/option&gt;
-          &lt;option value="2"&gt;Van&lt;/option&gt;</value>
-  </data>
-  <data name="STTermsAndConditions" xml:space="preserve">
-    <value>I agree to all terms and conditions</value>
-  </data>
-  <data name="STTotalCostinAED" xml:space="preserve">
-    <value>Total Cost in AED :</value>
-  </data>
-  <data name="SiteOrder" xml:space="preserve">
-    <value>Mashaweer | Place an Order</value>
-  </data>
-  <data name="STcalculateorder" xml:space="preserve">
-    <value>calculate order</value>
-  </data>
-  <data name="STCurency" xml:space="preserve">
-    <value>AED</value>
-  </data>
-  <data name="STFrom" xml:space="preserve">
-    <value>From</value>
-  </data>
-  <data name="STTo" xml:space="preserve">
-    <value>To</value>
-  </data>
-  <data name="STVia" xml:space="preserve">
-    <value>by</value>
-  </data>
-  <data name="STCUSTOMERS" xml:space="preserve">
-    <value>&lt;span class="tesm-customers"&gt;CUSTOMERS&lt;/span&gt;&lt;br/&gt;</value>
-  </data>
-  <data name="STWHATOUR" xml:space="preserve">
-    <value>WHAT OUR</value>
-  </data>
-  <data name="STCHOICEMESSAGE" xml:space="preserve">
-    <value>Service is not available between these areas</value>
-  </data>
-  <data name="STORDERMESSAGE" xml:space="preserve">
-    <value>Service is not available between these areas, Please choose two areas that the services is available on them before submitting the order</value>
-  </data>
-  <data name="STORDERSENT" xml:space="preserve">
-    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style="color:Red;"&gt;Your Order has been sent&lt;/span&gt;</value>
-  </data>
-  <data name="STADMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Abu Dhabi Map&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="STDBMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Dubai Map&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="STDBSHMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Dubai / Sharjah Map&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="STSHMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;Redirecting to Sharjah Map&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="PrclDtls" xml:space="preserve">
-    <value>Parcel Details</value>
-  </data>
-  <data name="STVAN" xml:space="preserve">
-    <value>Van</value>
-  </data>
-  <data name="NABDCHAT" xml:space="preserve">
-    <value>Chat with Live Agent</value>
-  </data>
-  <data name="NABDCHOOSEOPTION" xml:space="preserve">
-    <value>Choose Your Support Option</value>
-  </data>
-  <data name="NABDKNOWLEDGEBASE" xml:space="preserve">
-    <value>Knowledge Base</value>
-  </data>
-  <data name="NABDSUBMITCASE" xml:space="preserve">
-    <value>Submit New Case</value>
-  </data>
-  <data name="NABDTRACK" xml:space="preserve">
-    <value>Track Case</value>
-  </data>
-  <data name="REDIRECTMSG" xml:space="preserve">
-    <value>This page will automatically be redirected.</value>
-  </data>
-  <data name="STORDERFILLMISSINGMSG" xml:space="preserve">
-    <value>Please fill the missing fields,</value>
-  </data>
-  <data name="STORDERMESSAGESELECTAREAS" xml:space="preserve">
-    <value>Please select collection and destination areas</value>
-  </data>
-  <data name="STORDERMESSAGESELECTCITIES" xml:space="preserve">
-    <value>Please select collection and destination cities</value>
-  </data>
-  <data name="STORDERMESSAGESELECTCOLLECTIONAREA" xml:space="preserve">
-    <value>Please select collection area</value>
-  </data>
-  <data name="STORDERMESSAGESELECTCOLLECTIONCITY" xml:space="preserve">
-    <value>Please select collection city</value>
-  </data>
-  <data name="STORDERMESSAGESELECTDESTINATIONAREA" xml:space="preserve">
-    <value>Please select destination area</value>
-  </data>
-  <data name="STORDERMESSAGESELECTDESTINATIONCITY" xml:space="preserve">
-    <value>Please select destination city</value>
-  </data>
-  <data name="STORDERSELECTAREA" xml:space="preserve">
-    <value>Please select area</value>
-  </data>
-  <data name="STORDERSELECTCITY" xml:space="preserve">
-    <value>Please select city</value>
-  </data>
-  <data name="Support" xml:space="preserve">
-    <value>Support</value>
-  </data>
   <data name="ThankYou" xml:space="preserve">
     <value>Thank you</value>
   </data>
@@ -508,55 +565,7 @@ online&lt;/span&gt;</value>
   <data name="THANKYOUORDERMESSAGE" xml:space="preserve">
     <value>Thank you for order, you will be receiving an email with your tracking number shortly.</value>
   </data>
-  <data name="RECAPATCHA_AUDIO_WRITE" xml:space="preserve">
-    <value>Enter the numbers you hear:</value>
-  </data>
-  <data name="RECAPATCHA_CANT_HERE_THIS" xml:space="preserve">
-    <value>Download sound as MP3</value>
-  </data>
-  <data name="RECAPATCHA_GET_AUDIO" xml:space="preserve">
-    <value>Get an audio CAPTCHA</value>
-  </data>
-  <data name="RECAPATCHA_GET_IMAGE" xml:space="preserve">
-    <value>Get an image CAPTCHA</value>
-  </data>
-  <data name="RECAPATCHA_HELP" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="RECAPATCHA_INCORRECT_TRY_AGAIN" xml:space="preserve">
-    <value>Incorrect please try again</value>
-  </data>
-  <data name="RECAPATCHA_PLAY_AGAIN" xml:space="preserve">
-    <value>Replay Audio</value>
-  </data>
-  <data name="RECAPATCHA_REFRESH" xml:space="preserve">
-    <value>Refresh</value>
-  </data>
-  <data name="RECAPATCHA_IMAGE_WRITE" xml:space="preserve">
-    <value>Enter the words above:</value>
-  </data>
-  <data name="MOTORCYCLE" xml:space="preserve">
-    <value>Motorcycle</value>
-  </data>
-  <data name="STORDERCAPTCHAINVALID" xml:space="preserve">
-    <value>Please insert captcha correctly</value>
-  </data>
-  <data name="STORDERTERMSINVALIDMESSAGE" xml:space="preserve">
-    <value>Please accept our terms and conditions</value>
-  </data>
   <data name="VAN" xml:space="preserve">
     <value>Van</value>
-  </data>
-  <data name="STCALCCLEAR" xml:space="preserve">
-    <value>Please Clear Map by Clicking on clear button first</value>
-  </data>
-  <data name="COMINGSOON" xml:space="preserve">
-    <value>Coming Soon</value>
-  </data>
-  <data name="btnNext" xml:space="preserve">
-    <value>Next</value>
-  </data>
-  <data name="PageOrderMobile" xml:space="preserve">
-    <value>PLEASE FILL THIS FORM &lt;span style="color:#fff;"&gt;AND CLICK NEXT&lt;/span&gt;</value>
   </data>
 </root>

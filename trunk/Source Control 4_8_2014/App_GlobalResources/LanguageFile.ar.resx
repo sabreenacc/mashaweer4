@@ -117,6 +117,90 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnCancel" xml:space="preserve">
+    <value>مسح</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>التالى</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="ClctAddress" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="ClctCompanyName" xml:space="preserve">
+    <value>الشركة</value>
+  </data>
+  <data name="ClctEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="ClctInstructions" xml:space="preserve">
+    <value>تعليمات</value>
+  </data>
+  <data name="ClctLandMark" xml:space="preserve">
+    <value>أقرب مكان مشهور</value>
+  </data>
+  <data name="ClctMobile" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="ClctPerson" xml:space="preserve">
+    <value>إسم الراسل</value>
+  </data>
+  <data name="COMINGSOON" xml:space="preserve">
+    <value>قريباً</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="ContactMessage" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>إسمك</value>
+  </data>
+  <data name="CONTACT_US_SEND" xml:space="preserve">
+    <value>أرسال</value>
+  </data>
+  <data name="CustCmpnyName" xml:space="preserve">
+    <value>إسم العميل / الشركة</value>
+  </data>
+  <data name="CustEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="CustMobile" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="CustPerson" xml:space="preserve">
+    <value>اسم مقدم الطلب</value>
+  </data>
+  <data name="DDELIVERYADDRESSLOCATION" xml:space="preserve">
+    <value>عنوان موقع التسليم</value>
+  </data>
+  <data name="DELIVERYDATE" xml:space="preserve">
+    <value>تاريخ التسليم</value>
+  </data>
+  <data name="DlvryAddress" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="DlvryCompanyName" xml:space="preserve">
+    <value>الشركة</value>
+  </data>
+  <data name="DlvryEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="DlvryInstructions" xml:space="preserve">
+    <value>تعليمات</value>
+  </data>
+  <data name="DlvryLandMark" xml:space="preserve">
+    <value>أقرب مكان مشهور</value>
+  </data>
+  <data name="DlvryMobile" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="DlvryPerson" xml:space="preserve">
+    <value>إسم المرسل إليه</value>
+  </data>
   <data name="MENU_Calculator" xml:space="preserve">
     <value>الألة الحاسبة</value>
   </data>
@@ -138,8 +222,123 @@
   <data name="MENU_Terms" xml:space="preserve">
     <value>الشروط والأحكام</value>
   </data>
+  <data name="MOBILENUMBER" xml:space="preserve">
+    <value>رقم الهاتف الجوال</value>
+  </data>
+  <data name="MOTORCYCLE" xml:space="preserve">
+    <value>دراجة نارية</value>
+  </data>
+  <data name="NABDCHAT" xml:space="preserve">
+    <value>تحدث مع ممثل خدمة العملاء</value>
+  </data>
+  <data name="NABDCHOOSEOPTION" xml:space="preserve">
+    <value>إختر الخدمة المطلوبة</value>
+  </data>
+  <data name="NABDKNOWLEDGEBASE" xml:space="preserve">
+    <value>قاعدة المعلومات</value>
+  </data>
+  <data name="NABDSUBMITCASE" xml:space="preserve">
+    <value>إرسال شكواك</value>
+  </data>
+  <data name="NABDTRACK" xml:space="preserve">
+    <value>تتبع شكواك</value>
+  </data>
+  <data name="PageFAQ" xml:space="preserve">
+    <value>&lt;span style="color: #FFF;"&gt;أسئلة&lt;/span&gt;
+                &lt;span&gt;شائعة&lt;/span&gt;</value>
+  </data>
+  <data name="PageFAQ1" xml:space="preserve">
+    <value>&lt;span style="color: #FFF;"&gt;أسئلة&lt;/span&gt;
+                &lt;span&gt;شائعة&lt;/span&gt;</value>
+  </data>
+  <data name="PageLocation" xml:space="preserve">
+    <value>&lt;span style="color:#FFF;"&gt;إختر&lt;/span&gt;
+&lt;span &gt; مدينتك&lt;/span&gt;</value>
+  </data>
+  <data name="PageOrder" xml:space="preserve">
+    <value>من فضلك إملاء البيانات المطلوبة و &lt;span style="color:#fff;"&gt;إضغط إرسال&lt;/span&gt;</value>
+  </data>
+  <data name="PageOrderMobile" xml:space="preserve">
+    <value>من فضلك إملاء البيانات المطلوبة و &lt;span style="color:#fff;"&gt;إضغط التالى&lt;/span&gt;</value>
+  </data>
+  <data name="PageServices" xml:space="preserve">
+    <value>خدماتنا</value>
+  </data>
+  <data name="PageTerms" xml:space="preserve">
+    <value>&lt;span style="color:#FFF;"&gt;الشروط   &lt;/span&gt;
+&lt;span&gt; والأحكام&lt;/span&gt;</value>
+  </data>
+  <data name="PrclDtls" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="RECAPATCHA_AUDIO_WRITE" xml:space="preserve">
+    <value>إدخل الحروف التى سمعتها:</value>
+  </data>
+  <data name="RECAPATCHA_CANT_HERE_THIS" xml:space="preserve">
+    <value>تنزيل ملف الصوت بصيغة MP3 لسماعه</value>
+  </data>
+  <data name="RECAPATCHA_GET_AUDIO" xml:space="preserve">
+    <value>إستخدام الصوت</value>
+  </data>
+  <data name="RECAPATCHA_GET_IMAGE" xml:space="preserve">
+    <value>إستخدام الصورة</value>
+  </data>
+  <data name="RECAPATCHA_HELP" xml:space="preserve">
+    <value>مساعدة</value>
+  </data>
+  <data name="RECAPATCHA_IMAGE_WRITE" xml:space="preserve">
+    <value>إدخل الكلمات التى بالصورة:</value>
+  </data>
+  <data name="RECAPATCHA_INCORRECT_TRY_AGAIN" xml:space="preserve">
+    <value>خطأ من فضلك أعد المحاولة</value>
+  </data>
+  <data name="RECAPATCHA_PLAY_AGAIN" xml:space="preserve">
+    <value>أعد تشغيل الصوت</value>
+  </data>
+  <data name="RECAPATCHA_REFRESH" xml:space="preserve">
+    <value>إعادة التشغيل</value>
+  </data>
+  <data name="REDIRECTMSG" xml:space="preserve">
+    <value>سيتم تلقائيا إعادة توجيه هذه الصفحة.</value>
+  </data>
+  <data name="SiteCalculator" xml:space="preserve">
+    <value>مشاوير | الآلة الحاسبة</value>
+  </data>
+  <data name="SiteContact" xml:space="preserve">
+    <value>مشاوير | إتصل بنا</value>
+  </data>
+  <data name="SiteFAQ" xml:space="preserve">
+    <value>مشاوير |  الأسئلة الشائعة</value>
+  </data>
   <data name="SiteName" xml:space="preserve">
     <value>مشاوير | الأمارات</value>
+  </data>
+  <data name="SiteOrder" xml:space="preserve">
+    <value>مشاوير | إرسل طلب</value>
+  </data>
+  <data name="SiteServices" xml:space="preserve">
+    <value>Mashaweer | Services</value>
+  </data>
+  <data name="SiteTerms" xml:space="preserve">
+    <value>مشاوير |  الشروط والأحكام</value>
+  </data>
+  <data name="STAbuDhabi" xml:space="preserve">
+    <value>أبو ظبي</value>
+  </data>
+  <data name="STAcrossUAE" xml:space="preserve">
+    <value>عبر دولة الإمارات</value>
+  </data>
+  <data name="STADMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة أبوظبى&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
+  <data name="STArea" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="STCALCCLEAR" xml:space="preserve">
+    <value>من فضلك إضغط على زر مسح قبل الإستمرار.</value>
+  </data>
+  <data name="STcalculateorder" xml:space="preserve">
+    <value>إحسب طلبك</value>
   </data>
   <data name="STCalculateYourOrder" xml:space="preserve">
     <value>إحسب طلبك</value>
@@ -147,11 +346,50 @@
   <data name="STCALLUS" xml:space="preserve">
     <value>إتصل على</value>
   </data>
+  <data name="STCHOICEMESSAGE" xml:space="preserve">
+    <value>الخدمة غير متوفرة بين هاتين المنطقتين</value>
+  </data>
+  <data name="STCity" xml:space="preserve">
+    <value>مدينة</value>
+  </data>
   <data name="STClickHere" xml:space="preserve">
     <value>إضغط هنا</value>
   </data>
+  <data name="STCollection" xml:space="preserve">
+    <value>المكان المرسل منه</value>
+  </data>
+  <data name="STCollectionLocation" xml:space="preserve">
+    <value>المكان المرسل منه</value>
+  </data>
+  <data name="STCurency" xml:space="preserve">
+    <value>درهم</value>
+  </data>
+  <data name="STCustomerDetails" xml:space="preserve">
+    <value>بيانات العميل</value>
+  </data>
   <data name="STCustomerName" xml:space="preserve">
     <value>سوزان ماكدونالدز</value>
+  </data>
+  <data name="STCUSTOMERS" xml:space="preserve">
+    <value />
+  </data>
+  <data name="STDBMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة دبى&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
+  <data name="STDBSHMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة دبى / الشارقة&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
+  <data name="STDelivery" xml:space="preserve">
+    <value>المكان المرسل إليه</value>
+  </data>
+  <data name="STDeliveryLocation" xml:space="preserve">
+    <value>المكان المرسل إليه</value>
+  </data>
+  <data name="STDubai" xml:space="preserve">
+    <value>دبي</value>
+  </data>
+  <data name="STFrom" xml:space="preserve">
+    <value>من</value>
   </data>
   <data name="STLang" xml:space="preserve">
     <value>English</value>
@@ -166,6 +404,48 @@
 &lt;/h3&gt;
 احصل على التكلفة الدقيقة لمشوارك باستخدام خريطة جوجل التفاعلية. اختار مكان المرسل منه ثم مكان المرسل اليه. يمكنك أيضا اختيار بين دراجة نارية أو سيارة.</value>
   </data>
+  <data name="STORDERCAPTCHAINVALID" xml:space="preserve">
+    <value>من فضلك إدخل حروف التحقق من الهوية صحيحة</value>
+  </data>
+  <data name="STORDERFILLMISSINGMSG" xml:space="preserve">
+    <value>من فضلك أكمل البيانات الناقصة</value>
+  </data>
+  <data name="STORDERMESSAGE" xml:space="preserve">
+    <value>الخدمة غير متوفرة بين هاتين المنطقتين، من فضلك إختر منطقتين متوفر بهما الخدمة قبل إرسال الطلب</value>
+  </data>
+  <data name="STORDERMESSAGESELECTAREAS" xml:space="preserve">
+    <value>من فضلك إختر المنطقتين المرسل منها والمرسل إليها</value>
+  </data>
+  <data name="STORDERMESSAGESELECTCITIES" xml:space="preserve">
+    <value>من فضلك إختر المدينتين المرسل منها والمرسل إليها</value>
+  </data>
+  <data name="STORDERMESSAGESELECTCOLLECTIONAREA" xml:space="preserve">
+    <value>من فضلك إختر المنطقة المرسل منها</value>
+  </data>
+  <data name="STORDERMESSAGESELECTCOLLECTIONCITY" xml:space="preserve">
+    <value>من فضلك إختر المدينة المرسل منها</value>
+  </data>
+  <data name="STORDERMESSAGESELECTDESTINATIONAREA" xml:space="preserve">
+    <value>من فضلك إختر المنطقة المرسل إليها</value>
+  </data>
+  <data name="STORDERMESSAGESELECTDESTINATIONCITY" xml:space="preserve">
+    <value>من فضلك إختر المدينة المرسل إليها</value>
+  </data>
+  <data name="STORDERSELECTAREA" xml:space="preserve">
+    <value>الرجاء إختيار المنطقة</value>
+  </data>
+  <data name="STORDERSELECTCITY" xml:space="preserve">
+    <value>الرجاء إختيار المدينة</value>
+  </data>
+  <data name="STORDERSENT" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style="color:Red;"&gt;تم إرسال طلبك&lt;/span&gt;</value>
+  </data>
+  <data name="STORDERTERMSINVALIDMESSAGE" xml:space="preserve">
+    <value>من فضلك تقبل شروط مشاوير وأحكامها</value>
+  </data>
+  <data name="STPaymentlocation" xml:space="preserve">
+    <value>مكان الدفع :</value>
+  </data>
   <data name="STPlaceOrder" xml:space="preserve">
     <value>&lt;span&gt;إرسل طلب&lt;/span&gt;
 &lt;br /&gt;
@@ -178,11 +458,36 @@
   <data name="STSAYABOUTUS" xml:space="preserve">
     <value>عملاءنا عنا</value>
   </data>
+  <data name="STSelectMotor" xml:space="preserve">
+    <value>&lt;option value="1"&gt;دراجة نارية&lt;/option&gt;
+          &lt;option value="2"&gt;سيارة&lt;/option&gt;</value>
+  </data>
+  <data name="STSharjah" xml:space="preserve">
+    <value>الشارقة</value>
+  </data>
+  <data name="STSHMAPRDRCT" xml:space="preserve">
+    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة الشارقة&lt;/span&gt;&lt;/td&gt;</value>
+  </data>
   <data name="STTellFriend" xml:space="preserve">
     <value>أخبر صديق</value>
   </data>
+  <data name="STTermsAndConditions" xml:space="preserve">
+    <value>أوافق علي الشروط والأحكام</value>
+  </data>
   <data name="STTestimonials" xml:space="preserve">
     <value>مشاوير توفر لي الوقت الثمين الذي لا أستطيع توفيره وهذا يعطيني راحة البال لأنى مطمئنة على مشاويرى معاهم</value>
+  </data>
+  <data name="STTo" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="STTotalCostinAED" xml:space="preserve">
+    <value>تكلفة إجمالية بالدرهم :  </value>
+  </data>
+  <data name="STVAN" xml:space="preserve">
+    <value>سيارة</value>
+  </data>
+  <data name="STVia" xml:space="preserve">
+    <value>بإستخدام</value>
   </data>
   <data name="STWERUN" xml:space="preserve">
     <value>&lt;span&gt;نـعـملـك كــل&lt;/span&gt;
@@ -191,63 +496,11 @@
 &lt;br&gt;
 &lt;span style="color:#FFF;"&gt;في 90 دقيقة&lt;/span&gt;</value>
   </data>
-  <data name="ContactEmail" xml:space="preserve">
-    <value>البريد الإلكتروني</value>
+  <data name="STWHATOUR" xml:space="preserve">
+    <value>مـاذا يقـول</value>
   </data>
-  <data name="ContactMessage" xml:space="preserve">
-    <value>الرسالة</value>
-  </data>
-  <data name="ContactName" xml:space="preserve">
-    <value>إسمك</value>
-  </data>
-  <data name="CONTACT_US_SEND" xml:space="preserve">
-    <value>أرسال</value>
-  </data>
-  <data name="PageFAQ" xml:space="preserve">
-    <value>&lt;span style="color: #FFF;"&gt;أسئلة&lt;/span&gt;
-                &lt;span&gt;شائعة&lt;/span&gt;</value>
-  </data>
-  <data name="PageFAQ1" xml:space="preserve">
-    <value>&lt;span style="color: #FFF;"&gt;أسئلة&lt;/span&gt;
-                &lt;span&gt;شائعة&lt;/span&gt;</value>
-  </data>
-  <data name="PageLocation" xml:space="preserve">
-    <value>&lt;span style="color:#FFF;"&gt;إختر&lt;/span&gt;
-&lt;span &gt; مدينتك&lt;/span&gt;</value>
-  </data>
-  <data name="PageServices" xml:space="preserve">
-    <value>خدماتنا</value>
-  </data>
-  <data name="PageTerms" xml:space="preserve">
-    <value>&lt;span style="color:#FFF;"&gt;الشروط   &lt;/span&gt;
-&lt;span&gt; والأحكام&lt;/span&gt;</value>
-  </data>
-  <data name="SiteCalculator" xml:space="preserve">
-    <value>مشاوير | الآلة الحاسبة</value>
-  </data>
-  <data name="SiteContact" xml:space="preserve">
-    <value>مشاوير | إتصل بنا</value>
-  </data>
-  <data name="SiteFAQ" xml:space="preserve">
-    <value>مشاوير |  الأسئلة الشائعة</value>
-  </data>
-  <data name="SiteServices" xml:space="preserve">
-    <value>Mashaweer | Services</value>
-  </data>
-  <data name="SiteTerms" xml:space="preserve">
-    <value>مشاوير |  الشروط والأحكام</value>
-  </data>
-  <data name="STAbuDhabi" xml:space="preserve">
-    <value>أبو ظبي</value>
-  </data>
-  <data name="STAcrossUAE" xml:space="preserve">
-    <value>عبر دولة الإمارات</value>
-  </data>
-  <data name="STDubai" xml:space="preserve">
-    <value>دبي</value>
-  </data>
-  <data name="STSharjah" xml:space="preserve">
-    <value>الشارقة</value>
+  <data name="Support" xml:space="preserve">
+    <value>الدعم الفنى</value>
   </data>
   <data name="TermsContent" xml:space="preserve">
     <value>&lt;p&gt;
@@ -296,202 +549,6 @@
                 &lt;h3 align="center"&gt;
                     قد يتم تغيير الشروط والأحكام المذكورة أعلاه في أي وقت من الأوقات دون إشعار مسبق.&lt;/h3&gt;</value>
   </data>
-  <data name="CustCmpnyName" xml:space="preserve">
-    <value>إسم العميل / الشركة</value>
-  </data>
-  <data name="CustEmail" xml:space="preserve">
-    <value>البريد الإلكتروني</value>
-  </data>
-  <data name="CustPerson" xml:space="preserve">
-    <value>اسم مقدم الطلب</value>
-  </data>
-  <data name="CustMobile" xml:space="preserve">
-    <value>الهاتف</value>
-  </data>
-  <data name="ClctCompanyName" xml:space="preserve">
-    <value>الشركة</value>
-  </data>
-  <data name="ClctPerson" xml:space="preserve">
-    <value>إسم الراسل</value>
-  </data>
-  <data name="ClctEmail" xml:space="preserve">
-    <value>البريد الإلكتروني</value>
-  </data>
-  <data name="ClctMobile" xml:space="preserve">
-    <value>الهاتف</value>
-  </data>
-  <data name="ClctAddress" xml:space="preserve">
-    <value>العنوان</value>
-  </data>
-  <data name="ClctLandMark" xml:space="preserve">
-    <value>أقرب مكان مشهور</value>
-  </data>
-  <data name="ClctInstructions" xml:space="preserve">
-    <value>تعليمات</value>
-  </data>
-  <data name="DlvryCompanyName" xml:space="preserve">
-    <value>الشركة</value>
-  </data>
-  <data name="DlvryPerson" xml:space="preserve">
-    <value>إسم المرسل إليه</value>
-  </data>
-  <data name="DlvryEmail" xml:space="preserve">
-    <value>البريد الإلكتروني</value>
-  </data>
-  <data name="DlvryMobile" xml:space="preserve">
-    <value>الهاتف</value>
-  </data>
-  <data name="DlvryAddress" xml:space="preserve">
-    <value>العنوان</value>
-  </data>
-  <data name="DlvryLandMark" xml:space="preserve">
-    <value>أقرب مكان مشهور</value>
-  </data>
-  <data name="DlvryInstructions" xml:space="preserve">
-    <value>تعليمات</value>
-  </data>
-  <data name="btnSave" xml:space="preserve">
-    <value>إرسال</value>
-  </data>
-  <data name="btnCancel" xml:space="preserve">
-    <value>مسح</value>
-  </data>
-  <data name="PageOrder" xml:space="preserve">
-    <value>من فضلك إملاء البيانات المطلوبة و &lt;span style="color:#fff;"&gt;إضغط إرسال&lt;/span&gt;</value>
-  </data>
-  <data name="STArea" xml:space="preserve">
-    <value>المنطقة</value>
-  </data>
-  <data name="STCity" xml:space="preserve">
-    <value>مدينة</value>
-  </data>
-  <data name="STCollection" xml:space="preserve">
-    <value>المكان المرسل منه</value>
-  </data>
-  <data name="STCollectionLocation" xml:space="preserve">
-    <value>المكان المرسل منه</value>
-  </data>
-  <data name="STCustomerDetails" xml:space="preserve">
-    <value>بيانات العميل</value>
-  </data>
-  <data name="STDelivery" xml:space="preserve">
-    <value>المكان المرسل إليه</value>
-  </data>
-  <data name="STDeliveryLocation" xml:space="preserve">
-    <value>المكان المرسل إليه</value>
-  </data>
-  <data name="STPaymentlocation" xml:space="preserve">
-    <value>مكان الدفع :</value>
-  </data>
-  <data name="STSelectMotor" xml:space="preserve">
-    <value>&lt;option value="1"&gt;دراجة نارية&lt;/option&gt;
-          &lt;option value="2"&gt;سيارة&lt;/option&gt;</value>
-  </data>
-  <data name="STTermsAndConditions" xml:space="preserve">
-    <value>أوافق علي الشروط والأحكام</value>
-  </data>
-  <data name="STTotalCostinAED" xml:space="preserve">
-    <value>تكلفة إجمالية بالدرهم :  </value>
-  </data>
-  <data name="SiteOrder" xml:space="preserve">
-    <value>مشاوير | إرسل طلب</value>
-  </data>
-  <data name="STcalculateorder" xml:space="preserve">
-    <value>إحسب طلبك</value>
-  </data>
-  <data name="STCurency" xml:space="preserve">
-    <value>درهم</value>
-  </data>
-  <data name="STFrom" xml:space="preserve">
-    <value>من</value>
-  </data>
-  <data name="STTo" xml:space="preserve">
-    <value>إلى</value>
-  </data>
-  <data name="STVia" xml:space="preserve">
-    <value>بإستخدام</value>
-  </data>
-  <data name="STCUSTOMERS" xml:space="preserve">
-    <value />
-  </data>
-  <data name="STWHATOUR" xml:space="preserve">
-    <value>مـاذا يقـول</value>
-  </data>
-  <data name="STCHOICEMESSAGE" xml:space="preserve">
-    <value>الخدمة غير متوفرة بين هاتين المنطقتين</value>
-  </data>
-  <data name="STORDERMESSAGE" xml:space="preserve">
-    <value>الخدمة غير متوفرة بين هاتين المنطقتين، من فضلك إختر منطقتين متوفر بهما الخدمة قبل إرسال الطلب</value>
-  </data>
-  <data name="STORDERSENT" xml:space="preserve">
-    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style="color:Red;"&gt;تم إرسال طلبك&lt;/span&gt;</value>
-  </data>
-  <data name="STADMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة أبوظبى&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="STDBMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة دبى&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="STDBSHMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة دبى / الشارقة&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="STSHMAPRDRCT" xml:space="preserve">
-    <value>&lt;td&gt;&lt;span class='yellow-label'&gt;سيتم أعادة توجيهك لخريطة الشارقة&lt;/span&gt;&lt;/td&gt;</value>
-  </data>
-  <data name="PrclDtls" xml:space="preserve">
-    <value>الوصف</value>
-  </data>
-  <data name="STVAN" xml:space="preserve">
-    <value>سيارة</value>
-  </data>
-  <data name="NABDCHAT" xml:space="preserve">
-    <value>تحدث مع ممثل خدمة العملاء</value>
-  </data>
-  <data name="NABDCHOOSEOPTION" xml:space="preserve">
-    <value>إختر الخدمة المطلوبة</value>
-  </data>
-  <data name="NABDKNOWLEDGEBASE" xml:space="preserve">
-    <value>قاعدة المعلومات</value>
-  </data>
-  <data name="NABDSUBMITCASE" xml:space="preserve">
-    <value>إرسال شكواك</value>
-  </data>
-  <data name="NABDTRACK" xml:space="preserve">
-    <value>تتبع شكواك</value>
-  </data>
-  <data name="REDIRECTMSG" xml:space="preserve">
-    <value>سيتم تلقائيا إعادة توجيه هذه الصفحة.</value>
-  </data>
-  <data name="STORDERFILLMISSINGMSG" xml:space="preserve">
-    <value>من فضلك أكمل البيانات الناقصة</value>
-  </data>
-  <data name="STORDERMESSAGESELECTAREAS" xml:space="preserve">
-    <value>من فضلك إختر المنطقتين المرسل منها والمرسل إليها</value>
-  </data>
-  <data name="STORDERMESSAGESELECTCITIES" xml:space="preserve">
-    <value>من فضلك إختر المدينتين المرسل منها والمرسل إليها</value>
-  </data>
-  <data name="STORDERMESSAGESELECTCOLLECTIONAREA" xml:space="preserve">
-    <value>من فضلك إختر المنطقة المرسل منها</value>
-  </data>
-  <data name="STORDERMESSAGESELECTCOLLECTIONCITY" xml:space="preserve">
-    <value>من فضلك إختر المدينة المرسل منها</value>
-  </data>
-  <data name="STORDERMESSAGESELECTDESTINATIONAREA" xml:space="preserve">
-    <value>من فضلك إختر المنطقة المرسل إليها</value>
-  </data>
-  <data name="STORDERMESSAGESELECTDESTINATIONCITY" xml:space="preserve">
-    <value>من فضلك إختر المدينة المرسل إليها</value>
-  </data>
-  <data name="STORDERSELECTAREA" xml:space="preserve">
-    <value>الرجاء إختيار المنطقة</value>
-  </data>
-  <data name="STORDERSELECTCITY" xml:space="preserve">
-    <value>الرجاء إختيار المدينة</value>
-  </data>
-  <data name="Support" xml:space="preserve">
-    <value>الدعم الفنى</value>
-  </data>
   <data name="ThankYou" xml:space="preserve">
     <value>شكراً</value>
   </data>
@@ -501,55 +558,7 @@
   <data name="THANKYOUORDERMESSAGE" xml:space="preserve">
     <value>.شكرا لطلبك، سوف تصلك رسالة  على البريد الالكتروني برقم التتبع قريبا</value>
   </data>
-  <data name="RECAPATCHA_AUDIO_WRITE" xml:space="preserve">
-    <value>إدخل الحروف التى سمعتها:</value>
-  </data>
-  <data name="RECAPATCHA_CANT_HERE_THIS" xml:space="preserve">
-    <value>تنزيل ملف الصوت بصيغة MP3 لسماعه</value>
-  </data>
-  <data name="RECAPATCHA_GET_AUDIO" xml:space="preserve">
-    <value>إستخدام الصوت</value>
-  </data>
-  <data name="RECAPATCHA_GET_IMAGE" xml:space="preserve">
-    <value>إستخدام الصورة</value>
-  </data>
-  <data name="RECAPATCHA_HELP" xml:space="preserve">
-    <value>مساعدة</value>
-  </data>
-  <data name="RECAPATCHA_INCORRECT_TRY_AGAIN" xml:space="preserve">
-    <value>خطأ من فضلك أعد المحاولة</value>
-  </data>
-  <data name="RECAPATCHA_PLAY_AGAIN" xml:space="preserve">
-    <value>أعد تشغيل الصوت</value>
-  </data>
-  <data name="RECAPATCHA_REFRESH" xml:space="preserve">
-    <value>إعادة التشغيل</value>
-  </data>
-  <data name="RECAPATCHA_IMAGE_WRITE" xml:space="preserve">
-    <value>إدخل الكلمات التى بالصورة:</value>
-  </data>
-  <data name="MOTORCYCLE" xml:space="preserve">
-    <value>دراجة نارية</value>
-  </data>
-  <data name="STORDERCAPTCHAINVALID" xml:space="preserve">
-    <value>من فضلك إدخل حروف التحقق من الهوية صحيحة</value>
-  </data>
-  <data name="STORDERTERMSINVALIDMESSAGE" xml:space="preserve">
-    <value>من فضلك تقبل شروط مشاوير وأحكامها</value>
-  </data>
   <data name="VAN" xml:space="preserve">
     <value>سيارة</value>
-  </data>
-  <data name="STCALCCLEAR" xml:space="preserve">
-    <value>من فضلك إضغط على زر مسح قبل الإستمرار.</value>
-  </data>
-  <data name="COMINGSOON" xml:space="preserve">
-    <value>قريباً</value>
-  </data>
-  <data name="btnNext" xml:space="preserve">
-    <value>التالى</value>
-  </data>
-  <data name="PageOrderMobile" xml:space="preserve">
-    <value>من فضلك إملاء البيانات المطلوبة و &lt;span style="color:#fff;"&gt;إضغط التالى&lt;/span&gt;</value>
   </data>
 </root>

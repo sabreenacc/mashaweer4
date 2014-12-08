@@ -106,7 +106,7 @@
         <div class="header">
             <div class="logo-holder">
                 <a href="Default.aspx">
-                    <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/logo.png" alt="مشاوير الإمارات" /></a>
+                    <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/logo2.png" alt="مشاوير الإمارات" /></a>
             </div>
             <div class="header-right">
                 <div class="toplinks-area">
