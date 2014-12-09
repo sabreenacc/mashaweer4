@@ -36,7 +36,7 @@ public partial class LandingMashaweer : System.Web.UI.Page
                                ////.Replace("{Delivery date}", txtDELIVERYDATE.Text);
                               
 
-            if (Helper.Mail.SendMail("Contact from Mashaweer Website", Setting.SelectValue("ContactEmail"), mailBody, Setting.SelectValue("EmailUserName")))
+            if (Helper.Mail.SendMail("Contact from Mashaweer Website(xmas tree)", Setting.SelectValue("ContactEmail"), mailBody, Setting.SelectValue("EmailUserName")))
             {
                 Response.Redirect("thankyou.aspx");
             }

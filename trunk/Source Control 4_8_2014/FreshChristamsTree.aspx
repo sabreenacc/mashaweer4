@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeFile="LandingPage.aspx.cs" Inherits="LandingMashaweer" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2ForChristmasPage.master" AutoEventWireup="true"
+    CodeFile="FreshChristamsTree.aspx.cs" Inherits="LandingMashaweer" %>
 
 <%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
@@ -9,9 +9,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <div class="page-warp">
         <%--Noble Fir Fresh Xmas Tree 6 to 7 FT long--%>
-        <img src="App_Themes/Main<%= Globals.MashaweerLanguage %>/images/banner_top5.png" class="contact-img" style="width: 296px;height: 14px;margin-top: -2%;" usemap="#contactmap"  />
+        <%--<img src="App_Themes/Main<%= Globals.MashaweerLanguage %>/images/banner_top5.png" class="contact-img" style="width: 37%;margin-top: -2%;margin-right: 33%;margin-left: 33%;"  />--%>
         <div class="contact-header">
-            <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/contact-top-banner4.png"
+            <img src="/App_Themes/MainEn/images/Mashaweer-FB-Banner-87.png"
                 class="contact-img" usemap="#contactmap"  />
             <map name="contactmap">
                 <% if (Globals.MashaweerLanguage == "en")
