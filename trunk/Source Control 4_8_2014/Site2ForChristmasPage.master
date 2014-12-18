@@ -77,8 +77,8 @@
    else
    {
 %>
-            <li><a href="location.aspx"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
-            <li><a href="Order.aspx"><%=Resources.LanguageFile.MENU_Order%></a></li>
+            <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
+            <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Order%></a></li>
 <%
    }
 %>
@@ -157,11 +157,11 @@
    else
    {
 %>
-                    <li><a href="location.aspx"><i class="calculator-item"></i>
+                    <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="calculator-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Calculator %>
                     </a></li>
-                    <li><a href="Order.aspx"><i class="order-item"></i>
+                    <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="order-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Order %>
                     </a></li>
@@ -202,10 +202,10 @@
    else
    {
 %>
-                <li><a href="location.aspx">
+                <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Calculator%>
                 </a></li>
-                <li><a href="Order.aspx">
+                <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Order%></a></li>
 <%
    }

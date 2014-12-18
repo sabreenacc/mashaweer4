@@ -15,9 +15,9 @@
 
 <%--<a href="Calculator.aspx?ct=2" class="circle"><%=Resources.LanguageFile.STAbuDhabi %></a>--%>
 <a class="circle"><%=Resources.LanguageFile.STAbuDhabi %> <br /> <span style="font-size: 0.55em; color: lightgrey; line-height: 2.5em;"><%=Resources.LanguageFile.COMINGSOON %></span></a>
-<a href="Calculator.aspx?ct=1" class="circle bg-white"><%=Resources.LanguageFile.STDubai %></a>
-<a href="Calculator.aspx?ct=3" class="circle bg-yellow"><%=Resources.LanguageFile.STSharjah %></a>
-<a href="Calculator.aspx?ct=0" class="circle bg-gray"><%=Resources.LanguageFile.STAcrossUAE %></a>
+<a href="Calculator.aspx?ct=1&lang=<%:Globals.MashaweerLanguage%>" class="circle bg-white"><%=Resources.LanguageFile.STDubai %></a>
+<a href="Calculator.aspx?ct=3&lang=<%:Globals.MashaweerLanguage%>" class="circle bg-yellow"><%=Resources.LanguageFile.STSharjah %></a>
+<a href="Calculator.aspx?ct=0&lang=<%:Globals.MashaweerLanguage%>" class="circle bg-gray"><%=Resources.LanguageFile.STAcrossUAE %></a>
 
 
 

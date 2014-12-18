@@ -27,7 +27,7 @@ public partial class Order : System.Web.UI.Page
             //                                                                  { "help_btn", Resources.LanguageFile.RECAPATCHA_HELP },
             //                                                                  { "incorrect_try_again", Resources.LanguageFile.RECAPATCHA_INCORRECT_TRY_AGAIN } };
             //recaptcha.CustomThemeWidget = "recaptcha_widget";
-
+        //  string ss=  Request.QueryString["lang"].ToString();
             ddlFromEmirate.Items.Insert(0, new ListItem(Resources.LanguageFile.STORDERSELECTCITY, "-1", true));
             ddlToEmirate.Items.Insert(0, new ListItem(Resources.LanguageFile.STORDERSELECTCITY, "-1", true));
 
@@ -103,7 +103,7 @@ public partial class Order : System.Web.UI.Page
             mailBody = mailBody.Replace("{CustomerEmail}", txtCustEmail.Text);
             mailBody = mailBody.Replace("{PaymentLocation}", rdCollection.Checked ? "Collection" : "Delivery");
             mailBody = mailBody.Replace("{TotalCost}", hdnCost.Value);
-            mailBody = mailBody.Replace("{Vehicle}", vehicleSelect.Value == "1" ? Resources.LanguageFile.MOTORCYCLE : Resources.LanguageFile.VAN);
+            mailBody = mailBody.Replace("{Vehicle}", txtDELIVERYDATE.Text == "1" ? Resources.LanguageFile.MOTORCYCLE : Resources.LanguageFile.VAN);
             mailBody = mailBody.Replace("{ParcelDetails}", txtPrclDtl.Text);
             mailBody = mailBody.Replace("{ClctName}", txtClctCompanyName.Text);
             mailBody = mailBody.Replace("{DlvryName}", txtDlvryCompanyName.Text);
@@ -182,4 +182,8 @@ public partial class Order : System.Web.UI.Page
     //}
 
 
+    protected void btntest(object sender, EventArgs e)
+    {
+        string s = vehicleSelect.Value;
+    }
 }

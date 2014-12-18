@@ -65,8 +65,9 @@
     <form runat="server">
     <nav>
 		<ul class="clearfix" style="display: none;">  
-            <li><a href="Default.aspx"> <%=Resources.LanguageFile.MENU_HOME %> </a></li>
-            <li><a href="Service.aspx"><%=Resources.LanguageFile.MENU_Services%> </a></li>
+
+            <li><a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>"> <%=Resources.LanguageFile.MENU_HOME %> </a></li>
+            <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Services%> </a></li>
 <% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
    {  
 %>
@@ -77,12 +78,12 @@
    else
    {
 %>
-            <li><a href="location.aspx"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
-            <li><a href="Order.aspx"><%=Resources.LanguageFile.MENU_Order%></a></li>
+            <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
+            <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Order%></a></li>
 <%
    }
 %>
-            <li><a href="ContactUs.aspx"><%=Resources.LanguageFile.MENU_Contact%> </a></li>  
+            <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Contact%> </a></li>  
 		</ul>
 		<a href="#" id="pull"><%=Resources.LanguageFile.STMenuItem%></a>
 	</nav>
@@ -105,7 +106,7 @@
         </div>
         <div class="header">
             <div class="logo-holder">
-                <a href="Default.aspx">
+                <a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/logo2.png" alt="مشاوير الإمارات" /></a>
             </div>
             <div class="header-right">
@@ -137,7 +138,7 @@
                     </div>
                 </div>
                 <ul class="main-nav">
-                    <li><a href="Service.aspx"><i class="services-item"></i>
+                    <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="services-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Services %>
                     </a></li>
@@ -157,18 +158,18 @@
    else
    {
 %>
-                    <li><a href="location.aspx"><i class="calculator-item"></i>
+                    <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="calculator-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Calculator %>
                     </a></li>
-                    <li><a href="Order.aspx"><i class="order-item"></i>
+                    <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="order-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Order %>
                     </a></li>
 <%
    }
 %>
-                    <li><a href="ContactUs.aspx"><i class="contact-item"></i>
+                    <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="contact-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Contact %>
                     </a></li>
@@ -183,10 +184,10 @@
     <div class="container">
         <div class="footer">
             <ul>
-                <li><a href="Default.aspx">
+                <li><a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_HOME %>
                 </a></li>
-                <li><a href="Service.aspx">
+                <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Services%>
                 </a></li>
 <% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
@@ -202,20 +203,20 @@
    else
    {
 %>
-                <li><a href="location.aspx">
+                <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Calculator%>
                 </a></li>
-                <li><a href="Order.aspx">
+                <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Order%></a></li>
 <%
    }
 %>
-                <li><a href="ContactUs.aspx">
+                <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Contact%>
                 </a></li>
                 <li><a href="Faq.aspx">
                     <%=Resources.LanguageFile.MENU_FAQ %></a> </li>
-                <li><a href="Terms.aspx">
+                <li><a href="Terms.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Terms %></a> </li>
                 <!--<li><a href="Support.aspx">
                     <%=Resources.LanguageFile.Support %></a> </li>-->

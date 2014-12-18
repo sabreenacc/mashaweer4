@@ -16,5 +16,7 @@
         </asp:MenuItem>
         <asp:MenuItem Text="المستخدمين" NavigateUrl="/admin/Users/Default.aspx" SeparatorImageUrl="/App_Themes/Admin/images/menu_sep_black.png">
         </asp:MenuItem>
+         <asp:MenuItem Text="تغيير كلمة السر" NavigateUrl="/admin/resetcred.aspx" SeparatorImageUrl="/App_Themes/Admin/images/menu_sep_black.png">
+        </asp:MenuItem>
     </Items>
 </uc1:Menu>

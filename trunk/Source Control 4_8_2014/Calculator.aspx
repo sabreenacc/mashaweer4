@@ -60,7 +60,7 @@
                 <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/undermap-banner1.png" />
             </div>
             <div class="lft-part">
-                <a href="Order.aspx">
+                <a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/send-order.png" /></a>
             </div>
         </div>
@@ -258,7 +258,7 @@ foreach (var zoneClear in mashaweerZones)
                        {%>
                     if(firstplace == 1 && secondplace == 1) {
                         $(".calculator-row").html("<%=Resources.LanguageFile.STDBMAPRDRCT %>");
-                        window.location.href = "Calculator.aspx?ct=1";
+                        window.location.href = "Calculator.aspx?ct=1&lang=<%:Globals.MashaweerLanguage%>";
                         return;
                     } else if(firstplace == 2 &&secondplace == 2) {
                         //$(".calculator-row").html("<%=Resources.LanguageFile.STADMAPRDRCT %>");
@@ -268,7 +268,7 @@ foreach (var zoneClear in mashaweerZones)
                         return;
                     } else if(firstplace == 3 && secondplace == 3) {
                         $(".calculator-row").html("<%=Resources.LanguageFile.STSHMAPRDRCT %>");
-                        window.location.href = "Calculator.aspx?ct=3";
+                        window.location.href = "Calculator.aspx?ct=3&lang=<%:Globals.MashaweerLanguage%>";
                         return;
                     } else if((firstplace == 1 && secondplace == 3) || (firstplace == 3 && secondplace == 1)) {
                         $(".calculator-row").html("<%=Resources.LanguageFile.STDBSHMAPRDRCT %>");

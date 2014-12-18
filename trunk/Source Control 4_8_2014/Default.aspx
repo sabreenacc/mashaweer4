@@ -21,7 +21,7 @@
    else
    {
 %>
-    <a href="location.aspx" class="normal-btn"> <%=Resources.LanguageFile.STCalculateYourOrder %></a>
+    <a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>" class="normal-btn"> <%=Resources.LanguageFile.STCalculateYourOrder %></a>
 <%
    }
 %>
@@ -47,7 +47,7 @@
    else
    {
 %>
-<a href="Order.aspx" style="background-color:#f3b902;" class="normal-btn"><%=Resources.LanguageFile.STClickHere %> </a>
+<a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>" style="background-color:#f3b902;" class="normal-btn"><%=Resources.LanguageFile.STClickHere %> </a>
 <%
    }
 %>

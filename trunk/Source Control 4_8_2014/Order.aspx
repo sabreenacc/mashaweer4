@@ -286,7 +286,9 @@
                     <span style="min-width: 30px; display: -webkit-inline-box; display: -moz-inline-box;"
                         id="tdCost"></span>
                     <asp:HiddenField ID="hdnCost" ClientIDMode="Static" Value="" runat="server"/>
-                    <select name="select" id="vehicleSelect" runat="server" clientidmode="Static" class="via-select">
+                    <asp:TextBox ID="txtDELIVERYDATE" CssClass="txt-box" placeholder="<%$ Resources:LanguageFile, DELIVERYDATE%>"
+                            runat="server" TabIndex="1" style="display:none;"></asp:TextBox>
+                    <select name="select" id="vehicleSelect" runat="server" class="via-select">
                     </select>
                 </td>
             </tr>
@@ -394,7 +396,7 @@
         <table class="form-block2" border="0" cellspacing="1" cellpadding="1">
             <tr>
                 <td>
-                    <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" CssClass="normal-btn" ValidationGroup="Valid" />
+                    <asp:Button ID="btnSave" runat="server"   OnClick="btnSave_Click" CssClass="normal-btn" ValidationGroup="Valid" />
                     <asp:Button ID="btnCancel" runat="server" CssClass="normal-btn" Style="margin-top: 5px;"
                         PostBackUrl="Order.aspx" />
                 </td>
@@ -525,7 +527,8 @@ function filterType() {
         success: function (data) {
             if (parseInt(data, 10) === 0) {
                 // there is no Motorcycle Service between these zones
-                $(".via-select").val("2");
+                 $(".via-select").val("2");
+                $("[id$=txtDELIVERYDATE]").val("2");
                 $('.via-select').prop('disabled', 'disabled');
             }
             else
@@ -566,7 +569,6 @@ function calculateprice() {
             $("#hdnCost").val("");
             return;
         }
-
         $.ajax({
             url: "CalculateHandler.ashx?order=1&type=" + $(".via-select").val() + "&db=1&from=" + $("#<%=ddlFromZone.ClientID %>").val() + "&to=" + $("#<%=ddlToZone.ClientID %>").val() + "&fromEmirate=" + $("#<%=ddlFromEmirate.ClientID %>").val() + "&toEmirate=" + $("#<%=ddlToEmirate.ClientID %>").val(),
             cache: false,
@@ -603,7 +605,6 @@ function calculateprice() {
             filterType();
             return;
         }
-
         var strUrl = "";
         strUrl = "CalculateHandler.ashx?order=1&type=" + $(".via-select").val() + "&db=1&fromEmirate=" + $("#<%=ddlFromEmirate.ClientID %>").val() + "&toEmirate=" + 0 + "&FilterZones=1";
         $.ajax({
@@ -637,7 +638,6 @@ function calculateprice() {
             filterType();
             return;
         }
-
         var strUrl = "";
         strUrl = "CalculateHandler.ashx?order=1&type=" + $(".via-select").val() + "&db=1&toEmirate=" + $("#<%=ddlToEmirate.ClientID %>").val() + "&fromEmirate=" + 0 + "&FilterZones2=1";
 
