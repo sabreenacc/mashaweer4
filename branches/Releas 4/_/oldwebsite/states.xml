@@ -1,0 +1,264 @@
+<states>
+    <state name ="Al Wuheida" colour="#ff0000" >
+        <point lat="25.29259" lng="55.32749"/>
+        <point lat="25.29825" lng="55.33582"/>
+        <point lat="25.28599" lng="55.35024"/>
+        <point lat="25.27970" lng="55.34346"/>
+    </state>
+    <state name ="Abu Hail" colour="#008800" >
+        <point lat="25.29259" lng="55.32749"/>
+        <point lat="25.28382" lng="55.33831"/>
+        <point lat="25.27869" lng="55.32681"/>
+        <point lat="25.28770" lng="55.32200"/>
+        <point lat="25.29259" lng="55.32749"/>
+    </state>
+    <state name ="Hor Al Anz" colour="#0000ff" >
+        <point lat="25.27869" lng="55.32698"/>
+        <point lat="25.27466" lng="55.32904"/>
+        <point lat="25.27062" lng="55.33024"/>
+        <point lat="25.27233" lng="55.33762"/>
+        <point lat="25.27590" lng="55.34775"/>
+        <point lat="25.28382" lng="55.33831"/>
+    </state>
+    <state name ="Al Baraha" colour="#ff0000" >
+        <point lat="35.0041" lng="-88.1955"/>
+        <point lat="34.9918" lng="-85.6068"/>
+        <point lat="32.8404" lng="-85.1756"/>
+    </state>
+    <state name ="Arkansas" colour="#ff0000" >
+        <point lat="33.0225" lng="-94.0416"/>
+        <point lat="33.0075" lng="-91.2057"/>
+        <point lat="33.1180" lng="-91.1989"/>
+    </state>
+    <state name ="Arizona" colour="#ff0000" >
+        <point lat="36.9993" lng="-112.5989"/>
+        <point lat="37.0004" lng="-110.8630"/>
+        <point lat="37.0004" lng="-109.0475"/>
+    </state>
+    <state name ="Colorado" colour="#880000" >
+        <point lat="37.0004" lng="-109.0448"/>
+        <point lat="36.9949" lng="-102.0424"/>
+        <point lat="41.0006" lng="-102.0534"/>
+    </state>
+    <state name ="Connecticut" colour="#880000" >
+        <point lat="42.0498" lng="-73.4875"/>
+        <point lat="42.0511" lng="-73.4247"/>
+        <point lat="42.0371" lng="-72.8146"/>
+    </state>
+    <state name ="Delaware" colour="#880000" >
+        <point lat="39.7188" lng="-75.7919"/>
+        <point lat="39.5210" lng="-75.7837"/>
+        <point lat="38.9081" lng="-75.7288"/>
+    </state>
+    <state name ="Florida" colour="#8800ff" >
+        <point lat="30.9988" lng="-87.6050"/>
+        <point lat="30.9964" lng="-86.5613"/>
+        <point lat="31.0035" lng="-85.5313"/>
+    </state>
+    <state name ="Georgia" colour="#880000" >
+        <point lat="34.9974" lng="-85.6082"/>
+        <point lat="34.9906" lng="-84.7266"/>
+        <point lat="34.9895" lng="-84.1580"/>
+    </state>
+    <state name ="Hawaii" colour="#00ff00" >
+        <point lat="19.5158" lng="-154.6284"/>
+        <point lat="19.8894" lng="-154.8235"/>
+        <point lat="20.1849" lng="-155.0391"/>
+    </state>
+    <state name ="Iowa" colour="#00ff00" >
+        <point lat="40.5848" lng="-95.7623"/>
+        <point lat="40.5785" lng="-93.5445"/>
+        <point lat="40.6129" lng="-91.7372"/>
+    </state>
+    <state name ="Idaho" colour="#00ff00" >
+        <point lat="49.0000" lng="-117.0319"/>
+        <point lat="49.0018" lng="-116.0486"/>
+        <point lat="47.9752" lng="-116.0445"/>
+    </state>
+    <state name ="Illinois" colour="#00ffff" >
+
+        <point lat="42.5116" lng="-90.6290"/>
+        <point lat="42.4924" lng="-87.0213"/>
+        <point lat="41.7641" lng="-87.2067"/>
+    </state>
+    <state name ="Indiana" colour="#00ff00" >
+        <point lat="41.7611" lng="-87.5253"/>
+        <point lat="41.7611" lng="-84.8090"/>
+        <point lat="39.0981" lng="-84.8199"/>
+    </state>
+    <state name ="Kansas" colour="#008800" >
+        <point lat="40.0034" lng="-102.0506"/>
+        <point lat="40.0034" lng="-102.0506"/>
+        <point lat="36.9927" lng="-102.0438"/>
+    </state>
+    <state name ="Kentucky" colour="#008800" >
+        <point lat="36.4986" lng="-89.5372"/>
+        <point lat="36.5074" lng="-89.3010"/>
+        <point lat="36.5008" lng="-88.6871"/>
+    </state>
+    <state name ="Louisiana" colour="#008800" >
+        <point lat="33.0225" lng="-94.0430"/>
+        <point lat="33.0179" lng="-93.0048"/>
+        <point lat="33.0087" lng="-91.1646"/>
+    </state>
+    <state name ="Massachusetts" colour="#0000ff" >
+        <point lat="42.0003" lng="-72.7789"/>
+        <point lat="42.0330" lng="-72.7405"/>
+        <point lat="42.0330" lng="-72.3779"/>
+    </state>
+    <state name ="Maryland" colour="#0000ff" >
+        <point lat="39.7220" lng="-79.4778"/>
+        <point lat="39.7220" lng="-78.3600"/>
+        <point lat="39.7220" lng="-75.7878"/>
+    </state>
+    <state name ="Maine" colour="#0000ff" >
+        <point lat="45.3425" lng="-71.0129"/>
+        <point lat="45.3328" lng="-70.9525"/>
+        <point lat="45.2294" lng="-70.8618"/>
+    </state>
+    <state name ="Michigan" colour="#FF0000" >
+        <point lat="48.3033" lng="-88.3713"/>
+        <point lat="48.0101" lng="-87.6050"/>
+        <point lat="46.8902" lng="-84.8584"/>
+    </state>
+    <state name ="Minnesota" colour="#0000ff" >
+        <point lat="43.5008" lng="-96.4517"/>
+        <point lat="43.5017" lng="-91.2195"/>
+        <point lat="43.8226" lng="-91.3101"/>
+    </state>
+    <state name ="Missouri" colour="#000088" >
+        <point lat="40.6181" lng="-91.7468"/>
+        <point lat="40.5597" lng="-91.6809"/>
+        <point lat="40.5472" lng="-91.6260"/>
+    </state>
+    <state name ="Mississippi" colour="#000088" >
+        <point lat="35.0041" lng="-90.3049"/>
+        <point lat="35.0075" lng="-88.1955"/>
+        <point lat="34.8882" lng="-88.0994"/>
+    </state>
+    <state name ="Montana" colour="#000088" >
+        <point lat="44.4750" lng="-111.0512"/>
+        <point lat="44.7311" lng="-111.3684"/>
+        <point lat="44.6198" lng="-111.5071"/>
+    </state>
+    <state name ="North Carolina" colour="#ffff00" >
+        <point lat="33.7963" lng="-78.4850"/>
+        <point lat="34.8037" lng="-79.6742"/>
+        <point lat="34.8206" lng="-80.8003"/>
+    </state>
+    <state name ="North Dakota" colour="#ffff00" >
+        <point lat="48.9955" lng="-104.0501"/>
+        <point lat="45.9445" lng="-104.0446"/>
+        <point lat="45.9340" lng="-96.5671"/>
+    </state>
+    <state name ="Nebraska" colour="#ffff00" >
+        <point lat="42.9986" lng="-104.0543"/>
+        <point lat="41.0027" lng="-104.0543"/>
+        <point lat="41.0006" lng="-102.0506"/>
+    </state>
+    <state name ="New Hampshire" colour="#00ffff" >
+        <point lat="45.0153" lng="-71.5045"/>
+        <point lat="45.0532" lng="-71.4977"/>
+        <point lat="45.0910" lng="-71.4619"/>
+    </state>
+    <state name ="New Jersey" colour="#ffff00" >
+        <point lat="41.3572" lng="-74.6950"/>
+        <point lat="41.3394" lng="-74.6559"/>
+        <point lat="40.9934" lng="-73.8940"/>
+    </state>
+    <state name ="New Mexico" colour="#00ffff" >
+        <point lat="36.9971" lng="-109.0448"/>
+        <point lat="31.3337" lng="-109.0489"/>
+        <point lat="31.3349" lng="-108.2140"/>
+    </state>
+    <state name ="Nevada" colour="#00ffff" >
+        <point lat="41.9922" lng="-120.0037"/>
+        <point lat="42.0003" lng="-117.9602"/>
+        <point lat="42.0003" lng="-117.0264"/>
+    </state>
+    <state name ="New York" colour="#00ffff" >
+        <point lat="42.5142" lng="-79.7624"/>
+        <point lat="42.7783" lng="-79.0672"/>
+        <point lat="42.8508" lng="-78.9313"/>
+    </state>
+    <state name ="Ohio" colour="#ff8800" >
+        <point lat="38.4385" lng="-82.3425"/>
+        <point lat="38.5707" lng="-82.2917"/>
+        <point lat="38.5965" lng="-82.1722"/>
+    </state>
+    <state name ="Oklahoma" colour="#ff00ff" >
+        <point lat="37.0015" lng="-103.0051"/>
+        <point lat="36.5030" lng="-103.0037"/>
+        <point lat="36.4986" lng="-100.0003"/>
+    </state>
+    <state name ="Oregon" colour="#ff00ff" >
+        <point lat="46.2587" lng="-124.2444"/>
+        <point lat="46.2634" lng="-124.0384"/>
+        <point lat="46.2891" lng="-124.0205"/>
+    </state>
+    <state name ="Pennsylvania" colour="#ff00ff" >
+        <point lat="42.3261" lng="-80.5174"/>
+        <point lat="42.3961" lng="-80.0821"/>
+        <point lat="42.5167" lng="-79.7621"/>
+    </state>
+    <state name ="Rhode Island" colour="#ffff00" >
+        <point lat="41.3706" lng="-71.0568"/>
+        <point lat="41.3706" lng="-71.0541"/>
+        <point lat="41.6339" lng="-71.1447"/>
+    </state>
+    <state name ="South Carolina" colour="#ff8800" >
+        <point lat="32.0488" lng="-80.7001"/>
+        <point lat="32.0453" lng="-80.8978"/>
+        <point lat="32.1105" lng="-81.1134"/>
+    </state>
+    <state name ="South Dakota" colour="#ff8800" >
+        <point lat="45.9435" lng="-104.0501"/>
+        <point lat="43.0026" lng="-104.0529"/>
+        <point lat="42.9946" lng="-98.4993"/>
+    </state>
+    <state name ="Tennessee" colour="#ff8800" >
+        <point lat="36.6739" lng="-88.0678"/>
+        <point lat="36.6354" lng="-87.8522"/>
+        <point lat="36.6023" lng="-83.6787"/>
+    </state>
+    <state name ="Texas" colour="#00ff88" >
+        <point lat="31.8659" lng="-106.5715"/>
+        <point lat="31.7504" lng="-106.5042"/>
+        <point lat="31.6242" lng="-106.3092"/>
+    </state>
+    <state name ="Utah" colour="#00ff88" >
+        <point lat="36.9982" lng="-114.0491"/>
+        <point lat="37.0026" lng="-109.0462"/>
+        <point lat="40.9986" lng="-109.0503"/>
+    </state>
+    <state name ="Virginia" colour="#00ff88" >
+        <point lat="36.6017" lng="-83.6753"/>
+        <point lat="36.6519" lng="-83.5613"/>
+        <point lat="36.6673" lng="-83.4432"/>
+    </state>
+    <state name ="Vermont" colour="#88ff00" >
+        <point lat="45.0104" lng="-73.3427"/>
+        <point lat="45.0134" lng="-73.1827"/>
+        <point lat="45.0153" lng="-72.7432"/>
+    </state>
+    <state name ="Washington" colour="#88ff00" >
+        <point lat="49.0023" lng="-123.3208"/>
+        <point lat="49.0027" lng="-123.0338"/>
+        <point lat="49.0018" lng="-122.0650"/>
+    </state>
+    <state name ="Wisconsin" colour="#0088ff" >
+        <point lat="42.5116" lng="-90.6303"/>
+        <point lat="42.4954" lng="-87.0241"/>
+        <point lat="43.3721" lng="-87.1477"/>
+    </state>
+    <state name ="West Virginia" colour="#0088ff" >
+        <point lat="39.7188" lng="-79.4765"/>
+        <point lat="39.2057" lng="-79.4806"/>
+        <point lat="39.4871" lng="-79.0576"/>
+    </state>
+    <state name ="Wyoming" colour="#ff0088" >
+        <point lat="41.0037" lng="-104.0556"/>
+        <point lat="44.9949" lng="-104.0584"/>
+        <point lat="44.9998" lng="-111.0539"/>
+    </state>
+</states>

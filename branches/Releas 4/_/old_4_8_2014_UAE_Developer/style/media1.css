@@ -1,0 +1,134 @@
+ 
+  /* iphone5*/
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+#CityFrom{margin-top: 541px !important;}
+	#CityTo{margin-top: 541px !important;}
+	
+	#AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah{margin-top: 585px !important;}
+	
+	#AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai{margin-top: 585px !important;}
+	
+	   #priceDiv{ margin-top: 895px !important;}
+	   
+	   .indh{margin-right: 0 !important;}
+	   
+	   #numB{margin-right:-15px;}
+
+	   
+	   /*ARB*/
+	 #CityFromARB { margin-top: 535px !important;}
+    
+     #CityToARB{margin-top: 536px !important;}
+        
+     #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB{margin-top: 583px !important;}
+    
+     #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB {margin-top: 583px !important;}
+     
+       #priceDivARB{margin-top: 838px !important;}
+       
+       .chkbuxtxt{margin-top:-46px !important;margin-left:310px !important;}
+       
+       #payChkbox{margin-left: 10px !important;font-size:12px !important;}
+}
+
+/*ipad*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  
+{ /* STYLES GO HERE */
+	#CityFrom{margin-top: 542px !important;}
+	#CityTo{margin-top: 542px !important;}
+	
+	#AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah{margin-top: 585px !important;}
+	
+	#AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai{margin-top: 585px !important;}
+	
+	   #priceDiv{ margin-top: 895px !important;}
+	   
+	      /*ARB*/
+	 #CityFromARB
+    { margin-top: 535px !important;}
+    
+     #CityToARB
+    {margin-top: 536px !important;}
+        
+     #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB
+    {margin-top: 481px !important;}
+    
+     #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB
+    {margin-top: 592px !important;}
+    
+     #priceDivARB
+    {margin-top: 0 ;}
+	
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) 
+{ /* STYLES GO HERE */
+	#CityFrom{margin-top: 542px !important;}
+	#CityTo{margin-top: 542px !important;}
+	
+	#AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah{margin-top: 585px !important;}
+	
+	#AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai{margin-top: 585px !important;}
+	
+	   #priceDiv{ margin-top: 895px !important;}
+	   
+	   	      /*ARB*/
+	 #CityFromARB
+    { margin-top: 535px !important;}
+    
+     #CityToARB
+    {margin-top: 536px !important;}
+        
+     #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB
+    {margin-top: 481px !important;}
+    
+     #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB
+    {margin-top: 592px !important;}
+    
+     #priceDivARB
+    {margin-top: 0;}
+	
+}
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1)
+{ /* STYLES GO HERE */
+	#CityFrom{margin-top: 542px !important;}
+	#CityTo{margin-top: 542px !important;}
+	
+	#AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah{margin-top: 585px !important;}
+	
+	#AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai{margin-top: 585px !important;}
+	
+	   #priceDiv{ margin-top: 895px !important;}
+	   
+	      /*ARB*/
+	 #CityFromARB
+    { margin-top: 535px !important;}
+    
+     #CityToARB
+    {margin-top: 536px !important;}
+        
+     #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB
+    {margin-top: 481px !important;}
+    
+     #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB
+    {margin-top: 592px !important;}
+    
+     #priceDivARB
+    {margin-top: 0;}
+}
+
+/****************************************/
+
+
+

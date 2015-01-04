@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShjDataClasses">
+  <DataContextMoniker Name="/ShjDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4506fe97-0b35-4ac1-b22d-8562d6087b85" absoluteBounds="0.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ShjDataClassesDataContext/SharjahZone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfea9228-9cee-4c65-9974-ec2fe9db9584" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="059fc823-b4ef-4023-b805-f16841c0c592" absoluteBounds="3.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ShjDataClassesDataContext/SharjahZonePrice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0c2fe95-f5a6-426b-b1ce-c36626583aec" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

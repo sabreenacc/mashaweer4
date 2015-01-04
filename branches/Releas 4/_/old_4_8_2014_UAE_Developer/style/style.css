@@ -1,0 +1,867 @@
+﻿/*
+Theme Name: MashaweerUAE
+Author: Hassan & Saeed Pvt Ltd AND DigiXtron.
+Website: www.hassan-saeed.com.pk/www.digixtron.com
+Version: 1.0
+*/
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
+@import url("reset.css");
+
+/* FONTS  */
+@font-face {
+    font-family: 'helvetica-regular';
+    src: url('../fonts/helvetica-regular-webfont.eot');
+    src: url('../fonts/helvetica-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-regular-webfont.woff') format('woff'),
+         url('../fonts/helvetica-regular-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-regular-webfont.svg#helveticaneuemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'helvetica_thin';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-thin-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ge_ss_twobold';
+    src: url('../fonts/ge_ss_two_bold-webfont.eot');
+    src: url('../fonts/ge_ss_two_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ge_ss_two_bold-webfont.woff') format('woff'),
+         url('../fonts/ge_ss_two_bold-webfont.ttf') format('truetype'),
+         url('../fonts/ge_ss_two_bold-webfont.svg#ge_ss_twobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ge_ss_twolight';
+    src: url('../fonts/ge_ss_two_light-webfont.eot');
+    src: url('../fonts/ge_ss_two_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ge_ss_two_light-webfont.woff') format('woff'),
+         url('../fonts/ge_ss_two_light-webfont.ttf') format('truetype'),
+         url(../fonts/'ge_ss_two_light-webfont.svg#ge_ss_twolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ge_ss_twomedium';
+    src: url('../fonts/ge_ss_two_medium-webfont.eot');
+    src: url('../fonts/ge_ss_two_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ge_ss_two_medium-webfont.woff') format('woff'),
+         url('../fonts/ge_ss_two_medium-webfont.ttf') format('truetype'),
+         url('../fonts/ge_ss_two_medium-webfont.svg#ge_ss_twomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/****************/
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#rEd
+{
+     color:Red;
+     font-size:14px;
+}
+
+*{
+	border-radius: 0px !important;
+    padding: 0;
+
+}
+
+
+#lblPrice
+{
+    font-size:18px;
+}
+
+
+.navMenu a
+{
+    padding-right: 40px;
+    }
+    
+    #calcBubble
+    {
+        margin-top:40px;
+        position: relative;
+        z-index: 1;
+        padding-right: 80px;
+        width: 250px;
+        margin-left: auto;
+        display:block;
+        }
+        
+ #map_canvas
+ {
+     height: 393px; 
+     width: 948px; 
+     border-color: #fff; 
+     border-width: 6px;
+            border-style: solid;
+             overflow: hidden; 
+             position: relative; 
+             direction: rtl; 
+             margin-left: auto;
+             margin-right: auto;
+             margin-top:-250px;
+ }
+ 
+ .captCha{
+ width: 175px;
+height: 70px;
+font-size: 38px;
+margin-left: 230px;
+margin-top: -82px;
+border: none;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+position: relative;
+ }
+
+
+#lOgo
+{
+    margin-left: -25px;
+    }
+
+#skip_CaptchaCode
+{
+    width: 175px;height: 70px;font-size: 38px;margin-left: 230px;margin-top: -86px;border: none;position: relative;
+     vertical-align: top\9;
+  
+}
+
+/* Preloader */
+#preloader {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	/*background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	margin-top: 450px !important; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+    
+#CityFrom, #CityTo, #AreaTo, #AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjTo2,#ddlAreaShjFrom1,#ddlAreaShjTo1,#ddlToDubai,#ddlFromSharjah
+{
+    direction:ltr;
+    }
+     
+      
+    #CityFrom
+    {
+       margin-top: 546px !important;
+        margin-left: 96px;
+        
+         margin-top: 532px\9!important;
+         *margin-top:532px!important;
+         _margin-top:532px!important;
+    }
+    
+     #CityTo
+    {
+      margin-top: 546px !important;
+      margin-left: 576px;
+      
+        margin-top: 532px\9 !important;
+         *margin-top:532px !important;
+         _margin-top:532px !important;
+    }
+    
+    #AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah
+    {
+       margin-top: 588px !important;
+        margin-left: 96px;
+        
+         margin-top: 574px\9 !important;
+         *margin-top:574px !important;
+         _margin-top:574px !important;
+    }
+    
+     #AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai
+    {
+         margin-top: 588px !important;
+          margin-left: 576px;
+          
+          margin-top: 574px\9 !important;
+         *margin-top:574px !important;
+         _margin-top:574px !important;
+    }
+    
+
+     
+     #payLoc{padding-top:20px;}
+    
+     
+      #priceDiv
+    {
+    position: absolute;
+    margin-top: 845px;
+    margin-left: 505px;
+    font-family: 'helvetica-regular', sans-serif;
+    font-weight:bold;
+    
+         margin-top: 848px\9 !important;
+         *margin-top:848px !important;
+         _margin-top:848px !important;
+    }
+    
+    
+    #asteRik
+    {
+        color: red;
+vertical-align: top;
+font-size: 20px;
+padding-left: 3px;
+
+    }
+
+#phoneMail a{
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#phoneMail 
+{
+    	margin-left: 20px;
+}
+
+/* calc bar css*/
+#selection
+{
+margin-top: -20px;
+margin-left: 730px;
+}
+
+#from
+{padding-left:17px;}
+
+#calcBar
+{ height:64px;
+  width:960px;
+  background-color:white; 
+  margin-right: auto;
+  margin-left: auto;}
+
+#to
+{margin-left: 330px;margin-top: -17px;}
+
+#price
+{margin-left: 630px;margin-top: -17px;}
+
+#transPort
+{margin-top: -3px;
+ margin-left: 20px;
+ background-color: #231e0a;
+ width: 104px;
+ color: #fff;
+ background-image: url(../images/arrows.png);
+ background-position: 84px;
+ height: 30px;
+ font-size: 15px;
+
+    }
+    #transPort1
+    {
+        background-color: #231e0a; 
+        width: 100px; 
+        height: 30px; 
+        font-size: 14px; 
+        color: #fff; 
+        background-image: url(../images/arrows.png);
+         position: relative;
+         margin-left: 250px;
+         margin-top: -27px;
+          margin-bottom: 10px;
+         
+        
+    }
+    
+#clearmapcalculations
+{ margin-left: 130px;
+  margin-top: -1px;
+  font-weight: normal;}
+/****************************/
+
+
+#pMp
+{
+    padding-left: 70px;
+    margin-top: -30px;
+}
+
+#pMA
+{
+
+    text-align:center;
+    margin-top: -15px;
+    }
+    
+ #contctDetail
+ {
+     margin-left: 450px;
+     margin-top: -320px;
+ }
+ 
+ #contactSend
+ {
+     margin-right: 330px;
+     border: none;
+     }
+
+ #contactArrow
+ {
+   margin-top: 40px;
+    margin-left: 40px;
+ }
+   
+    
+#callUsNow {
+margin-top: -180px;
+}
+
+#callUsNow a{
+	color:#fff;
+	text-decoration:none;
+	margin-right: 30px;
+}
+
+::-moz-focus-inner {	border:0;}
+
+a, img {
+    border:none;
+}
+
+
+body 
+{
+	margin:0px;
+	padding:0px;
+	background-image:url(../images/background.jpg);
+	background-repeat:repeat;
+	background-size: 6%;
+}
+
+header {
+width: 100%;
+}
+
+
+.socialIcons{
+	font-weight: bold;
+	font-family: 'helvetica-regular', sans-serif;
+	font-size:15px;
+	margin-top: -204px;
+	margin-right: 40px;
+	}
+
+.container{
+	width:100%;
+}
+
+.content{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.footer a {
+	width:100%;
+	font-family: 'helvetica-regular', sans-serif;
+	text-decoration:none;
+	font-size:14px;
+	color:black;
+		
+}
+
+.yellowBtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background-color:#F2B914;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px !important;
+	display:inline-block;
+	color:white;
+	font-family: 'helvetica-regular', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	cursor:pointer;
+}.yellowBtn:hover {
+	color:black;
+}.yellowBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+.blackBtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #231E0A;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #231E0A;
+	box-shadow:inset 0px 1px 0px 0px #231E0A;
+	background-color:#231E0A;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px !important;
+	display:inline-block;
+	color:white;
+	cursor:pointer;
+	font-family: 'helvetica-regular', sans-serif;
+	
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+}.blackBtn:hover {
+		color:#F2B914;
+}.blackBtn:active {
+	position:relative;
+	top:1px;
+}
+#blkbutn
+{
+width:170px;
+text-align:center;
+}
+
+#calcBar p,span{
+		font-family: 'helvetica-regular', sans-serif;
+		font-weight: bold;
+		font-size:15px;
+		color:black;
+}
+
+.dropDown {
+ -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-color:#FFFFFF;
+  background-image: url(../images/arrows.png), 
+    -webkit-linear-gradient(#231e0a, #231e0a , #231e0a);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  font-family: 'helvetica-regular', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position:absolute;
+width:316px;
+background-image:url(../images/arrows1.png);
+color:#000000;
+-webkit-linear-gradient(white, white , white);
+border: 1px solid rgb(255, 255, 255);
+	
+}
+
+.nav_down{
+	padding:7px;
+	background-color:white;
+	border:1px solid #CCC;
+	position:fixed;
+	background:white url(../images/arrow_down.png) no-repeat top left;
+	background-position:50% 50%;
+	width:20px;
+	height:20px;
+	bottom:10px;
+	opacity:0.7;
+	left:70px;
+	white-space:nowrap;
+	cursor: pointer;
+	-moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+	-khtml-border-top-right-radius:3px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+select {
+	background-color:#231e0a;
+}
+
+textarea {
+	width: 400px;
+	height: 20px;
+
+	margin-bottom:10px;
+	-webkit-appearance: textfield;
+border:5px solid white;
+padding: 1px;
+background-color: white;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+font-family: 'helvetica-regular', sans-serif;
+font-size:14px;
+resize:none;
+overflow:auto;
+}
+
+
+@-moz-document url-prefix() { 
+     #CityFrom {
+     margin-top:539px !important;
+  }
+    #CityTo {
+     margin-top:539px !important;
+    }
+    
+     #AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah {
+     margin-top:581px !important;
+  }
+     #AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai {
+     margin-top:581px !important;
+  }
+  
+   #transPort1 {
+     margin-top:-20px !important;
+  }
+  
+   #priceDiv {
+     margin-top: 862px !important;
+  }
+  
+  #transPort{
+  -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  
+  #skip_CaptchaCode {
+  vertical-align: top !important;
+  }
+}
+
+#fromTitle,#toTitle
+{
+    font-size:16px;
+    color: #f2b914;
+}
+
+#msgBox{
+	margin-bottom:10px;
+	height:200px;
+	width:400px;
+		margin-bottom:10px;
+	-webkit-appearance: textfield;
+border:5px solid white;
+padding: 1px;
+background-color: white;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+resize: auto;
+	
+}
+p, h3, h4{
+font-family: 'helvetica-regular', sans-serif;
+color:black;
+}
+.chkbux
+{
+margin-left:485px;
+margin-top:-38px;
+padding-bottom:20px;
+text-align:left;
+font-weight:bold;
+}
+
+#faqQs
+{
+    margin-top: -380px;
+}
+
+#faqQs a{
+color:black;
+}
+
+#faqQs a p {
+	padding-left: 20px;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}
+
+#back-top {
+	position: fixed;
+bottom: 30px;
+margin-left: 600px;
+margin-bottom: 30px;
+}
+
+#back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ddd url(../images/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px !important;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+
+.gmnoprint span{
+    font-size:10px;
+}
+
+
+/* syles index plus header and footer of all pages */
+
+.ind1
+{
+ margin-right: 130px;
+}
+
+.ind2
+{
+ margin-top:-30px;
+ 
+     margin-top: -25px\9;
+         *margin-top:-25px;
+         _margin-top:-25px;
+ 
+}
+
+.ind3
+{
+ margin-right: 25px;
+}
+
+.ind4
+{
+ margin-right: 95px;
+ margin-top: -45px;
+}
+
+.ind5
+{
+ margin-top: -430px;
+}
+
+.ind6
+{
+ margin-top: -180px;
+ margin-left: 45px;
+ position: absolute;
+}
+
+.ind7
+{
+ margin-top: -150px;
+ margin-left: 70px;
+}
+
+.ind8
+{
+ margin-top: -220px;
+ margin-left: 300px;
+}
+
+.ind9
+{
+ margin-top: 20px;
+ margin-left: 300px;
+}
+
+.ind10
+{
+ margin-left: 300px;
+ margin-top: 10px;
+}
+
+.indp1
+{
+display:inline;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.indp2
+{
+padding-left:7px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.indp2 a
+{
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+
+.inda1
+{
+margin-right: 58px !important;
+
+   margin-right: 75px\9;
+         *margin-right:75px;
+         _margin-right:75px;
+
+}
+
+#bubbleIE
+{
+    font-size:14.5px\9;
+
+     *font-size:14.5px; 
+      _font-size:14.5px;
+    }
+
+.indh
+{
+font-weight: bold;
+margin-top: 45px;
+margin-right: 35px;
+font-family: 'helvetica-regular', sans-serif;
+margin-bottom: 20px;
+font-size: 20px;
+}
+
+.inda3
+{
+ color:#000;
+ font-family: 'ge_ss_twobold', Cursive;
+ font-size:20px;
+ font-weight: normal;
+}
+
+/*faq*/
+
+.faqsp1
+{
+ display: block;
+}
+.faqs1
+{
+ margin-top:-400px
+}
+
+#termscond
+{
+    padding-left: 20px;
+}
+
+#termscond h2
+{
+    letter-spacing: 0.1em;
+    font-weight:bold;
+    margin-bottom:20px;
+   font-family: 'helvetica-regular', sans-serif;
+   font-size: 20px;
+}
+
+
+
+/*terms*/
+.terms1
+
+{
+ padding-left: 20px;
+}
+.termsh1
+{
+    letter-spacing: 0.1em;
+    }
+
+
+.termsp1
+{
+     line-height: 25px;
+    }

@@ -1,0 +1,68 @@
+#fromLoc,#ilaidiv,#priceShowDiv,#Div1,#toLoc
+{margin-top: -23px !important;} 
+#selection
+{margin-top:-31px !important;}
+#bastakhdam
+{margin-top:-27px !important;} 
+#transPortARB{margin-top:3px !important;padding-right:10px;font-size:14px;font-family:ge_ss_twolight,fantasy;}
+#CityFrom,#CityTo{margin-top:-520px !important;}
+
+ #AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah 
+ {
+     margin-top:-474px !important;
+ }
+ 
+  #AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai 
+  {
+      margin-top:-474px !important;
+  }
+  
+  #priceDiv{margin-top:-170px !important;}
+  
+  #CityFromARB,#CityToARB{ margin-top: 545px !important;}
+
+ #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB 
+ {
+     margin-top:590px !important;
+ }
+ 
+  #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB
+  {
+      margin-top:590px !important;
+  }
+  
+  #priceDivARB{margin-top:895px !important;}
+  
+  #runErrand{margin-right:-15px !important;}
+  
+  #callUsNow{margin-left:-85px !important;}
+  
+  #contctDetail{margin-left:68px !important;}
+  
+  #phoneMail{margin-left:550px !important;}
+  
+  #phoneContact{margin-left:-550px !important;}
+    #textarea{overflow-y: hidden !important;}
+  
+  @-moz-document url-prefix()  
+  {
+     #CityFrom{margin-top:-534px !important;}
+     #CityTo {margin-top:-530px !important;}
+
+ #AreaFrom,#ddlAreaDxbFrom1,#ddlAreaShjFrom1,#ddlFromSharjah 
+ {
+     margin-top:-487px !important;
+ }
+ 
+  #AreaTo,#ddlAreaShjTo2,#ddlAreaShjTo1,#ddlToDubai 
+  {
+      margin-top:-487px !important;
+  }
+  
+  #bubbleIE
+  {
+      font-size:14.5px !important;
+  }
+   
+  }
+  

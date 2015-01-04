@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Mashaweer" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=Ahmed-Pc\SQLEXPRESS;Initial Catalog=Mashaweer;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MashaweerConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ZonePrice" Member="ZonePrices">
+    <Type Name="ZonePrice">
+      <Column Name="PriceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarPrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="MotorcyclePrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Association Name="Zone_ZonePrice" Member="Zone" ThisKey="FromZone" OtherKey="ZoneId" Type="Zone" IsForeignKey="true" />
+      <Association Name="Zone_ZonePrice1" Member="Zone1" ThisKey="ToZone" OtherKey="ZoneId" Type="Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmiratePrice" Member="EmiratePrices">
+    <Type Name="EmiratePrice">
+      <Column Name="PriceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromEmirate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToEmirate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarPrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="MotorcyclePrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Association Name="EEmirate_EmiratePrice" Member="EEmirate" ThisKey="FromEmirate" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+      <Association Name="EEmirate_EmiratePrice1" Member="EEmirate1" ThisKey="ToEmirate" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FAQ" Member="FAQs">
+    <Type Name="FAQ">
+      <Column Name="FAQId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Answer" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New" Member="News">
+    <Type Name="New">
+      <Column Name="NewID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Service" Member="Services">
+    <Type Name="Service">
+      <Column Name="ServiceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Setting" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="SettingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SettingKey" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SettingValue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SysUser" Member="SysUsers">
+    <Type Name="SysUser">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zone" Member="Zones">
+    <Type Name="Zone">
+      <Column Name="ZoneId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArabicName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="X" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="Y" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="zone_number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmirateId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Zone_ZonePrice" Member="ZonePrices" ThisKey="ZoneId" OtherKey="FromZone" Type="ZonePrice" />
+      <Association Name="Zone_ZonePrice1" Member="ZonePrices1" ThisKey="ZoneId" OtherKey="ToZone" Type="ZonePrice" />
+      <Association Name="EEmirate_Zone" Member="EEmirate" ThisKey="EmirateId" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EEmirate" Member="EEmirates">
+    <Type Name="EEmirate">
+      <Column Name="EmirateId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArabicName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="X" Type="System.Decimal" DbType="Decimal(18,15)" CanBeNull="true" />
+      <Column Name="Y" Type="System.Decimal" DbType="Decimal(18,15)" CanBeNull="true" />
+      <Association Name="EEmirate_EmiratePrice" Member="EmiratePrices" ThisKey="EmirateId" OtherKey="FromEmirate" Type="EmiratePrice" />
+      <Association Name="EEmirate_EmiratePrice1" Member="EmiratePrices1" ThisKey="EmirateId" OtherKey="ToEmirate" Type="EmiratePrice" />
+      <Association Name="EEmirate_Zone" Member="Zones" ThisKey="EmirateId" OtherKey="EmirateId" Type="Zone" />
+    </Type>
+  </Table>
+</Database>

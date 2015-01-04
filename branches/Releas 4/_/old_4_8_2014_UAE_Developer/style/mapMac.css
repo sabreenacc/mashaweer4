@@ -1,0 +1,13 @@
+#transPort
+{
+    padding-left: 6px;font-size:13px !important;
+} 
+
+
+@-moz-document url-prefix()  
+{
+    #bubbleIE
+    {
+    font-size:14.5px;
+    }
+}

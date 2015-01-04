@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="mashaweeruae" Class="ShjDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mashaweeruae.db.9413790.hostedresource.com;Initial Catalog=mashaweeruae;User ID=mashaweeruae" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="mashaweerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="mashaweeruae.SharjahZone" Member="SharjahZones">
+    <Type Name="SharjahZone">
+      <Column Name="ZoneId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArabicName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="X" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="Y" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="zone_number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.SharjahZonePrice" Member="SharjahZonePrices">
+    <Type Name="SharjahZonePrice">
+      <Column Name="PriceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarPrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="MotorcyclePrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
