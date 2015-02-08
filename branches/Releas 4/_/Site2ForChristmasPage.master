@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site2ForChristmasPage.master.cs" Inherits="SiteMaster" %>
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site2ForChristmasPage.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -22,6 +23,17 @@
         type="text/css" />
     <link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/mobile-nav.css" rel="stylesheet"
         type="text/css" />
+<% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
+   {  
+%>
+    <%--<link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/style_nmobile.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/mobile-nav_mobile.css" rel="stylesheet"
+        type="text/css" />--%>
+<%
+   }
+%>
+
     <link rel="shortcut icon" type="image/x-icon" href="fav.ico" />
     <script type="text/javascript" src="/js/jquery.1.7.2.min.js"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
@@ -47,7 +59,7 @@
             });
         });
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-32995610-1']);
@@ -59,14 +71,43 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
-    </script>
+    </script> -->
+	<script>
+	    (function (i, s, o, g, r, a, m) {
+	        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+	            (i[r].q = i[r].q || []).push(arguments)
+	        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	    ga('create', 'UA-32995610-1', 'auto');
+	    ga('require', 'displayfeatures');
+	    ga('send', 'pageview');
+	</script>
+	<script>
+	    (function () {
+	        var _fbq = window._fbq || (window._fbq = []);
+	        if (!_fbq.loaded) {
+	            var fbds = document.createElement('script');
+	            fbds.async = true;
+	            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+	            var s = document.getElementsByTagName('script')[0];
+	            s.parentNode.insertBefore(fbds, s);
+	            _fbq.loaded = true;
+	        }
+	        _fbq.push(['addPixelId', '915775171820162']);
+	    })();
+	    window._fbq = window._fbq || [];
+	    window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=915775171820162&amp;ev=PixelInitialized" /></noscript>
 </head>
 <body>
     <form runat="server">
     <nav>
 		<ul class="clearfix" style="display: none;">  
-            <li><a href="Default.aspx"> <%=Resources.LanguageFile.MENU_HOME %> </a></li>
-            <li><a href="Service.aspx"><%=Resources.LanguageFile.MENU_Services%> </a></li>
+            <li><a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>"> <%=Resources.LanguageFile.MENU_HOME %> </a></li>
+            <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Services%> </a></li>
 <% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
    {  
 %>
@@ -77,12 +118,12 @@
    else
    {
 %>
-            <li><a href="location.aspx"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
-            <li><a href="Order.aspx"><%=Resources.LanguageFile.MENU_Order%></a></li>
+            <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
+            <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Order%></a></li>
 <%
    }
 %>
-            <li><a href="ContactUs.aspx"><%=Resources.LanguageFile.MENU_Contact%> </a></li>  
+            <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Contact%> </a></li>  
 		</ul>
 		<a href="#" id="pull"><%=Resources.LanguageFile.STMenuItem%></a>
 	</nav>
@@ -105,8 +146,8 @@
         </div>
         <div class="header">
             <div class="logo-holder">
-                <a href="Default.aspx">
-                    <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/logo2.png" alt="مشاوير الإمارات" /></a>
+                <a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>">
+                    <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/logo.png" alt="مشاوير الإمارات" /></a>
             </div>
             <div class="header-right">
                 <div class="toplinks-area">
@@ -124,20 +165,16 @@
                                 var j = document.getElementsByTagName('script')[0]; j.parentNode.insertBefore(s, j);
                             })();
                         </script>
-                      <%--  <a href="http://www.smartaddon.com/?share" title="Share" onclick="return sa_tellafriend('http://www.mashaweeruae.com/')">
+                        <a href="http://www.smartaddon.com/?share" title="Share" onclick="return sa_tellafriend('http://www.mashaweeruae.com/')">
                             <%=Resources.LanguageFile.STTellFriend %></a>
                         <!-- SMARTADDON END -->
-                        |
-                        <asp:LinkButton ID="btnArabicLanguage" runat="server" ToolTip="عربي" Text="عربي"
-                            OnClick="BtnArabicLanguageClick"></asp:LinkButton>
-                        <asp:LinkButton ID="btnEnglishLanguage" runat="server" ToolTip="English" Text="English"
-                            OnClick="BtnEnglishLanguageClick"></asp:LinkButton>--%>
+                        
                     </div>
                     <div class="clear">
                     </div>
                 </div>
                 <ul class="main-nav">
-                    <li><a href="Service.aspx"><i class="services-item"></i>
+                    <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="services-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Services %>
                     </a></li>
@@ -157,18 +194,18 @@
    else
    {
 %>
-                    <li><a href="location.aspx"><i class="calculator-item"></i>
+                    <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="calculator-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Calculator %>
                     </a></li>
-                    <li><a href="Order.aspx"><i class="order-item"></i>
+                    <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="order-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Order %>
                     </a></li>
 <%
    }
 %>
-                    <li><a href="ContactUs.aspx"><i class="contact-item"></i>
+                    <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="contact-item"></i>
                         <br />
                         <%=Resources.LanguageFile.MENU_Contact %>
                     </a></li>
@@ -183,10 +220,10 @@
     <div class="container">
         <div class="footer">
             <ul>
-                <li><a href="Default.aspx">
+                <li><a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_HOME %>
                 </a></li>
-                <li><a href="Service.aspx">
+                <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Services%>
                 </a></li>
 <% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
@@ -202,20 +239,20 @@
    else
    {
 %>
-                <li><a href="location.aspx">
+                <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Calculator%>
                 </a></li>
-                <li><a href="Order.aspx">
+                <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Order%></a></li>
 <%
    }
 %>
-                <li><a href="ContactUs.aspx">
+                <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Contact%>
                 </a></li>
                 <li><a href="Faq.aspx">
                     <%=Resources.LanguageFile.MENU_FAQ %></a> </li>
-                <li><a href="Terms.aspx">
+                <li><a href="Terms.aspx?lang=<%:Globals.MashaweerLanguage%>">
                     <%=Resources.LanguageFile.MENU_Terms %></a> </li>
                 <!--<li><a href="Support.aspx">
                     <%=Resources.LanguageFile.Support %></a> </li>-->
