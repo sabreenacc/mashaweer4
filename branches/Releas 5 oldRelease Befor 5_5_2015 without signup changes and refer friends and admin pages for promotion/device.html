@@ -1,0 +1,1089 @@
+<html>
+<head>
+    <style>
+        html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strong, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tr, th, td, footer, header, menu, nav
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        article, footer, header, menu, nav, section
+        {
+            display: block;
+        }
+        body
+        {
+            line-height: 1;
+        }
+        html
+        {
+            background: #e6e6e6;
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background: 0;
+            margin: 0;
+            padding: 0;
+            font: normal normal 14px/18px "Helvetica Neue" ,Helvetica,sans-serif;
+            color: #808080;
+            text-align: left;
+        }
+        .text
+        {
+            width: 560px;
+            margin: 35px auto 45px auto;
+        }
+        .text a
+        {
+            color: #3800a1;
+            text-decoration: none;
+        }
+        .text a:hover
+        {
+            color: #b4002b;
+            text-decoration: none;
+        }
+        .text h3
+        {
+            color: #303030;
+            font: normal normal 20px/150% "Helvetica Neue" ,Helvetica,sans-serif;
+            margin-top: 20px;
+        }
+        .text p
+        {
+            color: #808080;
+            font: normal normal 15px/150% "Helvetica Neue" ,Helvetica,sans-serif;
+        }
+        .section
+        {
+            background: #fff;
+            -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            color: #808080;
+            font: normal normal 30px/150% "Helvetica Neue" ,Helvetica,sans-serif;
+            text-align: left;
+            overflow: hidden;
+            width: 600px;
+            height: 74px;
+            margin: 30px auto;
+            padding: 26px 0 0 40px;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+        }
+        .result
+        {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #fff;
+            text-align: center;
+            padding: 26px 0 0 0;
+        }
+        .result-none
+        {
+            background: #f0f0f0;
+            color: #808080;
+        }
+        .result-1
+        {
+            background: #3800a1;
+            display: none;
+        }
+        .result-2
+        {
+            background: #410096;
+            display: none;
+        }
+        .result-3
+        {
+            background: #4b0089;
+            display: none;
+        }
+        .result-4
+        {
+            background: #57007d;
+            display: none;
+        }
+        .result-5
+        {
+            background: #65006e;
+            display: none;
+        }
+        .result-6
+        {
+            background: #730060;
+            display: none;
+        }
+        .result-7
+        {
+            background: #820052;
+            display: none;
+        }
+        .result-8
+        {
+            background: #940044;
+            display: none;
+        }
+        .result-9
+        {
+            background: #a40037;
+            display: none;
+        }
+        .result-10
+        {
+            background: #b4002b;
+            display: none;
+        }
+        .result-11
+        {
+            background: #c40020;
+            display: none;
+        }
+        .result-12
+        {
+            background: #d40018;
+            display: none;
+        }
+        .result-13
+        {
+            background: #e20011;
+            display: none;
+        }
+        .result-14
+        {
+            background: #ef000b;
+            display: none;
+        }
+        .result-15
+        {
+            background: #f70007;
+            display: none;
+        }
+        .result-16
+        {
+            background: #fa0007;
+            display: none;
+        }
+        .result-17
+        {
+            background: #fb0007;
+            display: none;
+        }
+        .result-18
+        {
+            background: #f80007;
+            display: none;
+        }
+        .result-19
+        {
+            background: #fb1607;
+            display: none;
+        }
+        .result-20
+        {
+            background: #fb2907;
+            display: none;
+        }
+        .result-21
+        {
+            background: #fa3c07;
+            display: none;
+        }
+        .result-22
+        {
+            background: #fb5107;
+            display: none;
+        }
+        .result-23
+        {
+            background: #fc6708;
+            display: none;
+        }
+        .result-24
+        {
+            background: #fc7d08;
+            display: none;
+        }
+        .result-25
+        {
+            background: #fc9408;
+            display: none;
+        }
+        .result-26
+        {
+            background: #fdaa08;
+            display: none;
+        }
+        .result-27
+        {
+            background: #fdc009;
+            display: none;
+        }
+        .result-28
+        {
+            background: #fcd40a;
+            display: none;
+        }
+        .result-29
+        {
+            background: #fee70a;
+            display: none;
+        }
+        .result-30
+        {
+            background: #fcf50b;
+            display: none;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1)
+        {
+            .-webkit-min-device-pixel-ratio-1
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.1)
+        {
+            .-webkit-min-device-pixel-ratio-11
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.2)
+        {
+            .-webkit-min-device-pixel-ratio-12
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.3)
+        {
+            .-webkit-min-device-pixel-ratio-13
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.4)
+        {
+            .-webkit-min-device-pixel-ratio-14
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.5)
+        {
+            .-webkit-min-device-pixel-ratio-15
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.6)
+        {
+            .-webkit-min-device-pixel-ratio-16
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.7)
+        {
+            .-webkit-min-device-pixel-ratio-17
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.8)
+        {
+            .-webkit-min-device-pixel-ratio-18
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:1.9)
+        {
+            .-webkit-min-device-pixel-ratio-19
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2)
+        {
+            .-webkit-min-device-pixel-ratio-20
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.1)
+        {
+            .-webkit-min-device-pixel-ratio-21
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.2)
+        {
+            .-webkit-min-device-pixel-ratio-22
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.3)
+        {
+            .-webkit-min-device-pixel-ratio-23
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.4)
+        {
+            .-webkit-min-device-pixel-ratio-24
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.5)
+        {
+            .-webkit-min-device-pixel-ratio-25
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.6)
+        {
+            .-webkit-min-device-pixel-ratio-26
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.7)
+        {
+            .-webkit-min-device-pixel-ratio-27
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.8)
+        {
+            .-webkit-min-device-pixel-ratio-28
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:2.9)
+        {
+            .-webkit-min-device-pixel-ratio-29
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio:3)
+        {
+            .-webkit-min-device-pixel-ratio-30
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:10/10)
+        {
+            .-o-min-device-pixel-ratio-1
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:11/10)
+        {
+            .-o-min-device-pixel-ratio-11
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:12/10)
+        {
+            .-o-min-device-pixel-ratio-12
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:13/10)
+        {
+            .-o-min-device-pixel-ratio-13
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:14/10)
+        {
+            .-o-min-device-pixel-ratio-14
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:15/10)
+        {
+            .-o-min-device-pixel-ratio-15
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:16/10)
+        {
+            .-o-min-device-pixel-ratio-16
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:17/10)
+        {
+            .-o-min-device-pixel-ratio-17
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:18/10)
+        {
+            .-o-min-device-pixel-ratio-18
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:19/10)
+        {
+            .-o-min-device-pixel-ratio-19
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:20/10)
+        {
+            .-o-min-device-pixel-ratio-20
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:21/10)
+        {
+            .-o-min-device-pixel-ratio-21
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:22/10)
+        {
+            .-o-min-device-pixel-ratio-22
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:23/10)
+        {
+            .-o-min-device-pixel-ratio-23
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:24/10)
+        {
+            .-o-min-device-pixel-ratio-24
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:25/10)
+        {
+            .-o-min-device-pixel-ratio-25
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:26/10)
+        {
+            .-o-min-device-pixel-ratio-26
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:27/10)
+        {
+            .-o-min-device-pixel-ratio-27
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:28/10)
+        {
+            .-o-min-device-pixel-ratio-28
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:29/10)
+        {
+            .-o-min-device-pixel-ratio-29
+            {
+                display: block;
+            }
+        }
+        @media only screen and (-o-min-device-pixel-ratio:30/10)
+        {
+            .-o-min-device-pixel-ratio-30
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:96dpi)
+        {
+            .min-resolution-dpi-1
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:105dpi)
+        {
+            .min-resolution-dpi-11
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:115dpi)
+        {
+            .min-resolution-dpi-12
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:125dpi)
+        {
+            .min-resolution-dpi-13
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:135dpi)
+        {
+            .min-resolution-dpi-14
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:144dpi)
+        {
+            .min-resolution-dpi-15
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:154dpi)
+        {
+            .min-resolution-dpi-16
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:163dpi)
+        {
+            .min-resolution-dpi-17
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:173dpi)
+        {
+            .min-resolution-dpi-18
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:182dpi)
+        {
+            .min-resolution-dpi-19
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:192dpi)
+        {
+            .min-resolution-dpi-20
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:202dpi)
+        {
+            .min-resolution-dpi-21
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:211dpi)
+        {
+            .min-resolution-dpi-22
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:221dpi)
+        {
+            .min-resolution-dpi-23
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:230dpi)
+        {
+            .min-resolution-dpi-24
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:240dpi)
+        {
+            .min-resolution-dpi-25
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:250dpi)
+        {
+            .min-resolution-dpi-26
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:259dpi)
+        {
+            .min-resolution-dpi-27
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:267dpi)
+        {
+            .min-resolution-dpi-28
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:278dpi)
+        {
+            .min-resolution-dpi-29
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:288dpi)
+        {
+            .min-resolution-dpi-30
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1dppx)
+        {
+            .min-resolution-dppx-1
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.1dppx)
+        {
+            .min-resolution-dppx-11
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.2dppx)
+        {
+            .min-resolution-dppx-12
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.3dppx)
+        {
+            .min-resolution-dppx-13
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.4dppx)
+        {
+            .min-resolution-dppx-14
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.5dppx)
+        {
+            .min-resolution-dppx-15
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.6dppx)
+        {
+            .min-resolution-dppx-16
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.7dppx)
+        {
+            .min-resolution-dppx-17
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.8dppx)
+        {
+            .min-resolution-dppx-18
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:1.9dppx)
+        {
+            .min-resolution-dppx-19
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2dppx)
+        {
+            .min-resolution-dppx-20
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.1dppx)
+        {
+            .min-resolution-dppx-21
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.2dppx)
+        {
+            .min-resolution-dppx-22
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.3dppx)
+        {
+            .min-resolution-dppx-23
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.4dppx)
+        {
+            .min-resolution-dppx-24
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.5dppx)
+        {
+            .min-resolution-dppx-25
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.6dppx)
+        {
+            .min-resolution-dppx-26
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.7dppx)
+        {
+            .min-resolution-dppx-27
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.8dppx)
+        {
+            .min-resolution-dppx-28
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:2.9dppx)
+        {
+            .min-resolution-dppx-29
+            {
+                display: block;
+            }
+        }
+        @media only screen and (min-resolution:3dppx)
+        {
+            .min-resolution-dppx-30
+            {
+                display: block;
+            }
+        }
+        @media only screen and (orientation: portrait)
+        {
+             .orientation-portrait
+            {
+                display: block;
+            }
+        }
+        @media only screen and (orientation: landscape)
+        {
+             .orientation-landscape
+            {
+                display: block;
+            }
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    $(window).load(function () {
+        $("#deviceWidth").html(screen.width);
+        $("#deviceHeight").html(screen.height);
+        $("#devWidth").html($(window).width());
+        $("#devHeight").html($(window).height());
+    });
+    $(window).bind('resize', function () {
+        $("#deviceWidth").html(screen.width);
+        $("#deviceHeight").html(screen.height);
+        $("#devWidth").html($(window).width());
+        $("#devHeight").html($(window).height());
+        //document.write("Your browser has a devicePixelRatio of " + window.devicePixelRatio + "");
+    }).trigger('resize');
+</script>
+<div class="text">
+    <h3>
+        Device pixel density tests</h3>
+</div>
+<div class="section">
+    -webkit-min-device-pixel-ratio
+    <div class="result result-none">
+        nothin’</div>
+    <div class="result result-1 -webkit-min-device-pixel-ratio-1">
+        1.0</div>
+    <div class="result result-2 -webkit-min-device-pixel-ratio-11">
+        1.1</div>
+    <div class="result result-3 -webkit-min-device-pixel-ratio-12">
+        1.2</div>
+    <div class="result result-4 -webkit-min-device-pixel-ratio-13">
+        1.3</div>
+    <div class="result result-5 -webkit-min-device-pixel-ratio-14">
+        1.4</div>
+    <div class="result result-6 -webkit-min-device-pixel-ratio-15">
+        1.5</div>
+    <div class="result result-7 -webkit-min-device-pixel-ratio-16">
+        1.6</div>
+    <div class="result result-8 -webkit-min-device-pixel-ratio-17">
+        1.7</div>
+    <div class="result result-9 -webkit-min-device-pixel-ratio-18">
+        1.8</div>
+    <div class="result result-10 -webkit-min-device-pixel-ratio-19">
+        1.9</div>
+    <div class="result result-11 -webkit-min-device-pixel-ratio-20">
+        2.0</div>
+    <div class="result result-12 -webkit-min-device-pixel-ratio-21">
+        2.1</div>
+    <div class="result result-13 -webkit-min-device-pixel-ratio-22">
+        2.2</div>
+    <div class="result result-14 -webkit-min-device-pixel-ratio-23">
+        2.3</div>
+    <div class="result result-15 -webkit-min-device-pixel-ratio-24">
+        2.4</div>
+    <div class="result result-16 -webkit-min-device-pixel-ratio-25">
+        2.5</div>
+    <div class="result result-17 -webkit-min-device-pixel-ratio-26">
+        2.6</div>
+    <div class="result result-18 -webkit-min-device-pixel-ratio-27">
+        2.7</div>
+    <div class="result result-19 -webkit-min-device-pixel-ratio-28">
+        2.8</div>
+    <div class="result result-20 -webkit-min-device-pixel-ratio-29">
+        2.9</div>
+    <div class="result result-21 -webkit-min-device-pixel-ratio-30">
+        3.0</div>
+</div>
+<div class="section">
+    -o-min-device-pixel-ratio
+    <div class="result result-none">
+        nothin’</div>
+    <div class="result result-1 -o-min-device-pixel-ratio-1">
+        1.0</div>
+    <div class="result result-2 -o-min-device-pixel-ratio-11">
+        1.1</div>
+    <div class="result result-3 -o-min-device-pixel-ratio-12">
+        1.2</div>
+    <div class="result result-4 -o-min-device-pixel-ratio-13">
+        1.3</div>
+    <div class="result result-5 -o-min-device-pixel-ratio-14">
+        1.4</div>
+    <div class="result result-6 -o-min-device-pixel-ratio-15">
+        1.5</div>
+    <div class="result result-7 -o-min-device-pixel-ratio-16">
+        1.6</div>
+    <div class="result result-8 -o-min-device-pixel-ratio-17">
+        1.7</div>
+    <div class="result result-9 -o-min-device-pixel-ratio-18">
+        1.8</div>
+    <div class="result result-10 -o-min-device-pixel-ratio-19">
+        1.9</div>
+    <div class="result result-11 -o-min-device-pixel-ratio-20">
+        2.0</div>
+    <div class="result result-12 -o-min-device-pixel-ratio-21">
+        2.1</div>
+    <div class="result result-13 -o-min-device-pixel-ratio-22">
+        2.2</div>
+    <div class="result result-14 -o-min-device-pixel-ratio-23">
+        2.3</div>
+    <div class="result result-15 -o-min-device-pixel-ratio-24">
+        2.4</div>
+    <div class="result result-16 -o-min-device-pixel-ratio-25">
+        2.5</div>
+    <div class="result result-17 -o-min-device-pixel-ratio-26">
+        2.6</div>
+    <div class="result result-18 -o-min-device-pixel-ratio-27">
+        2.7</div>
+    <div class="result result-19 -o-min-device-pixel-ratio-28">
+        2.8</div>
+    <div class="result result-20 -o-min-device-pixel-ratio-29">
+        2.9</div>
+    <div class="result result-21 -o-min-device-pixel-ratio-30">
+        3.0</div>
+</div>
+<div class="section">
+    min-resolution (dpi)
+    <div class="result result-none">
+        nothin’</div>
+    <div class="result result-1 min-resolution-dpi-1">
+        96dpi</div>
+    <div class="result result-2 min-resolution-dpi-11">
+        105dpi</div>
+    <div class="result result-3 min-resolution-dpi-12">
+        115dpi</div>
+    <div class="result result-4 min-resolution-dpi-13">
+        125dpi</div>
+    <div class="result result-5 min-resolution-dpi-14">
+        135dpi</div>
+    <div class="result result-6 min-resolution-dpi-15">
+        144dpi</div>
+    <div class="result result-7 min-resolution-dpi-16">
+        154dpi</div>
+    <div class="result result-8 min-resolution-dpi-17">
+        163dpi</div>
+    <div class="result result-9 min-resolution-dpi-18">
+        173dpi</div>
+    <div class="result result-10 min-resolution-dpi-19">
+        182dpi</div>
+    <div class="result result-11 min-resolution-dpi-20">
+        192dpi</div>
+    <div class="result result-12 min-resolution-dpi-21">
+        202dpi</div>
+    <div class="result result-13 min-resolution-dpi-22">
+        211dpi</div>
+    <div class="result result-14 min-resolution-dpi-23">
+        221dpi</div>
+    <div class="result result-15 min-resolution-dpi-24">
+        230dpi</div>
+    <div class="result result-16 min-resolution-dpi-25">
+        240dpi</div>
+    <div class="result result-17 min-resolution-dpi-26">
+        250dpi</div>
+    <div class="result result-18 min-resolution-dpi-27">
+        259dpi</div>
+    <div class="result result-19 min-resolution-dpi-28">
+        267dpi</div>
+    <div class="result result-20 min-resolution-dpi-29">
+        278dpi</div>
+    <div class="result result-21 min-resolution-dpi-30">
+        288dpi</div>
+</div>
+<div class="section">
+    min-resolution (dppx)
+    <div class="result result-none">
+        nothin’</div>
+    <div class="result result-1 min-resolution-dppx-1">
+        1.0dppx</div>
+    <div class="result result-2 min-resolution-dppx-11">
+        1.1dppx</div>
+    <div class="result result-3 min-resolution-dppx-12">
+        1.2dppx</div>
+    <div class="result result-4 min-resolution-dppx-13">
+        1.3dppx</div>
+    <div class="result result-5 min-resolution-dppx-14">
+        1.4dppx</div>
+    <div class="result result-6 min-resolution-dppx-15">
+        1.5dppx</div>
+    <div class="result result-7 min-resolution-dppx-16">
+        1.6dppx</div>
+    <div class="result result-8 min-resolution-dppx-17">
+        1.7dppx</div>
+    <div class="result result-9 min-resolution-dppx-18">
+        1.8dppx</div>
+    <div class="result result-10 min-resolution-dppx-19">
+        1.9dppx</div>
+    <div class="result result-11 min-resolution-dppx-20">
+        2.0dppx</div>
+    <div class="result result-12 min-resolution-dppx-21">
+        2.1dppx</div>
+    <div class="result result-13 min-resolution-dppx-22">
+        2.2dppx</div>
+    <div class="result result-14 min-resolution-dppx-23">
+        2.3dppx</div>
+    <div class="result result-15 min-resolution-dppx-24">
+        2.4dppx</div>
+    <div class="result result-16 min-resolution-dppx-25">
+        2.5dppx</div>
+    <div class="result result-17 min-resolution-dppx-26">
+        2.6dppx</div>
+    <div class="result result-18 min-resolution-dppx-27">
+        2.7dppx</div>
+    <div class="result result-19 min-resolution-dppx-28">
+        2.8dppx</div>
+    <div class="result result-20 min-resolution-dppx-29">
+        2.9dppx</div>
+    <div class="result result-21 min-resolution-dppx-30">
+        3.0dppx</div>
+</div>
+<div class="section">
+    width
+    <div id="devWidth" class="result result-none">
+        nothin’</div>
+</div>
+<div class="section">
+    height
+    <div id="devHeight" class="result result-none">
+        nothin’</div>
+</div>
+<div class="section">
+    device-width
+    <div id="deviceWidth" class="result result-none">
+        nothin’</div>
+</div>
+<div class="section">
+    device-height
+    <div id="deviceHeight" class="result result-none">
+        nothin’</div>
+</div>
+<div class="section">
+    orientation
+    <div class="result result-none">
+        nothin’</div>
+    <div class="result result-1 orientation-portrait">
+        portrait</div>
+    <div class="result result-10 orientation-landscape">
+        landscape</div>
+</div>
+</html>

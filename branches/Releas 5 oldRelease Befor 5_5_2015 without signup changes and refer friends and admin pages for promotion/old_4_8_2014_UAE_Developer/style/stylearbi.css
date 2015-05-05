@@ -1,0 +1,1084 @@
+﻿/*
+Theme Name: MashaweerUAE
+Author: Hassan & Saeed Pvt Ltd AND DigiXtron.
+Website: www.hassan-saeed.com.pk/www.digixtron.com
+Version: 1.0
+*/
+/* FONTS  */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
+
+@font-face {
+    font-family: 'helvetica-regular';
+    src: url('../fonts/helvetica-regular-webfont.eot');
+    src: url('../fonts/helvetica-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-regular-webfont.woff') format('woff'),
+         url('../fonts/helvetica-regular-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-regular-webfont.svg#helveticaneuemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'helvetica_thin';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-thin-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ge_ss_twobold';
+    src: url('../fonts/ge_ss_two_bold-webfont.eot');
+    src: url('../fonts/ge_ss_two_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ge_ss_two_bold-webfont.woff') format('woff'),
+         url('../fonts/ge_ss_two_bold-webfont.ttf') format('truetype'),
+         url('../fonts/ge_ss_two_bold-webfont.svg#ge_ss_twobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ge_ss_twolight';
+    src: url('../fonts/ge_ss_two_light-webfont.eot');
+    src: url('../fonts/ge_ss_two_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ge_ss_two_light-webfont.woff') format('woff'),
+         url('../fonts/ge_ss_two_light-webfont.ttf') format('truetype'),
+         url(../fonts/'ge_ss_two_light-webfont.svg#ge_ss_twolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ge_ss_twomedium';
+    src: url('../fonts/ge_ss_two_medium-webfont.eot');
+    src: url('../fonts/ge_ss_two_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ge_ss_two_medium-webfont.woff') format('woff'),
+         url('../fonts/ge_ss_two_medium-webfont.ttf') format('truetype'),
+         url('../fonts/ge_ss_two_medium-webfont.svg#ge_ss_twomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/****************/
+@media only screen and (min-width: 660px) {
+
+width:100%;
+	
+}
+
+/* Preloader */
+#preloader {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	/*background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	margin-top: 400px !important; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+#payChkbox,p
+{
+    margin-left:80px;
+    font-weight: bold;
+    }
+	
+ .captCha{
+ width: 175px;
+height: 70px;
+font-size: 38px;
+margin-left: 230px;
+margin-top: -86px;
+border: none;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+position: relative;
+  vertical-align: top !important;
+ }
+    
+
+
+#selection
+{margin-left: 10px;
+ 
+    }
+    
+        
+        #comingsS
+{
+margin-right:60px;
+text-align:right;
+font-size:20px;
+}
+
+#CityFromARB, #CityToARB, #AreaToARB, #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB
+{
+    font-family: 'ge_ss_twolight', cursive;
+    direction:rtl;
+    background-position-x: 5px;
+    }
+    
+    #CityFromARB
+    {
+       margin-top: 533px;
+        margin-left: 479px;
+        
+         margin-top: 506.5px\9!important;
+         *margin-top:506.5px !important;
+         _margin-top:506.5px!important;
+       
+    }
+    
+    #CityToARB
+    {
+        margin-top: 534px;
+        margin-left: 0px;
+        
+       margin-top: 509px\9!important;
+         *margin-top:509px !important;
+         _margin-top:509px !important;
+    }
+    
+    #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB
+    {
+        margin-left: 479px;
+        margin-top: 579px;
+        
+          margin-top: 533px\9!important;
+         *margin-top:533px !important;
+         _margin-top:533px !important;
+    }
+    
+     #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB
+    {
+       margin-top: 580px;
+        margin-left: 0px;
+        
+          margin-top: 555px\9!important;
+         *margin-top:555px !important;
+         _margin-top:555px !important;
+    }
+    
+    #priceDivARB
+    {
+        position: absolute;
+         margin-top: 849px;
+
+        margin-left: 145px;
+        
+           margin-top: 820px\9!important;
+         *margin-top:820px !important;
+         _margin-top:820px !important;
+       
+    }
+    
+    #priceDivARB p
+    {
+        font-size:20px;
+         direction:rtl;
+    }
+    
+    @-moz-document url-prefix() { 
+     #CityFromARB {
+     margin-top: 521.5px !important;
+  }
+    #CityToARB {
+     margin-top: 525px !important;
+    }
+    
+     #AreaFromARB,#ddlAreaDxbFrom1ARB,#ddlAreaShjFrom1ARB,#ddlFromSharjahARB {
+     margin-top: 569px !important;
+  }
+     #AreaToARB,#ddlAreaShjTo2ARB,#ddlAreaShjTo1ARB,#ddlToDubaiARB {
+     margin-top: 573px !important;
+  }
+  
+   #priceDivARB {
+     margin-top: 852px !important;
+  }
+  
+  #upperTable
+  {
+       margin-left: 70px;
+    padding-top: 90px;
+      }
+      
+      #nameCus
+      {
+              margin-left: -70px;
+    padding-right: 65px;
+      }
+	  
+	    #transPortARB{
+  -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  
+  #skip_CaptchaCode {
+  vertical-align: top !important;
+  }
+}
+
+    
+    #heading
+    {
+        margin-right: 90px;
+        text-align:right;
+    }
+    
+    #faqQs
+    {
+        float:right;
+        text-align:right;
+        margin-right: 95px;
+        font-size: 18px;
+    }
+    
+    #faqQs p
+    {
+        margin-top: -20px;
+        margin-right: 10px;
+    }
+    
+    #faqQs a img
+    {
+        margin-right: -6px;
+        padding-left: 5px;
+
+    }
+    
+    #terms 
+    {
+        margin-top: -50px;
+        float: right;
+        margin-right: 95px;
+        direction: rtl;
+    }
+    
+    
+.serviceimage
+{
+  margin-top: -50px;
+}
+
+    
+    #currLbl
+    {
+       margin-left: -200px;
+        }
+
+
+#smartAddon 
+{
+    margin-left: 150px;
+    }
+    
+    #tellaFriend 
+    {
+        display:inline;
+        padding-right: 15px;
+        padding-left: 15px;
+         margin-left:0px;
+        
+        }
+        
+        #share
+        {
+            font-family: 'ge_ss_twobold', Cursive;
+             font-size:17px;
+             font-weight: normal;
+        }
+        
+#calcS
+{
+    padding-top:19px;
+    font-size: 0px;
+    /*direction:rtl;*/
+}
+
+#calcDxb
+{
+   margin-left: -200px;
+width: 120px;
+text-align: center;
+    }
+
+
+
+.arbicntact
+{
+ margin-top: 80px;
+ margin-left: 80px;
+}
+
+#contactBtn{
+border: none;
+margin-left: 320px;
+}
+
+#phoneMail a{
+	text-decoration:none;
+	font-weight:bold;
+}
+#phoneMail {
+	margin-top: -370px;
+margin-left: 620px;
+}
+
+#callUsNow {
+margin-top: -177px;
+text-align: right;
+width: 200px;
+margin-left: -95px;
+
+}
+
+#callNow
+{
+    font-family: ge_ss_twolight, cursive !important;
+    font-size: 22px;
+    font-weight: 600;   
+    
+}
+
+#fromTitle,#toTitle
+{
+    color: #f2b914;
+}
+
+#phoneContact{
+margin-left: -620px;
+margin-top: -35px;
+}
+
+#placeOrderARB
+{
+    margin-left: 40px;
+margin-top: -50px;
+    }
+
+#callUsNow a{
+	color:#fff;
+	text-decoration:none;
+	margin-right: 10px;
+}
+
+#callUs
+{
+    margin-left: -37px;
+}
+
+::-moz-focus-inner {	border:0;}
+
+a, img {
+    border:none;
+}
+
+
+*{
+	border-radius: 0px !important;
+}
+
+body 
+{
+	margin:0px;
+	padding:0px;
+	background-image:url(../images/background.jpg);
+	background-repeat:repeat;
+	background-size: 6%;
+}
+
+header {
+width: 100%;
+}
+
+.indexOc
+{
+ margin-top: -500px;
+}
+
+.indexCc
+{
+ margin-top: -200px;
+ margin-right: 55px;
+}
+
+.indexthumb
+{
+ margin-right: 70px;
+ margin-top: 38px;
+}
+
+#footerLinks a
+{
+font-size:16px;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+font-family: ge_ss_twobold, cursive !important;
+    
+    }
+    
+#quickLink{  
+margin-left: 95px;
+ margin-top: -45px;
+}
+
+.indexTesti
+{
+margin-left: -160px;
+margin-top: -185px;
+}
+
+
+#socialCircles
+{
+    margin-top:-25px;
+    
+    }
+.socialIcons{
+	font-weight: bold;
+	/*font-family: 'Conv_MyriadPro-SemiCn';*/
+	font-family: 'PT Sans', sans-serif;
+	font-size:15px;
+	margin-top: -208px;
+	margin-left: -10px;
+	}
+
+.container{
+	width:100%;
+}
+
+.content{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#runErrand
+{
+    padding-right: 50px;
+    }
+
+
+.footer a {
+	width:100%;
+	text-decoration:none;
+	font-size:14px;
+	color:black;
+		
+}
+
+#comingS
+{
+    margin-right:60px;
+    text-align:right;
+    font-size:24px;
+}
+
+.yellowBtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background-color:#F2B914;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px !important;
+	display:inline-block;
+	color:white;
+	font-family: 'ge_ss_twolight', cursive;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	cursor:pointer;
+}
+.yellowBtn:hover {
+	color:black;
+}
+.yellowBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+.blackBtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #231E0A;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #231E0A;
+	box-shadow:inset 0px 1px 0px 0px #231E0A;
+	background-color:#231E0A;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px !important;
+	display:inline-block;
+	color:white;
+	cursor:pointer;
+	font-family:'ge_ss_twolight', cursive;
+	
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+}.blackBtn:hover {
+		color:#F2B914;
+}.blackBtn:active {
+	position:relative;
+	top:1px;
+}
+#blkbutn
+{
+width:170px;
+text-align:center;
+margin-left:-280px;
+border: none;
+}
+
+#calcBar p,span{
+		font-family: 'ge_ss_twolight', cursive;
+		font-weight: bold;
+		font-size:14px;
+		color:black;
+}
+
+
+.dropDown {
+ -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-color:#FFFFFF;
+  background-image: url(../images/arrows.png), 
+    -webkit-linear-gradient(#231e0a, #231e0a , #231e0a);
+  background-position: center left;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: white;
+  font-size: 20px;
+  direction: rtl;
+  margin-left: -0px;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position:absolute;
+width:316px;
+background-image:url(../images/arrows1.png);
+color:#000000;
+-webkit-linear-gradient(white, white , white);
+border: 1px solid rgb(255, 255, 255);
+	
+}
+
+/*
+#AreaFromARB,#ContentPlaceHolder1_AreaFromARB
+{
+    direction:rtl;
+  
+    }
+    #CityFromARB,#ContentPlaceHolder1_CityFromARB
+    {
+    direction:rtl;
+ 
+    }
+    
+    #CityToARB,#ContentPlaceHolder1_CityToARB
+    {
+    direction:rtl;
+    
+    }
+    
+    #AreaToARB,#ContentPlaceHolder1_AreaToARB
+    {
+    direction:rtl;
+    
+    }
+*/
+.nav_down{
+	padding:7px;
+	background-color:white;
+	border:1px solid #CCC;
+	position:fixed;
+	background:white url(../images/arrow_down.png) no-repeat top left;
+	background-position:50% 50%;
+	width:20px;
+	height:20px;
+	bottom:10px;
+	opacity:0.7;
+    right: 5%;
+	white-space:nowrap;
+	cursor: pointer;
+	-moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+	-khtml-border-top-right-radius:3px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+
+}
+
+select {
+	background-color:#231e0a;
+}
+
+textarea {
+	width: 400px;
+	height: 20px;
+
+	margin-bottom:10px;
+	-webkit-appearance: textfield;
+border:5px solid white;
+padding: 1px;
+background-color: white;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+/*font-family: 'Conv_MyriadPro-SemiCn';*/
+font-family: 'ge_ss_twolight', cursive;
+font-size:14px;
+resize:none;
+overflow:auto;
+
+overflow-y: hidden;
+overflow-y: hidden\9;*overflow-y: hidden;_overflow-y: hidden;
+
+}
+
+#msgBox{
+	margin-bottom:10px;
+	height:200px;
+	width:400px;
+		margin-bottom:10px;
+	-webkit-appearance: textfield;
+border:5px solid white;
+padding: 1px;
+background-color: white;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+resize: auto;
+	
+}
+
+   #asteRik
+    {
+        color: red;
+vertical-align: top;
+font-size: 15px;
+margin-left: -9px;
+float: left;
+
+    }
+    
+p, h3, h4{
+/*font-family: 'Conv_MyriadPro-SemiCn';*/
+font-family: 'PT Sans', sans-serif;
+color:black;
+}
+
+#skip_CaptchaCode
+{
+    width: 175px;height: 70px;font-size: 38px;margin-left: 230px;margin-top: -90px;border: none;position: relative;
+    
+   vertical-align: top\9!important;
+         *vertical-align: top !important;
+         _vertical-align: top !important;
+}
+.chkbux
+{
+margin-left:0px;
+margin-top:-60px;
+text-align:left;
+}
+
+#faqQs a{
+color:black;
+}
+
+
+#back-top {
+	position: fixed;
+bottom: 30px;
+margin-left: -70px;
+margin-bottom: 30px;
+}
+
+#back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ddd url(../images/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px !important;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+
+.gmnoprint span{
+    font-size:10px;
+}
+textarea
+{
+    text-align:right;
+    }
+    .div
+    {
+         margin-right: 120px;
+        }
+        
+        .a1
+        {
+             margin-left:150px;
+             }
+        
+        
+        .abc
+        { 
+            display:inline; padding-left:15px; padding-right:15px;
+        }
+        
+        
+        .a2
+        { 
+            color: #000;text-decoration:underline; margin-left:0px;
+        }
+        
+        
+        .headtop
+        { 
+            margin-top:-25px;
+        }
+        
+        
+        .img1
+        {
+            width:480px; height:100;
+             margin-right: 45px;
+            }
+        
+        
+        
+        .img2
+        { 
+            margin-left: 200px;
+          }
+        
+        
+        .divtbl
+        {
+             margin-top:-5px;
+        }
+        
+        
+        .textareac1
+        {
+             width: 80px; margin-left:320px;
+             height: 24px;
+             margin-top: -22px;
+
+            }
+        
+        
+        .area1
+        {
+              width: 80px; margin-left: 320px;
+              height: 24px;
+            }
+        
+        .divtb2
+        {
+             margin-top:30px;
+            }
+        
+        
+        .textareac2
+        {
+             width: 80px; margin-left:320px;
+             height: 24px;
+             margin-top: -22px;
+            }
+        
+        
+        .area2
+        {
+               width: 80px; margin-left: 320px;
+               height: 24px;
+            }
+        
+        
+        .chkbuxtxt
+        {
+             margin-left:350px; margin-top: -35px;
+            }
+        #transPort
+        {
+            margin-left: -60px;
+            font-family: 'ge_ss_twolight', cursive;
+            font-size:14px; 
+            margin-top:10px;
+        }
+        
+        .a5
+        {
+             color:#000; margin-left: 160px;
+            }
+        
+        
+        .divc4
+        {
+             margin-left:480px;
+             width: 415px;height: 150px;margin-top:-15px;
+            }
+        
+        
+        .imgc4
+        {
+             margin-top: 20px;margin-left: 60px;
+            }
+        
+        
+        .textarea4
+        {
+            margin-left: 20px;margin-top: 30px;left: 195px; top: 1043px;
+            }
+        
+        
+        .divc5
+        {
+             margin-left: 80px;margin-top: -185px;
+            }
+            
+            .pc1
+            {
+              font-weight:bold;font-size:18px;letter-spacing:0.1em;text-align:left;margin-bottom: -10px; margin-left:180px;
+                }
+            
+            
+            .divc6
+            {
+                 margin-left:480px;
+                }
+            
+        .dropDownARB {
+ -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-color:#FFFFFF;
+
+  background-image: url(../images/arrows.png), 
+    -webkit-linear-gradient(#231e0a, #231e0a , #231e0a);
+  background-position: center left;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position:absolute;
+width:316px;
+background-image:url(../arabic/imagesARB/arrows1.png);
+color:#000000;
+-webkit-linear-gradient(white, white , white);
+border: 1px solid rgb(255, 255, 255);
+	
+}
+
+.dropDownSmall
+           {
+             -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;direction:rtl; background-color: #231e0a; width: 100px; 
+  height: 30px; font-size: 15px; color: #fff; background-image: url(../arabic/imagesARB/arrows.png); position: relative;margin-left: -70px;margin-top: -15px;
+               background-position: center left;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: white;
+               }
+			   
+			   a img {
+ border: none;
+}
+
+/*arbi map pages*/
+.calcbarclass
+{
+    height:64px;width:960px;background-color:white; margin-right: auto;margin-left: auto;margin-top: -50px;
+    }
+#clear
+{
+     margin-bottom:20px;
+    }
+
+    
+    #calcSdiv
+{
+    text-align: right;margin-top:-8px;
+    }
+#fromTitle
+{
+     padding-right: 20px;
+    }
+#fromLoc
+{
+  margin-top:-19px;padding-right: 50px;padding-left: 40px;  
+    }
+    
+    #ilaidiv
+    {
+         margin-top:-19px;
+        }
+#toTitle
+{
+     padding-left: 40px;padding-right: 29%;
+    }
+#toLoc
+{
+    margin-top:-19px;padding-right: 32%;
+    }
+#priceShowDiv
+{
+   margin-top: -19px;
+padding-right: 58%;
+    }
+#Div1
+{
+    margin-top: -19px;
+padding-right: 65.5%;
+    }
+    #selection
+{
+    margin-top: -25px;margin-left: 15px; text-align:left;
+    }
+    
+    #map_canvas
+    {
+        height: 393px; width: 948px; border-color: #fff; border-width: 6px;
+            border-style: solid; overflow: hidden; position: relative; 
+            direction: rtl; margin-left: auto;margin-right: auto;margin-top:-250px;
+    }
+    
+    #pgOrder
+    {
+        font-family: 'ge_ss_twolight', cursive;
+    }
+    
+    #calcBubble
+    {
+        margin-top:40px;position: relative;z-index: 1;padding-right: 80px;width: 250px;margin-left: auto;display:block;
+    }
+    
+    #bastakhdam
+    {
+      margin-left: 200px;
+      margin-top: -25px;
+        }
+#transPortARB
+{
+     margin-top:-3px;margin-left: 5px;background-color:#231e0a;width:100px;color:#fff;height: 30px;
+       font-family: 'ge_ss_twolight', cursive;
+        background-position: 3px;
+    }
+#clearmapcalculations
+{
+    margin-left: 0px;
+    font-size:13px;
+    }
+#calcBubble
+{
+    margin-top:40px;position: relative;z-index: 1;padding-right: 80px;width: 250px;margin-left: auto;display:block;
+    
+    }
+#calcbubbleimg
+{
+    margin-bottom: -140px;
+    }
+
+#map_canvas
+{
+    height: 393px; width: 948px; border-color: #fff; border-width: 6px;
+            border-style: solid; overflow: hidden; position: relative; direction: rtl; margin-left: auto;margin-right: auto;margin-top:-250px;
+}

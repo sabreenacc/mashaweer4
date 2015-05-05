@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.75" name="DB">
+  <DataContextMoniker Name="/DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a5e9c2c0-02d6-4f92-a30c-088e20892477" absoluteBounds="6.25, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBDataContext/ZonePrice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b969e7ef-937e-4791-83d2-62a8362056d8" absoluteBounds="6.265, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f349954d-145d-4dfc-aacd-c390516a3e39" absoluteBounds="3.5, 1, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DBDataContext/EmiratePrice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10dd5515-21ca-46fd-b952-9938ed5146d3" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39050d5f-2b46-401f-aea1-b8cd6571d96d" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBDataContext/FAQ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7a93d89-3635-4471-854d-033af7835444" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1963a212-38b1-424a-9113-5a554b8a3aeb" absoluteBounds="0.75, 6.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBDataContext/New" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd664547-5b59-46ca-8efd-673df4285ef1" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="899fdce3-5788-4bfa-a196-cb9847541888" absoluteBounds="3.75, 6.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBDataContext/Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc4793ca-5bb6-44af-ad40-36d315ac3445" absoluteBounds="3.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e69164fa-f2ae-4a94-83f1-e1717eb2375c" absoluteBounds="6.75, 6.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBDataContext/Setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01a909e2-cb5b-45ee-9ff9-93195ed57069" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6bcbf191-7047-414b-8bb0-4a66adfc6844" absoluteBounds="8.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DBDataContext/SysUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f67d1cf-a669-43f2-9002-58950bd36bc6" absoluteBounds="8.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2f5d924-a259-4f8d-96d5-223f9bd524bc" absoluteBounds="3.5, 3.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBDataContext/Zone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eaccc549-4955-4cba-8308-44472e1f2c1c" absoluteBounds="3.515, 4.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.63544840494792); (6.25 : 4.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBDataContext/Zone/Zone_ZonePrice" />
+      <nodes>
+        <classShapeMoniker Id="b2f5d924-a259-4f8d-96d5-223f9bd524bc" />
+        <classShapeMoniker Id="a5e9c2c0-02d6-4f92-a30c-088e20892477" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.13022420247396); (6.25 : 4.13022420247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBDataContext/Zone/Zone_ZonePrice1" />
+      <nodes>
+        <classShapeMoniker Id="b2f5d924-a259-4f8d-96d5-223f9bd524bc" />
+        <classShapeMoniker Id="a5e9c2c0-02d6-4f92-a30c-088e20892477" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="246d0129-d2ad-4fda-91e0-df3477f14566" absoluteBounds="1.25, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DBDataContext/EEmirate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c50fcf24-1f0f-46db-90cc-425bf1fd88bb" absoluteBounds="1.2650000000000001, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 1.94794840494792); (3.5 : 1.94794840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDataContext/EEmirate/EEmirate_EmiratePrice" />
+      <nodes>
+        <classShapeMoniker Id="246d0129-d2ad-4fda-91e0-df3477f14566" />
+        <classShapeMoniker Id="f349954d-145d-4dfc-aacd-c390516a3e39" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.25 : 1.47397420247396); (3.5 : 1.47397420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDataContext/EEmirate/EEmirate_EmiratePrice1" />
+      <nodes>
+        <classShapeMoniker Id="246d0129-d2ad-4fda-91e0-df3477f14566" />
+        <classShapeMoniker Id="f349954d-145d-4dfc-aacd-c390516a3e39" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.25 : 2.89589680989583); (2.25 : 4.70274983723958); (3.5 : 4.70274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDataContext/EEmirate/EEmirate_Zone" />
+      <nodes>
+        <classShapeMoniker Id="246d0129-d2ad-4fda-91e0-df3477f14566" />
+        <classShapeMoniker Id="b2f5d924-a259-4f8d-96d5-223f9bd524bc" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

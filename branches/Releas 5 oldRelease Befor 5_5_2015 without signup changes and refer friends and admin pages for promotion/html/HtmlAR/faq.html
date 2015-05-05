@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--[if lt IE 9]>
+	<script src="js/mediaqueries.js" type="text/javascript"></script>
+<![endif]-->
+<title>مشاوير |  الأسئلة الشائعة</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="mobile-nav.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+<nav>
+		<ul class="clearfix" style="display: none;">
+			<li><a href="index.html">الرئيسية</a></li>
+			<li><a href="services.html">خدماتنا</a></li>
+			<li><a href="choose-city.html">الألة الحاسبة</a></li>
+			<li><a href="order.html">إرسل طلب</a></li>
+			<li><a href="contact-us.html">إتصل بنا</a></li>
+				
+		</ul>
+		<a href="#" id="pull">القائمة</a>
+	</nav>
+<div class="container">
+<div class="header">
+<div class="logo-holder">
+  <a href="#"><img src="images/logo.png" alt="مشاوير الإمارات" /></a>
+ </div>
+ <div class="header-right">
+ <div class="toplinks-area">
+ <div class="social-icons">
+ <a href="#" class="fb-icon"></a>
+ <a href="#" class="tw-icon"></a>
+ <a href="#" class="in-icon"></a>
+ </div>
+ <div class="lang">
+ <a href="#">أخبر صديق</a> |
+ <a href="#">English</a></div>
+ <div class="clear"></div>
+ </div>
+ <ul class="main-nav">
+  <li>
+ <a href="services.html">
+ <i class="services-item"></i>
+ <br />
+ خدماتنا
+ </a>
+ </li>
+ <li>
+ <a href="choose-city.html">
+ <i class="calculator-item"></i>
+ <br />
+ الآلة الحاسبة
+ </a>
+ </li>
+ <li>
+  <a href="order.html">
+ <i class="order-item"></i>
+ <br />
+إرسل طلب
+ </a>
+ </li>
+ <li>
+ <a href="contact-us.html">
+ <i class="contact-item"></i>
+ <br />
+إتصل بنا
+ </a>
+ </li>
+ </ul> 
+ 
+</div> 
+ <div class="clear"></div> 
+</div>
+<div class="page-warp">
+<div class="choose-title">
+<span style="color:#FFF;">أسئلة</span>
+<span > شائعة</span>
+</div>
+<div class="faq-area">
+
+<script>
+$(document).ready(function () {
+	
+	$('.questions-list li').click(function () {
+    $(this).children('div').slideToggle()
+	});
+
+});
+
+</script>
+
+<ul class="questions-list">
+<li>
+<a href="#">ما هى أسعار خدمات التوصيل؟</a>
+<div class="answer-panel">
+<p>باستخدام الآلة الحاسبة يمكن معرفة أسعار التوصيل من و الى أى مكان فى دولة الامارات العربية المتحدة. 
+</p>
+</div>
+</li>
+<li>
+<a>ما هي المناطق التى تشمل خدمتكم؟</a>
+<div class="answer-panel">
+<p>نحن تغطي جميع المهمات في دبي والشارقة، ولكن يمكننا أن نوصل في جميع الإمارات السبع و مدينة العين كذلك. 
+ 
+</p>
+</div>
+</li>
+<li>
+<a>هل يجب أن أحضر الطلب بنفسى؟
+</a>
+<div class="answer-panel">
+<p>لا، سنقوم باستلامه منك في أى وقت و أى مكان حسب رغبتك. 
+</p>
+</div>
+</li>
+<li>
+<a>هل هناك حد أقصى لحجم أو وزن الطلب؟
+</a>
+<div class="answer-panel">
+<p>يرجى مراجعة صفحة<a href="#">الالة الحاسبة</a> للحصول على السعر إما لدراجة نارية أو سيارة. </p>
+</div>
+</li>
+<li>
+<a>ماذا لو لم يتم سرد خدمة أحتاج لها؟</a>
+<div class="answer-panel">
+<p>فقط أسألنا ! وسنفعل ما في وسعنا لمساعدتكم. لن يتم تنفيذ طلبات توصيل غير مشروعة. 
+ </p>
+</div>
+</li>
+<li>
+<a>كيف أعرف أن طلبى سيكون فى أمان؟</a>
+<div class="answer-panel">
+<p>ان الطلب الخاص بكم لا يتنقل من مندوب الى مندوب أو من سيارة الى أخرى و لكن يقوم مندوبنا نتسليم الطلبات فور استلامها مباشرة إلى الوجهة التي تريدها.  
+ </p>
+</div>
+</li>
+<li>
+<a>ما هي ساعات العمل الخاصة بكم؟</a>
+<div class="answer-panel">
+<p>السبت - الخميس 9:00 ص حتي 9:00 م – العطلة الأسبوعية يوم الجمعة. 
+ </p>
+</div>
+</li>
+<li>
+<a>هل تستطيع توصيل الطلبات في نفس اليوم؟</a>
+<div class="answer-panel">
+<p>بالتأكيد.</p>
+</div>
+</li>
+<li>
+<a>هل هناك تأمين؟</a>
+<div class="answer-panel">
+<p>نعم. </p>
+</div>
+</li>
+<li>
+<a>هل يمكنني تغيير الوجهة بعد ارسال الطلب؟</a>
+<div class="answer-panel">
+<p>بكل تأكيد، فقط اتصل بمركز خدمة العملاء وأنهم سوف يقومون بتنفيذ كل التغييرات التي تريدها.</p>
+</div>
+</li>
+</ul>
+</div>
+
+  <div class="clear"></div>
+</div>
+
+</div>
+<div class="container">
+<div class="footer">
+<ul>
+<li>
+<a href="#">الرئيسية</a>
+</li>
+<li>
+<a href="#">خدماتنا</a>
+</li>
+<li>
+<a href="#">الألة الحاسبة</a>
+</li>
+<li>
+<a href="#">إرسل طلب</a>
+</li>
+<li>
+<a href="#">الأسئلة المتداولة</a>
+</li>
+<li>
+<a href="#">الشروط والأحكام</a>
+</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

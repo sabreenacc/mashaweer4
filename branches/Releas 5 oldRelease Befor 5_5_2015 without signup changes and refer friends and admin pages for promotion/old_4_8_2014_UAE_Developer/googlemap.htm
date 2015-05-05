@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mashaweer Map</title>
+    <style type="text/css">
+        html, body, #map_canvas
+        {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+    </style>
+    <script src="http://maps.google.com/maps?file=api&v=2&sensor=false&language=ar&dir=rtl" type="text/javascript"></script>
+
+
+
+
+
+
+
+    <!--<script type="text/javascript">
+        var geocoder;
+        var marker;
+
+        function initialize() {
+            // created using http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+            var styleOff = [{ visibility: 'off'}];
+            var stylez = [
+            { featureType: 'transit.station',
+                elementType: 'labels',
+                stylers: styleOff
+            }
+            //          { featureType: 'administrative',
+            //              elementType: 'labels',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'administrative.province',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'administrative.locality',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'administrative.neighborhood',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'administrative.land_parcel',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'poi',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'landscape',
+            //              stylers: styleOff
+            //          },
+            //          { featureType: 'road',
+            //              stylers: styleOff
+            //          }
+          ];
+            geocoder = new google.maps.Geocoder();
+            var mapDiv = document.getElementById('map_canvas');
+            var map = new google.maps.Map(mapDiv, {
+                center: new google.maps.LatLng(25.155929, 55.224667),
+                zoom: 13,
+                mapTypeId: 'Border View',
+                draggableCursor: 'pointer',
+                draggingCursor: 'wait',
+                mapTypeControlOptions: {
+                    mapTypeIds: ['View']
+                }
+            });
+            var customMapType = new google.maps.StyledMapType(stylez,
+            { name: 'Mashaweer Map' });
+            map.mapTypes.set('Border View', customMapType);
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(53.012924, 18.59848),
+                map: map
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>-->
+    <!--<script type="text/javascript">
+        var map;
+        function initialize() {
+            var myOptions = {
+                zoom: 12,
+                center: new google.maps.LatLng(25.155929, 55.224667),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('map_canvas'),
+            myOptions);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>-->
+</head>
+<body>
+    <div id="map_canvas">
+    </div>
+    
+    <script type="text/javascript">
+    //<![CDATA[
+
+        if (GBrowserIsCompatible()) {
+
+            var polys = [];
+            var labels = [];
+
+
+            // === A method for testing if a point is inside a polygon
+            // === Returns true if poly contains point
+            // === Algorithm shamelessly stolen from http://alienryderflex.com/polygon/ 
+            GPolygon.prototype.Contains = function (point) {
+                var j = 0;
+                var oddNodes = false;
+                var x = point.lng();
+                var y = point.lat();
+                for (var i = 0; i < this.getVertexCount(); i++) {
+                    j++;
+                    if (j == this.getVertexCount()) { j = 0; }
+                    if (((this.getVertex(i).lat() < y) && (this.getVertex(j).lat() >= y))
+          || ((this.getVertex(j).lat() < y) && (this.getVertex(i).lat() >= y))) {
+                        if (this.getVertex(i).lng() + (y - this.getVertex(i).lat())
+            / (this.getVertex(j).lat() - this.getVertex(i).lat())
+            * (this.getVertex(j).lng() - this.getVertex(i).lng()) < x) {
+                            oddNodes = !oddNodes
+                        }
+                    }
+                }
+                return oddNodes;
+            }
+
+
+
+            // Display the map, with some controls and set the initial location 
+            var map = new GMap2(document.getElementById("map_canvas"));
+//            map.addControl(new GLargeMapControl());
+//            map.addControl(new GMapTypeControl());
+            map.setCenter(new GLatLng(25.27854, 55.33024), 13); //25.155929, 55.224667), 13);
+            map.enableScrollWheelZoom();
+
+
+//            GEvent.addListener(map, "click", function (overlay, point) {
+//                if (!overlay) {
+//                    for (var i = 0; i < polys.length; i++) {
+//                        if (polys[i].Contains(point)) {
+//                            map.openInfoWindowHtml(point, "You clicked on " + labels[i]);
+//                            //i = 999; // Jump out of loop
+//                        }
+//                    }
+//                }
+//            });
+
+//            GEvent.addListener(map, "mouseover", function (overlay, point) {
+//                if (!overlay) {
+//                    for (var i = 0; i < polys.length; i++) {
+//                        if (polys[i].Contains(point)) {
+//                            map.openInfoWindowHtml(point, "You clicked on " + labels[i]);
+//                            //i = 999; // Jump out of loop
+//                        }
+//                    }
+//                }
+//            });
+
+
+            // Read the data from states.xml
+
+            var request = GXmlHttp.create();
+            request.open("GET", "states.xml", true);
+            request.onreadystatechange = function () {
+                if (request.readyState == 4) {
+                    var xmlDoc = GXml.parse(request.responseText);
+
+                    // ========= Now process the polylines ===========
+                    var states = xmlDoc.documentElement.getElementsByTagName("state");
+
+                    // read each line
+                    for (var a = 0; a < states.length; a++) {
+                        // get any state attributes
+                        var label = states[a].getAttribute("name");
+                        var colour = states[a].getAttribute("colour");
+                        // read each point on that line
+                        var points = states[a].getElementsByTagName("point");
+                        var pts = [];
+                        for (var i = 0; i < points.length; i++) {
+                            pts[i] = new GLatLng(parseFloat(points[i].getAttribute("lat")),
+                                   parseFloat(points[i].getAttribute("lng")));
+                        }
+                        var poly = new GPolygon(pts, "#000000", 1, 1, colour, 0.2, { clickable: false });
+                        polys.push(poly);
+                        labels.push(label);
+                        map.addOverlay(poly);
+                    }
+                    // ================================================           
+                }
+            }
+            request.send(null);
+
+        }
+
+        // display a warning if the browser was not compatible
+        else {
+            alert("Sorry, the Google Maps API is not compatible with this browser");
+        }
+
+        // This Javascript is based on code provided by the
+        // Community Church Javascript Team
+        // http://www.bisphamchurch.org.uk/   
+        // http://econym.org.uk/gmap/
+
+    //]]>
+    </script>
+</body>
+</html>

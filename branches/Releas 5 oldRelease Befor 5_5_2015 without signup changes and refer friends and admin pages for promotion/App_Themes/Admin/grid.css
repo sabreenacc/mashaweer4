@@ -1,0 +1,231 @@
+@charset "utf-8";
+.grid th {
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	background-image: url(images/th-bg.jpg);
+	background-repeat: repeat-x;
+	height: 21px;
+	border-collapse:collapse;
+	border-left:solid 1px #bfc8d8;
+	font-size: 10px;
+	line-height: 21px;
+}
+.grid a {
+	font-weight: bold;
+	color: #000;
+	text-align: center; 
+	height: 21px;
+	font-size: 10px;
+	line-height: 21px;
+}
+.spacer1 {
+	background-color: #60779F;
+	height: 1px;
+}
+.grid {
+	border: solid 1px #000;
+}
+.row1 td , .row2 td{
+	text-align: center;
+	padding: 3px;
+}
+.row2 td{
+	background-color: #eff1f5;
+	border-top:solid 1px #cad2df;
+	border-bottom:solid 1px #cad2df;
+	
+}
+.btns-space {
+	background-image: url(images/pager_bg.gif);
+	background-repeat: repeat-x;
+	height: 30px;
+	background-color: #CCC;
+	background-position: center top;
+	text-align: left;
+}
+.btns-space input {
+	margin-top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 18px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	background-image: url(images/bullet_add.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-top: 3px;
+	padding-right: 35px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	cursor:pointer;
+	border:none;
+	background-color:transparent;
+	font-weight: bold;
+	border-right:solid 1px #bfc8d8;
+}
+.btns-space input:hover {
+	text-decoration: underline;
+}
+
+
+.btns-space a {
+	margin-top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 18px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	background-image: url(images/bullet_add.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-top: 3px;
+	padding-right: 35px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+	cursor:pointer;
+	border:none;
+	background-color:transparent;
+	font-weight: bold;
+	border-right:solid 1px #bfc8d8;
+	 
+	text-decoration: none;
+	text-align:left;
+	
+	color :Black;
+}
+.btns-space a:hover {
+	text-decoration: underline;
+}
+
+
+/*-------edit-------*/
+.tbl-footer {
+	background-image: url(images/pager_bg.gif);
+	background-repeat: repeat-x;
+	height: 25px;
+	background-position: center top;
+ 
+	padding: 5px;
+}
+
+/*-------add-------*/
+/*.tbl-footer a:link, a:visited, a:active 
+{
+    width: 90px;
+	color:#ffffff;
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:12px;
+	font-weight:normal;
+}
+.tbl-footer a:hover 
+{
+    width: 20px;
+	color:#4B80B4;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:normal;
+}
+.tbl-footer span 
+{
+    
+	font-size: 9px; 
+	font-weight: bold;
+}*/
+/*********************/
+a.wlink:link, a.wlink:visited, a.wlink:active 
+{
+   
+	color:#ffffff;
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:12px;
+}
+a.wlink:hover {
+	color:#4B80B4;
+	text-decoration:none;
+	font-size:12px;
+}
+a.wlinkd:link, a.wlinkd:visited, a.wlinkd:active 
+{
+    
+	color:#ffffff;
+	text-decoration:none;
+	font-size:12px;
+}
+a.wlinkd:hover {
+	color:#ffffff;
+	text-decoration:underline;
+	font-size:12px;
+}
+a.wlink:link, a.wlink:visited, a.wlink:active 
+{
+   
+	color:#ffffff;
+	text-decoration:none;
+	font-family:Tahoma;
+	font-size:12px;
+}
+a.wlink:hover {
+	color:#4B80B4;
+	text-decoration:none;
+	font-size:12px;
+}
+a.wlinkd:link, a.wlinkd:visited, a.wlinkd:active {
+	color:#ffffff;
+	text-decoration:none;
+	font-size:12px;
+}
+a.wlinkd:hover {
+	color:#ffffff;
+	text-decoration:underline;
+	font-size:12px;
+}
+.wtxt {
+	color:#ffffff;
+	font-size:12px;
+}
+.btxt {
+	color:#000000;
+	font-size:12px;
+}
+a.blink:link, a.blink:visited, a.blink:active {
+	color:#000000;
+	text-decoration:none;
+	font-size:12px;
+}
+a.blink:hover {
+	color:#000000;
+	text-decoration:underline;
+	font-size:12px;
+}
+/* doaa*/
+
+ .btn_prev {
+	cursor: pointer;
+	width: 25px;
+	background-image: url(images/pager-right.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	border: none;
+}
+ .btn_next {
+	cursor: pointer;
+	width: 25px;
+	background-image: url(images/pager-left.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	border: none;
+}
+.pager-numbers
+{
+    background-color: #242c3b;
+    color:#CAD2DF;
+    font-weight:bolder;
+    font-size:15px;
+}
+.pager-numbers a
+{
+    color:White;
+}

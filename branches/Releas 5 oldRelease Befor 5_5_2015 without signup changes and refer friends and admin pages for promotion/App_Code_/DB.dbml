@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="mashaweeruae" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mashaweeruae.db.9413790.hostedresource.com;Initial Catalog=mashaweeruae;User ID=mashaweeruae" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MashaweerConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ZonePrice" Member="ZonePrices">
+    <Type Name="ZonePrice">
+      <Column Name="PriceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarPrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="MotorcyclePrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Association Name="Zone_ZonePrice" Member="Zone" ThisKey="FromZone" OtherKey="ZoneId" Type="Zone" IsForeignKey="true" />
+      <Association Name="Zone_ZonePrice1" Member="Zone1" ThisKey="ToZone" OtherKey="ZoneId" Type="Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmiratePrice" Member="EmiratePrices">
+    <Type Name="EmiratePrice">
+      <Column Name="PriceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromEmirate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToEmirate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CarPrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Column Name="MotorcyclePrice" Type="System.Decimal" DbType="Decimal(18,5) NOT NULL" CanBeNull="false" />
+      <Association Name="EEmirate_EmiratePrice" Member="EEmirate" ThisKey="FromEmirate" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+      <Association Name="EEmirate_EmiratePrice1" Member="EEmirate1" ThisKey="ToEmirate" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FAQ" Member="FAQs">
+    <Type Name="FAQ">
+      <Column Name="FAQId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Answer" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New" Member="News">
+    <Type Name="New">
+      <Column Name="NewID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Service" Member="Services">
+    <Type Name="Service">
+      <Column Name="ServiceId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Setting" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="SettingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SettingKey" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SettingValue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SysUser" Member="SysUsers">
+    <Type Name="SysUser">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zone" Member="Zones">
+    <Type Name="Zone">
+      <Column Name="ZoneId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArabicName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="X" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="Y" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="zone_number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmirateId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Zone_ZonePrice" Member="ZonePrices" ThisKey="ZoneId" OtherKey="FromZone" Type="ZonePrice" />
+      <Association Name="Zone_ZonePrice1" Member="ZonePrices1" ThisKey="ZoneId" OtherKey="ToZone" Type="ZonePrice" />
+      <Association Name="Zone_Visitor" Member="Visitors" ThisKey="ZoneId" OtherKey="AreaId" Type="Visitor" />
+      <Association Name="Zone_CustomerLocation" Member="CustomerLocations" ThisKey="ZoneId" OtherKey="AreaId" Type="CustomerLocation" />
+      <Association Name="EEmirate_Zone" Member="EEmirate" ThisKey="EmirateId" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EEmirate" Member="EEmirates">
+    <Type Name="EEmirate">
+      <Column Name="EmirateId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ArabicName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="X" Type="System.Decimal" DbType="Decimal(18,15)" CanBeNull="true" />
+      <Column Name="Y" Type="System.Decimal" DbType="Decimal(18,15)" CanBeNull="true" />
+      <Association Name="EEmirate_EmiratePrice" Member="EmiratePrices" ThisKey="EmirateId" OtherKey="FromEmirate" Type="EmiratePrice" />
+      <Association Name="EEmirate_EmiratePrice1" Member="EmiratePrices1" ThisKey="EmirateId" OtherKey="ToEmirate" Type="EmiratePrice" />
+      <Association Name="EEmirate_Zone" Member="Zones" ThisKey="EmirateId" OtherKey="EmirateId" Type="Zone" />
+      <Association Name="EEmirate_Visitor" Member="Visitors" ThisKey="EmirateId" OtherKey="CityId" Type="Visitor" />
+      <Association Name="EEmirate_CustomerLocation" Member="CustomerLocations" ThisKey="EmirateId" OtherKey="City" Type="CustomerLocation" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.VisitorPromotions" Member="VisitorPromotions">
+    <Type Name="VisitorPromotion">
+      <Column Name="VisitorId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodeNumber" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Visitor_VisitorPromotion" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+      <Association Name="Discountcode_VisitorPromotion" Member="Discountcode" ThisKey="CodeNumber" OtherKey="CodeNumber" Type="Discountcode" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.Visitor" Member="Visitors">
+    <Type Name="Visitor">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AreaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VisitorId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CityId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Visitor_VisitorPromotion" Member="VisitorPromotions" ThisKey="VisitorId" OtherKey="VisitorId" Type="VisitorPromotion" />
+      <Association Name="Visitor_ReferToFriend" Member="ReferToFriends" ThisKey="VisitorId" OtherKey="VisitorId" Type="ReferToFriend" />
+      <Association Name="Visitor_CustomerLocation" Member="CustomerLocations" ThisKey="VisitorId" OtherKey="CustomerId" Type="CustomerLocation" />
+      <Association Name="EEmirate_Visitor" Member="EEmirate" ThisKey="CityId" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+      <Association Name="Zone_Visitor" Member="Zone" ThisKey="AreaId" OtherKey="ZoneId" Type="Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.ReferToFriend" Member="ReferToFriends">
+    <Type Name="ReferToFriend">
+      <Column Name="ReferToFriendId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FriendEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VisitorId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VisitorEmailIfnotRegistered" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiscountcodeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Visitor_ReferToFriend" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+      <Association Name="Discountcode_ReferToFriend" Member="Discountcode" ThisKey="DiscountcodeId" OtherKey="CodeNumber" Type="Discountcode" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.Discountcodes" Member="Discountcodes">
+    <Type Name="Discountcode">
+      <Column Name="CodeNumber" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codeused" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GeneratedDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ValidatPeriod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsedDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DiscountTypeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PromotionCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ExpiryDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Discountcode_VisitorPromotion" Member="VisitorPromotions" ThisKey="CodeNumber" OtherKey="CodeNumber" Type="VisitorPromotion" />
+      <Association Name="Discountcode_ReferToFriend" Member="ReferToFriends" ThisKey="CodeNumber" OtherKey="DiscountcodeId" Type="ReferToFriend" />
+      <Association Name="DiscountType_Discountcode" Member="DiscountType" ThisKey="DiscountTypeId" OtherKey="DiscountTypeId" Type="DiscountType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.DiscountType" Member="DiscountTypes">
+    <Type Name="DiscountType">
+      <Column Name="DiscountTypeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StandardPer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FixedAmount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SpecialPer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValidatePeriodInDays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Activate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DiscountType_Discountcode" Member="Discountcodes" ThisKey="DiscountTypeId" OtherKey="DiscountTypeId" Type="Discountcode" />
+    </Type>
+  </Table>
+  <Table Name="mashaweeruae.CustomerLocation" Member="CustomerLocations">
+    <Type Name="CustomerLocation">
+      <Column Name="DeliveryLocId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ContatctPerson" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PhoneNum" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NearestLandMark" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="City" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AreaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TypeLoc" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Association Name="Visitor_CustomerLocation" Member="Visitor" ThisKey="CustomerId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+      <Association Name="Zone_CustomerLocation" Member="Zone" ThisKey="AreaId" OtherKey="ZoneId" Type="Zone" IsForeignKey="true" />
+      <Association Name="EEmirate_CustomerLocation" Member="EEmirate" ThisKey="City" OtherKey="EmirateId" Type="EEmirate" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

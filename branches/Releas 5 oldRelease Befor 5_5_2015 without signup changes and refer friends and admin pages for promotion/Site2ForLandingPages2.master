@@ -1,0 +1,247 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site2ForLandingPages2.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="viewport" width="device-width" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+   <meta name="keywords" lang="en" content="Business Service assistant,Personal concierge service,Personal Delivery Service,Delivery services,Deliveries in UAE,Deliveries in Dubai, Same day delivery,Express Delivery,Fast Delivery,Local delivery service,Cheque Collection, Office messenger,Office driver,Gift Distribution,Pickup and drop off service,Express Pickup and drop off,Express courier service,Pickup and drop off in Dubai, Same Day Pickup and drop off,Pickup service in Dubai,Drop off Service in Dubai,Presents Delivery,Gift Deliveries,Flower Delivery,Cake Delivery,Balloons Delivery, Messenger service in Dubai,Bill Payment,Pay bills,Collect Cheque,Deposit Cheque,Deposit Check,Surprise deliveries in Dubai,Surprise deliveries in UAE, Messenger in Abu Dhabi,Messenger in UAE,Pickup & Delivery Services in Abu Dhabi,Local Delivery,Express Delivery,Bullet service, Personal Errands,Individual Errands,Corporate Errands,Business Errands." />
+    <meta name="description" lang="en" content="MashaweerUAE offers a timesaving and reliable service where we are able to run all kinds of business-related and personal errands, same day and express pick-ups and delivery across the UAE. From running errands, delivering party needs such as balloons, gifts, invitations to handling your banking needs and even tackling a trip to Ikea, as well as cheque collection and bank deposits. Mashaweer is your personal concierge ready to free your time so you can focus on what’s more important to you." />
+    <meta name="keywords" lang="ar" content="خدمة التوصيل الشخصية,مساعدة خدمة رجال الأعمال,خدمة المساعد الشخصي,خدمات التوصبل,خدمات التوصبل فى الامارات,خدمات التوصبل فى دبى,خدمات التوصبل فى نفس اليوم,خدمات التوصبل السريع,خدمات التوصبل المحلى,استلام الشبكات,ساعى مكتب,سائق مكتب,توزيع الهدايا,خدمة الاستلام و التسليم,خدمة الاستلام و التسليم السريعة,خدمة البريد السريع,خدمة الاستلام و التسليم فى دبى,خدمة الاستلام و التسليم فى نفس اليوم,خدمة الاستلام  فى دبى,خدمة التسليم فى دبى,توصيل الهدايا,توصيل الورود,توصيل الكيكات,توصيل البالونات,خدمات الساعى فى دبى,سداد الفواتير,استلام الشبكات,ايداع الشيكات,استلام و ايداع الشيكات,خدمات الساعى فى ابوظبى,خدمات الساعى فى الامارات,خدمة الاستلام و التسليم فى ابوظبى,التوصبل المحلى,التوصبل السريع,الخدمة السريعة,المهام الشخصية,المشاوير الخاصة,مهمات المكاتب,مشاوير الشركات." /> 
+    <meta name="description" lang="ar" content="مشاوير الامارات  تقدم خدمات قضاء المهمات و المشاوير للأشخاص و الشركات بما يوفر لهم الوقت عن طريق خدمة سريعة و مضمونة بما فى ذلك خدمة التوصيل السريع و خدمات الاستلام و التوزيع و التسليم فى نفس اليوم فى جميع أنحاء المدينة مثل توصيل احتياجات الحفلات مثل البالونات و الهدايا، و تسليم الدعوات، الى القيام بمهامك البنكية و حتى القيام برحلة الى ايكيا نيابة عنك. و كذلك مهام و مشاوير البنوك الخاصة بالشركات. مشاوير هى مندوبك الشخصى المستعد دائما لتوفير وقتك و جهدك حتى تتمكن من التركيز على ما هو أكثر أهمية." />
+     <!--[if lt IE 9]>
+	<script src="js/mediaqueries.js" type="text/javascript"></script>
+<![endif]-->
+    <link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/reset.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/style.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/mobile-nav.css" rel="stylesheet"
+        type="text/css" />
+    <link href="scripts/LoginPopUp/css/style.css" rel="stylesheet" />
+<% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
+   {  
+%>
+    <%--<link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/style_nmobile.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/App_Themes/Main<%= Globals.MashaweerLanguage %>/mobile-nav_mobile.css" rel="stylesheet"
+        type="text/css" />--%>
+<%
+   }
+%>
+
+    <link rel="shortcut icon" type="image/x-icon" href="fav.ico" />
+    <script type="text/javascript" src="/js/jquery.1.7.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        <title>
+            <%=Resources.LanguageFile.SiteName %></title>
+    </asp:ContentPlaceHolder>
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!-- <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32995610-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script> -->
+	<script>
+	    (function (i, s, o, g, r, a, m) {
+	        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+	            (i[r].q = i[r].q || []).push(arguments)
+	        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	    ga('create', 'UA-32995610-1', 'auto');
+	    ga('require', 'displayfeatures');
+	    ga('send', 'pageview');
+	</script>
+	<script>
+	    (function () {
+	        var _fbq = window._fbq || (window._fbq = []);
+	        if (!_fbq.loaded) {
+	            var fbds = document.createElement('script');
+	            fbds.async = true;
+	            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+	            var s = document.getElementsByTagName('script')[0];
+	            s.parentNode.insertBefore(fbds, s);
+	            _fbq.loaded = true;
+	        }
+	        _fbq.push(['addPixelId', '915775171820162']);
+	    })();
+	    window._fbq = window._fbq || [];
+	    window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=915775171820162&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+    <%--<form runat="server">--%>
+    <nav>
+		<ul class="clearfix" style="display: none;">  
+            <li><a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>"> <%=Resources.LanguageFile.MENU_HOME %> </a></li>
+            <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Services%> </a></li>
+<% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
+   {  
+%>
+            <li><a href="CalculatorMobile.aspx"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
+            <li><a href="CalculatorMobile.aspx?order=1"><%=Resources.LanguageFile.MENU_Order%></a></li>
+<%
+   }
+   else
+   {
+%>
+            <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Calculator%> </a></li>
+            <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Order%></a></li>
+<%
+   }
+%>
+            <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>"><%=Resources.LanguageFile.MENU_Contact%> </a></li>  
+		</ul>
+		<a href="#" id="pull"><%=Resources.LanguageFile.STMenuItem%></a>
+	</nav>
+   
+    <div class="container">
+        <div>
+            <div class="result result-d">
+                Main</div>
+            <div class="result result-mp">
+                Mobile Portrait</div>
+            <div class="result result-mph">
+                Mobile Portrait HD</div>
+            <div class="result result-ml">
+                Mobile Landscape</div>
+            <div class="result result-mlh">
+                Mobile Landscape HD</div>
+            <div class="result result-tp">
+                Tablet Portrait</div>
+            <div class="result result-tph">
+                Tablet Portrait HD</div>
+        </div>
+        <div class="header">
+            <div class="logo-holder">
+                <a href="Default.aspx?lang=<%:Globals.MashaweerLanguage%>">
+                    <img src="/App_Themes/Main<%= Globals.MashaweerLanguage %>/images/logo.png" alt="مشاوير الإمارات" /></a>
+            </div>
+            <div class="header-right">
+                <div class="toplinks-area">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/MashaweerUAE" target="_blank" class="fb-icon"></a>
+                        <a href="https://twitter.com/mashaweeruae" target="_blank" class="tw-icon"></a>
+                        <a href="http://www.linkedin.com/company/mashaweer-uae?trk=cp_followed_name_mashaweer-uae" target="_blank" class="in-icon"></a>
+                        <a class="instIcon" onclick="window.open('https://instagram.com/mashaweeruae/','_blank')">
+                                <img id="imgInst" style="width:100%" src="App_Themes/_Main/images/instagram-icon2.png" /></a>
+                            <a onclick="window.open('http://google.com/+Mashaweeruae','_blank')" class="GmIcon">
+                                <img id="imgG" style="width:100%" src="App_Themes/_Main/images/googlePlus2.png" /></a>
+                    </div>
+                    <script>
+
+                        $('.instIcon').on('mouseover', function (event) {
+                            $("#imgInst").attr("src", "App_Themes/_Main/images/instagram-icon.png");
+                        });
+                        $('.instIcon').on('mouseout', function (event) {
+                            $("#imgInst").attr("src", 'App_Themes/_Main/images/instagram-icon2.png');
+                        });
+
+                        $('.GmIcon').on('mouseover', function (event) {
+
+                            $("#imgG").attr('src', "App_Themes/_Main/images/googlePlus.png");
+                        }).on('mouseout', function (event) {
+                            $("#imgG").attr('src', "App_Themes/_Main/images/googlePlus2.png");
+                        });
+                        </script>
+                    <div class="lang">
+                        <!-- SMARTADDON BEGIN -->
+                        <script type="text/javascript">
+                            (function () {
+                                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                                s.src = 'http://s1.smartaddon.com/share_addon.js';
+                                var j = document.getElementsByTagName('script')[0]; j.parentNode.insertBefore(s, j);
+                            })();
+                        </script>
+                        <a href="http://www.smartaddon.com/?share" title="Share" onclick="return sa_tellafriend('http://www.mashaweeruae.com/')">
+                            <%=Resources.LanguageFile.STTellFriend %></a>
+                        <!-- SMARTADDON END -->
+                        
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <ul class="main-nav">
+                    <li><a href="Service.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="services-item"></i>
+                        <br />
+                        <%=Resources.LanguageFile.MENU_Services %>
+                    </a></li>
+<% if (DeviceRecognizer.RecongnizeDevice(Request) == "mobile")
+   {  
+%>
+                    <li><a href="CalculatorMobile.aspx"><i class="calculator-item"></i>
+                        <br />
+                        <%=Resources.LanguageFile.MENU_Calculator %>
+                    </a></li>
+                    <li><a href="CalculatorMobile.aspx?order=1"><i class="order-item"></i>
+                        <br />
+                        <%=Resources.LanguageFile.MENU_Order %>
+                    </a></li>
+<%
+   }
+   else
+   {
+%>
+                    <li><a href="location.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="calculator-item"></i>
+                        <br />
+                        <%=Resources.LanguageFile.MENU_Calculator %>
+                    </a></li>
+                    <li><a href="Order.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="order-item"></i>
+                        <br />
+                        <%=Resources.LanguageFile.MENU_Order %>
+                    </a></li>
+<%
+   }
+%>
+                    <li><a href="ContactUs.aspx?lang=<%:Globals.MashaweerLanguage%>"><i class="contact-item"></i>
+                        <br />
+                        <%=Resources.LanguageFile.MENU_Contact %>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+        </asp:ContentPlaceHolder>
+   
+    <%--</form>--%>
+</body>
+</html>
